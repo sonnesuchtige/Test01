@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://ContactMangementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons1="http://ContactMangementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons2="http://ContactMangementLibrary" xmlns:bons3="http://CorrespondenceLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons5="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:bons6="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons7="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons8="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" xmlns:bons4="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.administration.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo"/>
+    <xsd:include schemaLocation="CaseWatchListBO.xsd"/>
+    <xsd:include schemaLocation="ActCMCaseStepBO.xsd"/>
+    <xsd:include schemaLocation="ActCMCaseEventBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="AlertArrayBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>
+    <xsd:include schemaLocation="CaseRoutingBO.xsd"/>
+    <xsd:include schemaLocation="CaseARSBO.xsd"/>
+    <xsd:include schemaLocation="AssociatedCaseCorrespondenceBO.xsd"/>
+    <xsd:include schemaLocation="CaseAttachXref.xsd"/>
+    <xsd:include schemaLocation="Attachment.xsd"/>
+    <xsd:include schemaLocation="AlertBO.xsd"/>
+    <xsd:include schemaLocation="CaseTypeBO.xsd"/>
+    <xsd:include schemaLocation="../../../../../../../../xsd-includes/http.ContactManagementLibrary.com.acs.enterprise.mmis.program.contactmanagment.process.bo.xsd"/>
+
+    <xsd:complexType name="CaseRecordBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons7:EnterpriseBaseDomainBO">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="actCMCaseEvents" type="bons4:ActCMCaseEventBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="actCMCaseSteps" type="bons4:ActCMCaseStepBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="alerts" type="bons4:AlertBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="appealTrk" type="bons5:AppealTrackingBO"/>
+            <xsd:element minOccurs="0" name="caseARS" type="bons4:CaseARSBO"/>
+            <xsd:element minOccurs="0" name="caseAssignedToWorkUnit" type="bons4:WorkUnitBO"/>
+            <xsd:element minOccurs="0" name="caseAttachCrossReferences" type="bons4:CaseAttachCrossReferencesBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="caseBCCP" type="bons4:CaseBCCPBO"/>
+            <xsd:element minOccurs="0" name="caseCommonEntityCrossRefs" type="bons4:CaseCmnEntityXRefBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="caseCorrespondences" type="bons4:AssociatedCaseCorrespondenceBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="caseCreatedByWorkUnit" type="bons4:WorkUnitBO"/>
+            <xsd:element minOccurs="0" name="caseDDU" type="bons4:CaseDDUBO"/>
+            <xsd:element minOccurs="0" name="caseLetterRequests" type="bons4:CaseLetterRequestBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="caseOpenWorkUnit" type="bons4:WorkUnitBO"/>
+            <xsd:element minOccurs="0" name="casePriorityCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="caseSK" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="caseStatusCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="caseStatusDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="caseType" type="bons4:CaseTypeBO"/>
+            <xsd:element minOccurs="0" name="daysToCloseNumber" type="xsd:int"/>
+            <xsd:element minOccurs="0" name="lastUpdatedByWorkUnit" type="bons4:WorkUnitBO"/>
+            <xsd:element minOccurs="0" name="lobHierarchy" type="bons4:LOBHierarchyBO"/>
+            <xsd:element minOccurs="0" name="noteSet" type="bons6:NoteSetBO"/>
+            <xsd:element minOccurs="0" name="openDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="reviewedBySupervisorWorkUnit" type="bons4:WorkUnitBO"/>
+            <xsd:element minOccurs="0" name="sensitiveDataIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="supervisorReviewReqIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="title" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="caseRoutings" type="bons4:CaseRoutingBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="currentCaseRecordLinks" type="bons4:CaseLinkBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="priorCaseRecordLinks" type="bons4:CaseLinkBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="caseWatchLists" type="bons4:CaseWatchListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="lineOfBusiness" type="bons8:LineOfBusinessBO"/>
+                </xsd:sequence>                                  </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

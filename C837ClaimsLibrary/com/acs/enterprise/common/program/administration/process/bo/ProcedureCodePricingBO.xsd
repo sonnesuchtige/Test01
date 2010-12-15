@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="ProgramBasePricingBO.xsd"/>
+    <xsd:include schemaLocation="LineOfBusinessBO.xsd"/>
+    <xsd:complexType name="ProcedureCodePricingBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:ProgramBasePricingBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="procedureLowerIndicator" type="xsd:boolean"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/mmis/common/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons3="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo">
+    <xsd:include schemaLocation="CommonReviewBO.xsd"/>
+    <xsd:include schemaLocation="NoteSetBO.xsd"/>
+    <xsd:include schemaLocation="FinancialInformationBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="CommonEntityRepCrossReferenceBO.xsd"/>
+    <xsd:include schemaLocation="PhoneUsageBO.xsd"/>
+    <xsd:include schemaLocation="EmailAddressUsageBO.xsd"/>
+    <xsd:include schemaLocation="AddressUsageBO.xsd"/>
+    <xsd:include schemaLocation="CommonEntityTypeBO.xsd"/>
+    <xsd:complexType name="CommonEntityBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons3:EnterpriseBaseDomainBO">        <xsd:sequence>
+      <xsd:element minOccurs="0" name="commonEntitySK" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="voidIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="secCommunicationCode" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="addressUsage" type="bons0:AddressUsageBO"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="eAddressUsage" type="bons0:EmailAddressUsageBO"/>
+            <xsd:element minOccurs="0" name="phoneUsage" type="bons0:PhoneUsageBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="commonEntityRepCrossReference" type="bons0:CommonEntityRepCrossReferenceBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="financialInformation" type="bons0:FinancialInformationBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="providerOrganization" type="bons0:ProviderOrganizationBO"/>
+                    <xsd:element minOccurs="0" name="commonEntityTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="commonReview" type="bons0:CommonReviewBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="altPayIndicator" type="xsd:string"/>
+                </xsd:sequence>                          
+                    
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

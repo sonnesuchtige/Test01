@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="DisabilityInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="beginQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginPeriodQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginDate1" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="beginQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginPeriodQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginDate2" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="beginQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginPeriodQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginDate3" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="beginQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginPeriodQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginDate4" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="beginQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginPeriodQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginDate5" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="endQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endPeriodQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endDate1" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="endQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endPeriodQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endDate2" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="endQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endPeriodQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endDate3" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="endQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endPeriodQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endDate4" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="endQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endPeriodQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endDate5" type="xsd:date"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

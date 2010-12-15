@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="TestInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="testDateQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testDatePeriodQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testDate1" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="testDateQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testDatePeriodQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testDate2" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode6" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode6" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult6" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode7" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode7" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult7" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode8" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode8" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult8" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode9" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode9" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult9" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode10" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode10" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult10" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode11" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode11" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult11" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode12" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode12" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult12" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode13" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode13" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult13" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode14" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode14" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult14" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode15" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode15" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult15" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode16" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode16" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult16" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode17" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode17" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult17" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode18" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode18" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult18" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode19" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode19" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult19" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementQualifierCode20" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testMeasurementCode20" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="testResult20" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

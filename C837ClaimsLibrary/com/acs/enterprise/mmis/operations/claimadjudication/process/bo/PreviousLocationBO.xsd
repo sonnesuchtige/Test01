@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="PreviousLocationBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element name="exceptionLocationCode" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="suspenseLocationExceptionCode" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="exceptionLocationID" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="exceptionLocationDate" type="xsd:date" minOccurs="0"/>
+      <xsd:element name="exceptionLocationUserID" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="sequenceNumber" type="xsd:int" minOccurs="0"/>
+        </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

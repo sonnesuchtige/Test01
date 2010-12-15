@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="RateRCProviderNetworkRegionBO.xsd"/>
+    <xsd:include schemaLocation="RateRCProviderTypeBO.xsd"/>
+    <xsd:include schemaLocation="RateRCProviderNetworkBO.xsd"/>
+    <xsd:include schemaLocation="RCBillTypeInclExclBO.xsd"/>
+    <xsd:include schemaLocation="RCProviderTypeInclExclBO.xsd"/>
+    <xsd:include schemaLocation="RCProviderSpecialtyInclExclBO.xsd"/>
+    <xsd:include schemaLocation="RevenueCodeDetailBO.xsd"/>
+    <xsd:include schemaLocation="ProgramBaseDomainBO.xsd"/>
+    <xsd:include schemaLocation="RateRCBenefitPlanBO.xsd"/>
+    <xsd:include schemaLocation="RevenuePricingBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:complexType name="RevenueCodeBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:ProgramBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="longDescription" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="provSpeclIncludeExcludeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="provTypeIncludeExcludeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="billTypeIncludeExcludeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="revenueCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="revenueTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="shortDescription" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="providerRateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="providerTypeRateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="revenueRegionRateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="revenueBPRateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="noteSet" type="bons0:NoteSetBO"/>
+      <xsd:element minOccurs="0" name="revenueCodeDetails" type="bons1:RevenueCodeDetailBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="revenuePricingDetails" type="bons1:RevenuePricingBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="rcProviderSpecialtyInclExcl" type="bons1:RCProviderSpecialtyInclExclBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="rcProviderTypeInclExcl" type="bons1:RCProviderTypeInclExclBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="rcBillTypeInclExcl" type="bons1:RCBillTypeInclExclBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="rateRCBenefitPlan" type="bons1:RateRCBenefitPlanBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="rateRCProviderNtwrk" type="bons1:RateRCProviderNetworkBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="rateRCProviderType" type="bons1:RateRCProviderTypeBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="rateRCProviderNtwrkRegion" type="bons1:RateRCProviderNetworkRegionBO" maxOccurs="unbounded"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

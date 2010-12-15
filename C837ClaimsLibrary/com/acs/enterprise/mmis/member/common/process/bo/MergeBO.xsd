@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="LegalLiabBO.xsd"/>
+    <xsd:include schemaLocation="LetterGenerationBO.xsd"/>
+    <xsd:include schemaLocation="LiabilitySpanBO.xsd"/>
+    <xsd:include schemaLocation="LockinSpanBO.xsd"/>
+    <xsd:include schemaLocation="LTCSpanBO.xsd"/>
+    <xsd:include schemaLocation="MassEnrollmentTriggerBO.xsd"/>
+    <xsd:include schemaLocation="McareSpanBO.xsd"/>
+    <xsd:include schemaLocation="MemberArraySearchCriteriaBO.xsd"/>
+    <xsd:include schemaLocation="MemberBO.xsd"/>
+    <xsd:include schemaLocation="MemberDataBO.xsd"/>
+    <xsd:include schemaLocation="MemberEnrollmentTriggerBO.xsd"/>
+    <xsd:include schemaLocation="MemberExceptionBO.xsd"/>
+    <xsd:include schemaLocation="MemberIDBO.xsd"/>
+    <xsd:include schemaLocation="MemberInformationRequestBO.xsd"/>
+    <xsd:include schemaLocation="MemberResultBO.xsd"/>
+    <xsd:include schemaLocation="MemberRulesCriteriaBO.xsd"/>
+    <xsd:include schemaLocation="MemberSearchCriteriaBO.xsd"/>
+    <xsd:include schemaLocation="MemberSearchResultBO.xsd"/>
+    <xsd:include schemaLocation="MemberSpanBaseDomainBO.xsd"/>
+    <xsd:include schemaLocation="MemberSystemParameterRequestBO.xsd"/>
+    <xsd:include schemaLocation="MemberURLimitBO.xsd"/>
+    <xsd:include schemaLocation="MemberVerificationBO.xsd"/>
+    <xsd:include schemaLocation="CaseOwnerBO.xsd"/>
+    <xsd:include schemaLocation="CaseBO.xsd"/>
+    <xsd:include schemaLocation="CaseAssistanceGroupBO.xsd"/>
+    <xsd:include schemaLocation="BPRedeterminationCriteriaBO.xsd"/>
+    <xsd:include schemaLocation="BenefitPlanOptionBO.xsd"/>
+    <xsd:include schemaLocation="BenefitPlanLimitBO.xsd"/>
+    <xsd:include schemaLocation="AutoAssignmentTriggerBO.xsd"/>
+    <xsd:include schemaLocation="AlternateMemberIDBO.xsd"/>
+    <xsd:include schemaLocation="EmploymentInformationBO.xsd"/>
+    <xsd:include schemaLocation="EligibilitySpanBO.xsd"/>
+    <xsd:include schemaLocation="EligibilityGuaranteeResponse.xsd"/>
+    <xsd:include schemaLocation="EligibilityGuaranteeBO.xsd"/>
+    <xsd:complexType name="MergeBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+        <xsd:sequence>
+  <xsd:element minOccurs="0" name="mergeSystemID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="targetSystemID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="mergeTypeCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="incmgTxnTypeCode" type="xsd:string"/>
+        </xsd:sequence>                                  </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

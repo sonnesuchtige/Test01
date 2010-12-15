@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo">
+    <xsd:include schemaLocation="CommonEntityRepCrossReferenceBO.xsd"/>
+    <xsd:complexType name="MemberRepresentativeBO">
+    <xsd:sequence>
+            <xsd:element minOccurs="0" name="memberSysID" type="xsd:long"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

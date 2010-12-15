@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="NotesInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="noteReferenceCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="noteText1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="noteReferenceCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="attribute2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="noteText2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="noteReferenceCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="noteText3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="noteReferenceCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="noteText4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="noteReferenceCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="noteText5" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode6" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText6" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode7" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText7" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode8" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText8" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode9" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText9" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode10" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText10" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode11" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText11" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode12" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText12" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode13" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText13" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode14" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText14" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode15" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText15" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode16" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText16" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode17" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText17" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode18" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText18" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode19" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText19" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteReferenceCode20" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="noteText20" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="billingNoteCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="billingNoteText" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

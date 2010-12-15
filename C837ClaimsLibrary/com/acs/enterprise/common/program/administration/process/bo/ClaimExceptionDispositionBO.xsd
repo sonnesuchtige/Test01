@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="ClaimExceptionBO.xsd"/>
+    <xsd:complexType name="ClaimExceptionDispositionBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="batchDocumentTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="batchMediaSourceCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="claimTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="claimExcDispCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="claimExcAppCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="forceDenyCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="claimException" type="bons0:ClaimExceptionBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

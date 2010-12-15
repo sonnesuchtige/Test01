@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+    <xsd:complexType name="CaseAssistanceGroupBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="caseAssistanceGroupNumber" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="caseAssistanceGroupBeginDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="caseAssistanceGroupEndDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="caseAdultSizeNumber" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="caseChildSizeNumber" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="caseFamilySizeNumber" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="caseFederalPovertyLevelNum" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="caseGrossEarnedAmt" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="caseGrossUnearnedAmt" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="caseNetEarnedAmt" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="caseNetUnearnedAmt" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="caseTotalResourceAmt" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="caseTotalGrossAmt" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="caseTotalNetAmt" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="caseAssistanceGroupVoidIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="caseAssistanceTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="caseAssistanceTermReasonCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="caseAssistanceGroupSequenceNum" type="xsd:int"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

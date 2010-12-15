@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+
+    <xsd:complexType name="DetermineBPTriggerBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="CustomerCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="TriggerType" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="TriggerVerb" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="LineOfBusiness" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="MemberSysID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="MemberCurrentID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="MemberCurrentType" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="CountyCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="COE" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="CAPCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="EligibilityBeginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="EligibilityEndDate" type="xsd:date"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

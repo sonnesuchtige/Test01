@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd"/>
+    <xsd:complexType name="OwnerInformationBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="ownerTaxID" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="ownerDBAName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ownerBusinessAttnName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ownerSSNNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ownerDateOfBirth" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="ownerMedicareId" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ownerBusinessName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ownerTitleName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ownerType" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="name" type="bons0:NameBO"/>
+                    <xsd:element minOccurs="0" name="stateOrCountryOfBirth" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="ownerMedicaidID" type="xsd:string"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

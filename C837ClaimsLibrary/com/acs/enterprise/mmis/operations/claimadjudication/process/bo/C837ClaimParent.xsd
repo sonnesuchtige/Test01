@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+
+    <xsd:include schemaLocation="EDITrackingBO.xsd"/>
+    <xsd:include schemaLocation="ClaimAuxBO.xsd"/>
+    <xsd:include schemaLocation="EnterpriseClaimBO.xsd"/>
+
+    <xsd:element name="C837ClaimParent" type="bons0:C837ClaimParent"/>
+    <xsd:complexType name="C837ClaimParent">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="claimAux" type="bons0:ClaimAuxBO"/>
+      <xsd:element minOccurs="0" name="enterpriseClaim" type="bons0:EnterpriseClaimBO"/>
+      <xsd:element minOccurs="0" name="ediTracking" type="bons0:EDITrackingBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+
+</xsd:schema>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+    <xsd:include schemaLocation="ClaimAuxBO.xsd"/>
+    <xsd:include schemaLocation="RepricedClaimInfoBO.xsd"/>
+    <xsd:complexType name="C837InstitutionalLineItemBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="lineNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="serviceQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="submittedUnitsCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="serviceDateQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="servicePeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="assessmentQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="assessmentPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="assessmentDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="facilityTaxQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="facilityTaxAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="repricedClaimInfo" type="bons0:RepricedClaimInfoBO"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

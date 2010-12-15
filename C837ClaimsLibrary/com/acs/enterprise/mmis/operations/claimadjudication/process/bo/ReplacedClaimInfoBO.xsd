@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="EnterpriseClaimBO.xsd"/>
+  <xsd:complexType name="ReplacedClaimInfoBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="claimType" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="claimMemberId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="claimStatus" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="docType" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="txnTypeCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="claimCreditCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="paidDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="billingProviderID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="billingProviderIDType" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="tcn" type="xsd:string"/>
+                </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

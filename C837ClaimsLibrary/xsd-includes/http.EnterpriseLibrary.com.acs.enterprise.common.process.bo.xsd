@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bo="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo">
+  <xsd:annotation>
+    <xsd:appinfo source="wid.federated.schema"/>
+  </xsd:annotation>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/process/bo/EnterpriseNotificationBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/process/bo/NameBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/process/bo/AppealTrackingBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/process/bo/AttachmentBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/process/bo/SMTPNotificationBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/process/bo/ExceptionBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/process/bo/ErrorDescriptionBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/process/bo/EnterpriseBusinessFaultBO.xsd"/>
+</xsd:schema>

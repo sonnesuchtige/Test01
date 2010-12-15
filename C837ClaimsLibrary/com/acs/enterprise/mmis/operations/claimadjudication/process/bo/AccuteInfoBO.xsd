@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="AccuteInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="acuteQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="acutePeriodQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="acuteManifestationDate1" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="acuteQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="acutePeriodQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="acuteManifestationDate2" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="acuteQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="acutePeriodQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="acuteManifestationDate3" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="acuteQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="acutePeriodQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="acuteManifestationDate4" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="acuteQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="acutePeriodQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="acuteManifestationDate5" type="xsd:date"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

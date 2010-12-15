@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="AdditionalClaimDataBO">
+        <xsd:sequence>
+        <xsd:element name="baseRateSourceCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="drgCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="calculatedCoveredDays" type="xsd:int" minOccurs="0"/>
+          <xsd:element name="reimbursementStatusCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="saRequiredIndicator" type="xsd:boolean" minOccurs="0"/>
+          <xsd:element name="batchDate" type="xsd:date" minOccurs="0"/>
+          <xsd:element name="paymentTypeCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="batchTypeCode" type="xsd:string" minOccurs="0"/>          
+          <xsd:element name="unableToWorkFromDate" type="xsd:date" minOccurs="0"/>
+          <xsd:element name="unableToWorkToDate" type="xsd:date" minOccurs="0"/>
+          <xsd:element name="racialCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="residenceCountyCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="sex" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="memberName" type="bons1:NameBO" minOccurs="0"/>
+          <xsd:element name="lengthOfStay" type="xsd:int" minOccurs="0"/>
+          <xsd:element name="nonCoveredDays" type="xsd:int" minOccurs="0"/>
+          <xsd:element name="admittingDiagnosisCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="totalCoPayAmount" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="managedCareCoPayAmount" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="emergencyDiagnosisIndicator" type="xsd:boolean" minOccurs="0"/>
+          <xsd:element name="overrideLocationCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="serviceFacilityTaxanomyCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="eombDate" type="xsd:date" minOccurs="0"/>
+          <xsd:element name="fcn" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="medicalRecordNumber" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="signIndicator" type="xsd:boolean" minOccurs="0"/>
+                    <xsd:element minOccurs="0" name="mic" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="peerGroupCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="grouperAllowedAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="outlierDays" type="xsd:int"/>
+            <xsd:element minOccurs="0" name="outlierAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="outlierReductionPercentage" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="drgAllowedAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="inpatientPercentage" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="nonCoveredChargeAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="coInsuranceAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="deductibleAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="paidAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="overrideLocationID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="extInjuryDiagnosisCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="federalMatchCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="federalCategoryCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="admitSourceCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="admitTypeCode" type="xsd:string"/>
+        </xsd:sequence>
+        
+      
+    </xsd:complexType>
+</xsd:schema>

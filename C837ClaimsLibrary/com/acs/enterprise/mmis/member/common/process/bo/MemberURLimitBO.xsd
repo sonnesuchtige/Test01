@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="MemberBO.xsd"/>
+    <xsd:include schemaLocation="BenefitPlanLimitBO.xsd"/>
+    <xsd:complexType name="MemberURLimitBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="urLimitCategoryCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="urLimitEndDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="firstDateOfService" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="parameterNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="urLimitMetDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="urLimitAllowAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="urLimitUsedAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="lastTCNNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitPlanLimit" type="bons0:BenefitPlanLimitBO"/>
+            <xsd:element minOccurs="0" name="tempUsedAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="urLimitBeginDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="bpId" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="urBenefitPlanReview" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="parameterTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="urBenefitPlanLimitSK" type="xsd:long"/>
+        </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

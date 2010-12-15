@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://CorrespondenceLibrary" xmlns:bons1="http://CorrespondenceLibrary/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons3="http://CorrespondenceLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons4="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons2="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+  
+    
+    <xsd:include schemaLocation="CustomFieldBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="CorrespondenceCategorySubject.xsd"/>
+    <xsd:include schemaLocation="CallScriptBO.xsd"/>
+    <xsd:include schemaLocation="WorkUnitBO.xsd"/>
+    <xsd:include schemaLocation="SubjectBO.xsd"/>
+    <xsd:complexType name="CategoryBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons4:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+            <xsd:element minOccurs="0" name="description" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Description of category</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="voidIndicator" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>This determines the Active/InActive sate of Category&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="categoryDeletionDays" type="xsd:int">
+        <xsd:annotation>
+          <xsd:documentation>The number of days before a "closed" Correspondence of this category type is removed from the Watchlist table. This value, if specified, overrides the system default value from the Parameter table. TBD:&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="categoryPriorityDay1" type="xsd:int">
+        <xsd:annotation>
+          <xsd:documentation>The number of days an open correspondence can be at the next lower priority code before being automatically escalated to Priority code 1. &#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="categoryPriorityDay2" type="xsd:int">
+        <xsd:annotation>
+          <xsd:documentation>The number of days an open correspondence can be at the next lower priority code before being automatically escalated to Priority code 2. A zero value indicates this priority level is to be skipped. &#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="categoryPriorityDay3" type="xsd:int">
+        <xsd:annotation>
+          <xsd:documentation>The number of days an open correspondence can be at the next lower priority code before being automatically escalated to Priority code 3. A zero value indicates this priority level is to be skipped. &#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="categorySK" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="supervisorReviewReqIndicator" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>This is an indicator  that specifies whether or not a supervisor is required to review a Correspondence record with this Category before it can be closed.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="defaultRouteToWorkUnit" type="bons2:WorkUnitBO" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation>Route to whom?</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="priorityCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="status" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="categoryTypeCode" type="xsd:string"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

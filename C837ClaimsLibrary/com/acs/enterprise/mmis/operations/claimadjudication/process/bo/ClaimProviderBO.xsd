@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:Q1="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons2="http://ClaimAdjudicationLibrary" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="ClaimProviderAddressBO.xsd"/>
+    <xsd:include schemaLocation="ClaimMemberBO.xsd"/>
+    <xsd:include schemaLocation="ClaimLineItemsProvidersBO.xsd"/>
+    <xsd:include schemaLocation="ClaimDataValidationRulesBO.xsd"/>
+    <xsd:include schemaLocation="ClaimDataValidationLineItemRulesBO.xsd"/>
+    <xsd:include schemaLocation="ClaimAttachmentBO.xsd"/>
+    <xsd:include schemaLocation="ClaimAdjudicationEditBO.xsd"/>
+    <xsd:include schemaLocation="CategoryOfServiceBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="ClaimProviderBO">
+        <xsd:sequence>
+        <xsd:element name="providerSystemID" type="xsd:long" minOccurs="0"/>
+          <xsd:element name="providerTypeCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="providerSpecialityCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="providerTaxonomyCode" type="xsd:string" minOccurs="0"/>
+            <xsd:element minOccurs="0" name="providerAddress" type="Q1:ClaimProviderAddressBO"/>
+            <xsd:element minOccurs="0" name="cliaCertNumbers" type="xsd:string" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="cliaCertTypeCodes" type="xsd:string" maxOccurs="unbounded"/>
+        </xsd:sequence>
+        
+      
+    </xsd:complexType>
+</xsd:schema>

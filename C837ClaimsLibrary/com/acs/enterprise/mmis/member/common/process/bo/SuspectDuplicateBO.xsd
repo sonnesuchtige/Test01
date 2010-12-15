@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="EnrollmentTriggerBO.xsd"/>
+    <xsd:include schemaLocation="EnrollmentSpanBO.xsd"/>
+    <xsd:include schemaLocation="EmploymentInformationBO.xsd"/>
+    <xsd:include schemaLocation="EligibilitySpanBO.xsd"/>
+    <xsd:include schemaLocation="EligibilityGuaranteeBO.xsd"/>
+    <xsd:include schemaLocation="MemberBO.xsd"/>
+    <xsd:complexType name="SuspectDuplicateBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+            <xsd:element minOccurs="0" name="suspectDuplicateReasonCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="suspectDuplicateProcessCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="transactionSourceCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="suspectMemberSysID" type="xsd:long"/>
+                    <xsd:element minOccurs="0" name="memberSysID" type="xsd:long"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" xmlns:bons0="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="EnrollmentTriggerBO.xsd"/>
+    <xsd:include schemaLocation="EnrollmentSpanBO.xsd"/>
+    <xsd:include schemaLocation="EmploymentInformationBO.xsd"/>
+    <xsd:include schemaLocation="EligibilitySpanBO.xsd"/>
+    <xsd:include schemaLocation="EligibilityGuaranteeBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.ProviderEnrollmentLibrary.com.acs.enterprise.mmis.provider.enrollment.process.bo.xsd" namespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo"/>
+    <xsd:include schemaLocation="MemberBO.xsd"/>
+    <xsd:complexType name="SwipeRequestBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="swipeActionReasonCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="swipeActionDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="swipeActionCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="bpID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="providerAltID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="providerAltIDTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="caseNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="cardTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="provider" type="bons1:ProviderBO"/>
+                    <xsd:element minOccurs="0" name="incmgTxnTypeCode" type="xsd:string"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

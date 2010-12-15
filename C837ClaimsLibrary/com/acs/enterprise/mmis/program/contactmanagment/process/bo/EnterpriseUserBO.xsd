@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:include schemaLocation="WorkUnitBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="EnterpriseUserBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="userWorkUnitSK" type="xsd:long"/>
+          <xsd:element minOccurs="0" name="userID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="supervisorReviewReqIndicator" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="supervisorIndicator" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="accountActiveIndicator" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="prefixName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="firstName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="lastName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="middleName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="suffixName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="phoneNumber" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="phoneNumExt" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="emailAddress" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="organizationID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="orgName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="orgDescription" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="caseFilter" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="correspondenceFilter" type="xsd:string"/>
+        </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

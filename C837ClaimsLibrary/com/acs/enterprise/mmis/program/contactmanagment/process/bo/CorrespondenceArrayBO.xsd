@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons1="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="CorrespondenceRecordBO.xsd"/>
+    <xsd:complexType name="CorrespondenceArrayBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="correspondenceBO" type="bons0:CorrespondenceRecordBO"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+  <xsd:complexType name="EditVO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="editCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="longDesc" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="shortDesc" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

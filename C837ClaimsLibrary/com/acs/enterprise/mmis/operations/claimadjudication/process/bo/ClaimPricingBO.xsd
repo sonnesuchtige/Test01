@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="ClaimPricingBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="allowedAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="baseRateAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="baseRateSourceCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="calculatedCoveredDays" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="drgCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="reimbursementStatusCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="peerGroupCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="grouperAllowedAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="outlierDays" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="outlierAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="outlierReductionPercentage" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="drgAllowedAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="inpatientPercentage" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="calculatedCoveredChargeAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="coveredChargeAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="nonCoveredChargeAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="calculatedAllowedAmount" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="drgOutlierAmount" type="xsd:double"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

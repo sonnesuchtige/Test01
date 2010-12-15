@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="OtherPayerBO.xsd"/>
+    <xsd:include schemaLocation="ClaimProviderIDBO.xsd"/>
+    <xsd:include schemaLocation="ClaimProviderBO.xsd"/>
+    <xsd:include schemaLocation="ServiceFacilityBO.xsd"/>
+    <xsd:include schemaLocation="ClaimProviderInfoBO.xsd"/>
+    <xsd:complexType name="C837LineItemProviderBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="lineNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="renderingProvider" type="bons0:ClaimProviderInfoBO"/>
+      <xsd:element minOccurs="0" name="purchasedServiceProvider" type="bons0:ClaimProviderInfoBO"/>
+      <xsd:element minOccurs="0" name="serviceFacility" type="bons0:ServiceFacilityBO"/>
+      <xsd:element minOccurs="0" name="supervisingProvider" type="bons0:ClaimProviderInfoBO"/>
+      <xsd:element minOccurs="0" name="orderingProvider" type="bons0:ClaimProviderInfoBO"/>
+      <xsd:element minOccurs="0" name="referringProvider1" type="bons0:ClaimProviderInfoBO"/>
+      <xsd:element minOccurs="0" name="referringProvider2" type="bons0:ClaimProviderInfoBO"/>
+      <xsd:element minOccurs="0" name="otherPayer1" type="bons0:OtherPayerBO"/>
+      <xsd:element minOccurs="0" name="otherPayer2" type="bons0:OtherPayerBO"/>
+      <xsd:element minOccurs="0" name="otherPayer3" type="bons0:OtherPayerBO"/>
+      <xsd:element minOccurs="0" name="otherPayer4" type="bons0:OtherPayerBO"/>
+      <xsd:element minOccurs="0" name="attendingProvider" type="bons0:ClaimProviderInfoBO"/>
+      <xsd:element minOccurs="0" name="operatingProvider" type="bons0:ClaimProviderInfoBO"/>
+      <xsd:element minOccurs="0" name="otherProvider" type="bons0:ClaimProviderInfoBO"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

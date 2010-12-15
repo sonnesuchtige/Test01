@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bo="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo">
+  <xsd:annotation>
+    <xsd:appinfo source="wid.federated.schema"/>
+  </xsd:annotation>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/CascadeInformationBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/CascadeInformationListBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSUserKeyBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSIndexBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSUpdateIndexBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSCommonReturnBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSPageInfoBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSPageInfoListBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSFaultBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSUpdateIndexListBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSUserKeyListBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSIndexUpdateBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EnterpriseUploadFileBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSUploadFileBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSQuickSearchReturnListBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSQuickSearchBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSQuickSearchReturnBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/edms/process/bo/EDMSTriggerBO.xsd"/>
+</xsd:schema>

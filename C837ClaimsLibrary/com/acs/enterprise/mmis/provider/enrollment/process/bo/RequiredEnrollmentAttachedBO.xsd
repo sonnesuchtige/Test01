@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+  <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="RequiredEnrollmentAttachedBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="tradPartId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="enrollAttachTypeCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="attachReqIndicator" type="xsd:string"/>
+        </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

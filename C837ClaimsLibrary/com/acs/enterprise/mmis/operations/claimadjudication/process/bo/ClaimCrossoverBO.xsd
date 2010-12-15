@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="C837ClaimParent.xsd"/>
+    <xsd:complexType name="ClaimCrossoverBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="c837ClaimParent" type="bons0:C837ClaimParent"/>
+      <xsd:element minOccurs="0" name="rejected" type="xsd:boolean"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

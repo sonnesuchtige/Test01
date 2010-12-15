@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="LineOfBusinessBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:include schemaLocation="RateBO.xsd"/>
+  <xsd:complexType name="RateRevenueCodeBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:RateBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="noteSet" type="bons1:NoteSetBO"/>
+          <xsd:element minOccurs="0" name="lobCodeObj" type="bons0:LineOfBusinessBO"/>
+        </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

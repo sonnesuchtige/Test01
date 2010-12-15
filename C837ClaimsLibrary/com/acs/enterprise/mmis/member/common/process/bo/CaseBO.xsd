@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons2="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:bons3="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="CaseAssistanceGroupBO.xsd"/>
+    <xsd:include schemaLocation="CaseOwnerBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" schemaLocation="../../../../../common/program/administration/process/bo/LineOfBusinessBO.xsd"/>
+    <xsd:complexType name="CaseBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons3:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="caseNum" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lob" type="bons0:LineOfBusinessBO"/>
+      <xsd:element minOccurs="0" name="commonEntity" type="bons1:CommonEntityBO"/>
+            <xsd:element minOccurs="0" name="caseOwner" type="bons2:CaseOwnerBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="caseAssistanceGroup" type="bons2:CaseAssistanceGroupBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="incmgTxnTypeCode" type="xsd:string"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

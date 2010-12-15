@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://com/acs/enterprise/cots/geostan" xmlns:bons1="http://AddressValidationLibrary/com/acs/enterprise/common/cots/geostan/bo" xmlns:bons2="http://AddressValidationLibrary/com/acs/enterprise/common/cots/addressvalidation/bo" xmlns:bons3="http://AddressValidationLibrary/com/acs/enterprise/common/cots/addressvalidation/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://AddressValidationLibrary/com/acs/enterprise/common/cots/addressvalidation/bo">
+    <xsd:include schemaLocation="AddressResponseDataBO.xsd"/>
+    <xsd:complexType name="AddressResponseDataArrayBO">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="AddressResponseArray" type="bons3:AddressResponseDataBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

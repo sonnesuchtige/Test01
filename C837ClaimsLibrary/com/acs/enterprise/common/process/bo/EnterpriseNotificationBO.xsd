@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo">
+  <xsd:complexType name="EnterpriseNotificationBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="notificationType" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="notificationUserId" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="notificationSubject" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="notificationMessage" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

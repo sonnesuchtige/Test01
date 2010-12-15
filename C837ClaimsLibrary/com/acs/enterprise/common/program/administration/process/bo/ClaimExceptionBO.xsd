@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:complexType name="ClaimExceptionBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="exceptionAppliesToCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="exceptionCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="longDescription" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="shortDescription" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="indexNum" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="ncpdpVersionNum" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="exceptionRPTTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="noteSet" type="bons0:NoteSetBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

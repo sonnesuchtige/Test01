@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="SimilarIllnessInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="illnessQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessPeriodQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessDate1" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="illnessQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessPeriodQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessDate2" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="illnessQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessPeriodQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessDate3" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="illnessQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessPeriodQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessDate4" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="illnessQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessPeriodQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessDate5" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="illnessQualifierCode6" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessPeriodQualifierCode6" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessDate6" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="illnessQualifierCode7" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessPeriodQualifierCode7" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessDate7" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="illnessQualifierCode8" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessPeriodQualifierCode8" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessDate8" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="illnessQualifierCode9" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessPeriodQualifierCode9" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessDate9" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="illnessQualifierCode10" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessPeriodQualifierCode10" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessDate10" type="xsd:date"/>    
+      
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

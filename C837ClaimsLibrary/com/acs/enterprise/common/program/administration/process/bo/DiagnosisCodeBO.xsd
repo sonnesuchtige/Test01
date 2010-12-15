@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="DiagnosisCodeDetailBO.xsd"/>
+    <xsd:include schemaLocation="DiagnosisFormerCodeBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:complexType name="DiagnosisCodeBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="diagnosisCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="diagnosisDescription" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="diagnosisVersioncode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="endDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="noteSet" type="bons0:NoteSetBO"/>
+      <xsd:element minOccurs="0" name="diagnosisFormerCodes" type="bons1:DiagnosisFormerCodeBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="diagnosisCodeDetails" type="bons1:DiagnosisCodeDetailBO" maxOccurs="unbounded"/>
+        </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

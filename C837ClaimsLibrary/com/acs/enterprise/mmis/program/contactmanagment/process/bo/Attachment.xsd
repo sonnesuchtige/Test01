@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="AttachmentBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="attachmentAddedByName" type="xsd:string">
+        <xsd:annotation>
+          
+        <xsd:documentation>User who added attachment to CR</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="attachmentDescription" type="xsd:string">
+        <xsd:annotation>
+          
+        <xsd:documentation>Description of document.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="attachmentStoredInEDMSDate" type="xsd:string">
+        <xsd:annotation>
+          
+        <xsd:documentation>Date Attachment was added to CR.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="attachmentEDMSPageID" type="xsd:string">
+        <xsd:annotation>
+          
+        <xsd:documentation>page ID of EDMS</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="attachmentFileName" type="xsd:string">
+        <xsd:annotation>
+          
+        <xsd:documentation>File name only.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="attachmentSK" type="xsd:long">
+        <xsd:annotation>
+          <xsd:documentation>Attachment Surrogate Key</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="detachedIndicator" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Is the document detached</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="correspondenceSK" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Correspondencesk</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="attachmentCreatedDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="edmsWrkUnitLevel" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="edmsDocType" type="xsd:string"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

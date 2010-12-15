@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="PriorAuthorizationInfoBO.xsd"/>
+    <xsd:complexType name="OtherPayerBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="entityCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="entityTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="payerName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="payerQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="payerID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="priorAuthorizationInfoA" type="bons0:PriorAuthorizationInfoBO"/>
+      <xsd:element minOccurs="0" name="priorAuthorizationInfoB" type="bons0:PriorAuthorizationInfoBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

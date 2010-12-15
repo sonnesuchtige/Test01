@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/benefitadministration/process/bo">
+  <xsd:complexType name="BenefitPlanMainBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="benefitPlanID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="typeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="optionsCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitPlanDesc" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitPlanAddlDesc" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitPlanStatCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

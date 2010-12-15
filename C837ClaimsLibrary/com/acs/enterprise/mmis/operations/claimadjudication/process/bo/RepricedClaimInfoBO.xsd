@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="RepricedClaimInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="methodologyCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="repriceAllowedAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="savingsAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="organizationID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="repricePerDiemRate" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="repriceAPGCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="repriceAPGAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="repriceRejectReasonCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="repriceComplianceCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="repriceExceptionCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="drgCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="drgAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="revenueCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="serviceQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="serviceCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="unitCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="unitQuantity" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="rejectReasonCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="policyComplianceCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="exceptionCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ambulatoryPatientGroupCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ambulatoryPatientGroupAmount" type="xsd:double"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

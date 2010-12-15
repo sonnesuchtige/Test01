@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+  <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="TPCarrierTransactionBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="tradingPartnerId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="tplCarrierId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="tpCarrierCrossRefBeginDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="txnTypeCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="txnDirectionCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="x12VersionCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="tpTransactionTypeBeginDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="tpCarrierTransBeginDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="tpProvTransEndDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="tpCarrierTransSeqNum" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="tpCarrierCrossRefSeqNum" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="tpTransactionTypeSeqNum" type="xsd:int"/>
+                </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

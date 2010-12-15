@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="RepricedClaimInfoBO.xsd"/>
+    <xsd:include schemaLocation="FileInfoBO.xsd"/>
+    <xsd:include schemaLocation="AmbulatoryPatientGroupBO.xsd"/>
+    <xsd:complexType name="C837ServiceLineItemBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="lineNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="contractTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="contractAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="contractPercentage" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="contractCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="contractDiscountPercentage" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="contractVersionID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="repriceQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="repriceReferenceNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="adjustedRepriceQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="adjustedRepriceReferenceNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="controlNumberQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="controlNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="mammographyQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="mammographyCertificationID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="cliaQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="referringCLIAQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="referringCLIANumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="immunizationBatchQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="immunizationBatchNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="oxygenFlowRateQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="oxygenFlowRateDescription" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="universalProductQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="universalProductNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="taxQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="taxAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="approvedQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="approvedAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="postageQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="postageClaimedAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="noteCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="noteText" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="purchasedServiceProviderID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="purchasedServiceChargeAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="visitQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="visitsCount" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="visitFrequencyPeriodCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="visitFrequencyCount" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="visitPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="visitPeriodNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="visitPatternCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="visitPatternTimeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ambulatoryPatientGroup" type="bons0:AmbulatoryPatientGroupBO"/>
+      <xsd:element minOccurs="0" name="fileFormatInfo" type="bons0:FileInfoBO"/>
+      <xsd:element minOccurs="0" name="repricedClaimInfo" type="bons0:RepricedClaimInfoBO"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

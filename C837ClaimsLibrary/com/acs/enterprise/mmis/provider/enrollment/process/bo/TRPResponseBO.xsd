@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://AddressValidationLibrary/com/acs/enterprise/common/cots/addressvalidation/bo" xmlns:bons1="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:include schemaLocation="TradingPartnerBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.AddressValidationLibrary.com.acs.enterprise.common.cots.addressvalidation.bo.xsd" namespace="http://AddressValidationLibrary/com/acs/enterprise/common/cots/addressvalidation/bo"/>
+    <xsd:complexType name="TRPResponseBO">
+    <xsd:sequence>
+            <xsd:element minOccurs="0" name="addressResponseDataArray" type="bons0:AddressResponseDataArrayBO"/>
+            <xsd:element minOccurs="0" name="tradingPartner" type="bons1:TradingPartnerBO"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

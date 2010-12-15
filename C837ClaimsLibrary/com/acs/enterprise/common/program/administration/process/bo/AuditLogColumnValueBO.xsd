@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="AuditLogTableBO.xsd"/>
+    <xsd:complexType name="AuditLogColumnValueBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="tableName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="columnName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beforeValue" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="afterValue" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="auditLogTable" type="bons0:AuditLogTableBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

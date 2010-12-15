@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="ClaimProcessFieldsBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="medicareAssignmentCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ruleCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="drgReturnCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="mdcCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="mdcTitle" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="drgGrouperVersion" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="drgTitle" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="reimbInvocationCount" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="networkStatusCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="spendDownLeft" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="spendDownSpanSeqNumber" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="finDataExists" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="replacedClaimStatus" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="adjustmentReasonCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="faultName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="claimSourceID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="saLowerOfLogicIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="pricingIdentifier" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="procedureCodeSwitchIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="memberLocked" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="payeeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="submittedRemarksNotInSL" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="autoAdjustment" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="bundledClaim" type="xsd:boolean"/>
+                </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

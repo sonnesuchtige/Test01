@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:bons3="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons5="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="CommonEntityBO.xsd"/>
+    <xsd:include schemaLocation="PhoneBO.xsd"/>
+    <xsd:include schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd"/>
+    <xsd:complexType name="PhoneUsageBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons5:EnterpriseBaseDomainBO">        <xsd:sequence>
+      <xsd:element minOccurs="0" name="phoneSK" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="phoneUsageTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="endDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="phoneUsageTypeSigCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="voidIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="phone" type="bons1:PhoneBO"/>
+                    <xsd:element minOccurs="0" name="phoneUsageSequenceNumber" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="phoneUsageGlobalSigCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="phoneUsageStatCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="dummyIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="incmgTxnTypeCode" type="xsd:string"/>
+                </xsd:sequence>                          
+                    
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

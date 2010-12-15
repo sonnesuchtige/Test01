@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:bons3="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.ProviderEnrollmentLibrary.com.acs.enterprise.mmis.provider.enrollment.process.bo.xsd" namespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo"/>
+    <xsd:complexType name="SwipeCardBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons3:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="swipeControlNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="swipeTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="swipeStatusCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="swipeIssueDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="swipeDeactiveDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="swipeIssueReasonCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="deactiveReasonCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="caseNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="memberAltID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="alternateIDTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="providerName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="providerAltID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="provAltIDTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="bpID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="name" type="bons2:NameBO"/>
+                    <xsd:element minOccurs="0" name="provider" type="bons0:ProviderBO"/>
+                    <xsd:element minOccurs="0" name="uspsLine2Address" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="uspsLine1Address" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="cityName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="countryCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="stateCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="zipCode4" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="zipCode5" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="countyCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="townCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="addressLine1" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="addressLine2" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="addressLine3" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="addressLine4" type="xsd:string"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

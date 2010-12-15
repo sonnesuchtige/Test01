@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://LetterGenerationLibrary" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons0="http://AddressValidationLibrary/com/acs/enterprise/common/cots/addressvalidation/bo" targetNamespace="http://LetterGenerationLibrary/com/acs/enterprise/common/cots/lettergeneration/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.AddressValidationLibrary.com.acs.enterprise.common.cots.addressvalidation.bo.xsd" namespace="http://AddressValidationLibrary/com/acs/enterprise/common/cots/addressvalidation/bo"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:import schemaLocation="LetterReceiverAttachment.xsd" namespace="http://LetterGenerationLibrary"/>
+    <xsd:complexType name="LetterGenerationReceiverBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="cotsLtrRecTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ltrReqCommunMethodCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="edmsPageID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dbaName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="firstName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lastName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="commonEntityID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="eAddressSK" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="eAddressUsageTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="adrSK" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="addressUsageTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="rowSelIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="letterReceiverAttachment" type="bons1:LetterReceiverAttachment" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="addressUsageSeqNum" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="eAddressUsageSeqNum" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ltrReqRecvSK" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="addressUsageDesc" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="attachmentPresent" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="actionToBeApplied" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="uspsAddressLine1" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="uspsAddressLine2" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="addressDataVO" type="bons0:AddressDataBO"/>
+                    <xsd:element minOccurs="0" name="entityID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="entityName" type="xsd:string"/>
+		    <xsd:element minOccurs="0" name="addressSK" type="xsd:string"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

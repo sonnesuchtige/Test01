@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://LetterGenerationLibrary/com/acs/enterprise/common/cots/lettergeneration/process/bo" targetNamespace="http://LetterGenerationLibrary/com/acs/enterprise/common/cots/lettergeneration/process/bo">
+    <xsd:include schemaLocation="LetterReceiverSKBO.xsd"/>
+    <xsd:complexType name="LetterRequestKeysBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="letterRequestSK" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="letterReceiverSK" type="bons0:LetterReceiverSKBO" maxOccurs="unbounded"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

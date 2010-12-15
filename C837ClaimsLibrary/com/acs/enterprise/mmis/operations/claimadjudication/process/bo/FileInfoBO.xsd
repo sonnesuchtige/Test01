@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="FileInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="fileInformation1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="fileInformation2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="fileInformation3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="fileInformation4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="fileInformation5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="fileInformation6" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="fileInformation7" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="fileInformation8" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="fileInformation9" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="fileInformation10" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

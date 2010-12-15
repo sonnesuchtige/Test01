@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="EnterpriseClaimAuxBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="networkID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="billingLocationCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="errorParameterCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="errorModuleID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="errorMessageText" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="inKindIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="adjudicatedCycleNumber" type="xsd:int"/>
+            <xsd:element minOccurs="0" name="accidentStateCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="patientPaidAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="suspenseLocationExceptionCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="exceptionLocationID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="claimFrequencyCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="predeterminationBenefitsCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="accidentDateTime" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="referralDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="submitterID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="relationshipCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="patientResponsibilityAmount" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="cliaNumber1" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="cliaNumber2" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="cliaNumber3" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="hysterectomyIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="sterilizationIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="abortionIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="prevReimbursementCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="prevReimbursementAmount" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="familyPlanningIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="fiscalPendID" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="costAvoidanceIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="otherFundAmount" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="archiveRetrievalDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="originalPaidDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="postOperativeBeginDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="postOperativeEndDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="ediTrackingNumber" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="claimReceivedDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="federalFundAmount" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="calculatedSubmittedChargeAmount" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="medicarePartCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="originalFiscalPendDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="stateFundAmount" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="countyFundAmount" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="patientLiableAmount" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="submittedProviderNPINumber" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="billedHours" type="xsd:int"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

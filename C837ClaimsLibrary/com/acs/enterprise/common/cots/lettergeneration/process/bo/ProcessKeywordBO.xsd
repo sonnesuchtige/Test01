@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://LetterGenerationLibrary/com/acs/enterprise/common/cots/lettergeneration/process/bo">
+  <xsd:complexType name="ProcessKeywordBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="processKey" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="processValue" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

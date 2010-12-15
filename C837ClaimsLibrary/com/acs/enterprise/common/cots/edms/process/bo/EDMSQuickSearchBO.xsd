@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo" targetNamespace="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo">
+    <xsd:include schemaLocation="EDMSUserKeyListBO.xsd"/>
+    <xsd:complexType name="EDMSQuickSearchBO">
+        <xsd:sequence>
+      <xsd:element minOccurs="0" name="strPageId" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="boEDMSUserIndexKeysForSearch" type="bons0:EDMSUserKeyListBO"/>
+      <xsd:element minOccurs="0" name="strLoginId" type="xsd:string"/>
+    </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

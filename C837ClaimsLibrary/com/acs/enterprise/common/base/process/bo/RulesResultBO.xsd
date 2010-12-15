@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo">
+    <xsd:include schemaLocation="RuleExceptionBO.xsd"/>
+    <xsd:complexType name="RulesResultBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="returnValue" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ruleExceptions" type="bons0:RuleExceptionBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:include schemaLocation="MemberSpanBaseDomainBO.xsd"/>
+    <xsd:include schemaLocation="MemberSearchResultBO.xsd"/>
+    <xsd:include schemaLocation="MemberRulesCriteriaBO.xsd"/>
+    <xsd:include schemaLocation="MemberResultBO.xsd"/>
+    <xsd:include schemaLocation="MemberInformationRequestBO.xsd"/>
+    <xsd:include schemaLocation="MemberIDBO.xsd"/>
+    <xsd:include schemaLocation="MemberEnrollmentTriggerBO.xsd"/>
+    <xsd:include schemaLocation="MemberDataBO.xsd"/>
+    <xsd:include schemaLocation="MemberBO.xsd"/>
+    <xsd:include schemaLocation="McareSpanBO.xsd"/>
+    <xsd:include schemaLocation="MassEnrollmentTriggerBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" schemaLocation="../../../../../common/program/administration/process/bo/LineOfBusinessBO.xsd"/>
+    <xsd:complexType name="LiabilitySpanBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:MemberSpanBaseDomainBO">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="liabilityCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="liabilityAmt" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="liabilityBalanceAmt" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="lob" type="bons0:LineOfBusinessBO"/>
+                    <xsd:element minOccurs="0" name="coeCode" type="xsd:string"/>
+                </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

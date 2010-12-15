@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="C837DentalLineItemBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+    <xsd:include schemaLocation="ClaimAuxBO.xsd"/>
+    <xsd:include schemaLocation="AssistantSurgeonInfoBO.xsd"/>
+    <xsd:include schemaLocation="ToothStatusInfoBO.xsd"/>
+    <xsd:include schemaLocation="NotesInfoBO.xsd"/>
+    <xsd:complexType name="C837DentalClaimBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="serviceDateQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="serviceDatePeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="serviceDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="appliancePeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="applianceQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="applianceDate1" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="applianceQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="appliancePeriodQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="applianceDate2" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="applianceQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="appliancePeriodQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="applianceDate3" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="applianceQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="appliancePeriodQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="applianceDate5" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="applianceDate4" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="applianceQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="appliancePeriodQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="orthoTreatmentMonths" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="orthoTreatmentMonthsRemaining" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="orthoPurposeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitsQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitsID1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitsQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitsID2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitsQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitsID3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitsQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitsID4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitsQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitsID5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="referralDatePeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="referralDateQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="notesInfo" type="bons0:NotesInfoBO"/>
+      <xsd:element minOccurs="0" name="toothStatusInfo" type="bons0:ToothStatusInfoBO"/>
+      <xsd:element minOccurs="0" name="assistantSurgeonInfo" type="bons0:AssistantSurgeonInfoBO"/>
+                    <xsd:element minOccurs="0" name="c837DentalLineItems" type="bons0:C837DentalLineItemBO" maxOccurs="unbounded"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

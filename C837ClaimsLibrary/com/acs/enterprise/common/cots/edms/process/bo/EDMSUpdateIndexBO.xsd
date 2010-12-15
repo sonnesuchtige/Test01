@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo" targetNamespace="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo">
+    <xsd:include schemaLocation="EDMSUserKeyBO.xsd"/>
+    <xsd:complexType name="EDMSUpdateIndexBO">
+        <xsd:annotation>
+      <xsd:documentation>This BO will be used to update the index value back to EDMS. This Bo will be populated by the calling module for Index key update into EDMS.</xsd:documentation>
+    </xsd:annotation>
+        <xsd:sequence>
+      <xsd:element minOccurs="1" name="strPageID" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This attribute stores EDMS pageID, which is a unique key id representing file stored in EDMS.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="1" name="boUserKey" type="bons0:EDMSUserKeyBO" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation>This attribute stores array of EDMSUserKeyBO,which contain Enterprise index key values.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

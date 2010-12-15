@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo">
+    <xsd:include schemaLocation="TPLCarrierRepresentativeBO.xsd"/>
+    <xsd:include schemaLocation="MemberRepresentativeBO.xsd"/>
+    <xsd:include schemaLocation="MemberCaseRepresentativeBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="FinancialInformationBO.xsd"/>
+    <xsd:include schemaLocation="ProviderRepresentativeBO.xsd"/>
+    <xsd:include schemaLocation="RepresentativeBO.xsd"/>
+    <xsd:include schemaLocation="CommonEntityBO.xsd"/>
+    <xsd:complexType name="CommonEntityRepCrossReferenceBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">        <xsd:sequence>
+          <xsd:element minOccurs="0" name="representative" type="bons0:RepresentativeBO"/>
+          <xsd:element minOccurs="0" name="representativeCrossReferenceCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="endDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="relationshipCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="providerRepresentatives" type="bons0:ProviderRepresentativeBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="memberRepresentatives" type="bons0:MemberRepresentativeBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="representativeSignificantCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="tplCarrierRepresentatives" type="bons0:TPLCarrierRepresentativeBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="representativeXReferenceStatusCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="representativeSK" type="xsd:long"/>
+                </xsd:sequence>                          
+                    
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

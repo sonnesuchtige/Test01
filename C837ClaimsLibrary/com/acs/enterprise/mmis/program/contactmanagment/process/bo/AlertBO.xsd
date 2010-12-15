@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons1="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:include schemaLocation="EnterpriseUserBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="WorkUnitBO.xsd"/>
+    <xsd:complexType name="AlertBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="alertTypeCode" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Type of the alert.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="description" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>A brief description of the event or action.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="dueDate" type="xsd:date">
+        <xsd:annotation>
+          <xsd:documentation>The date the event or activity is expected to occur.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="alertSK" type="xsd:long">
+        <xsd:annotation>
+          <xsd:documentation>Alert Surrogate Key</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="userWorkUnit" type="bons0:WorkUnitBO"/>
+            <xsd:element minOccurs="0" name="alertStatusCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="stepOrderNumber" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="cotsLetterRequestSK" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="receivingUserID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="isCRAlertNew" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="enterpriseUser" type="bons0:EnterpriseUserBO"/>
+         </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

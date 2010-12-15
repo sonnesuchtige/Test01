@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="HomeHealthCareCertificationBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="prognosisCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="serviceFromDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="firstCertificationDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="lastCertificationDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="diagnosisDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="skilledNursingFacilityIndicator" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="medicareCoveredIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="typeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="surgicalProcedureDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="surgicalProcedureQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="surgicalProcedureCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="physicianOrderDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="physicianLastVisitDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="inpatientBeginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="inpatientEndDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="dischargeFacilityTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="secondaryDiagnosisDate1" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="secondaryDiagnosisDate2" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="secondaryDiagnosisDate3" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="secondaryDiagnosisDate4" type="xsd:date"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

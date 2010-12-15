@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons2="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons3="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="EntityTypeBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd"/>
+    <xsd:complexType name="CMEntityBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons3:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="cmEntityID" type="xsd:int">
+        <xsd:annotation>
+          <xsd:documentation>CM Entity ID, which is currently known as Specific Entity ID, is an ID created in Contact Management system for Unenrolled Entities.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="entityID" type="xsd:double">
+        <xsd:annotation>
+          <xsd:documentation>Entity ID is an ID of an Enrolled Entity like Provider or Member</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="commonEntity" type="bons1:CommonEntityBO"/>
+            <xsd:element minOccurs="0" name="employeeIdentificationNumber" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>The Federal Employer Identification Number of the entity also called as Tax Identification Number and Federal Employee ID Number</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="entitytype" type="bons2:EntityTypeBO"/>
+            <xsd:element minOccurs="0" name="firstName" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This is the Entity First name</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="lastName" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This is the Entity Last name</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="lineOfBusiness" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This field indicates a line of business code to be used for system processing. The line of business is used to identify the entities that have fiscal responsibility for payment of insurance claims on behalf of their respective members. </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="middleInitial" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This is the Entity middle initial</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="nationalProviderID" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>The National Provider ID of the entity.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="organizationType" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>It denotes organization types&#13;
+e.g. Organization, Group, Both</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="prefix" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Entity prefix</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="providerType" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>The field denotes the provoder type code &#13;
+e.g. Chiropractor, Physician, Nurologist, Pediatrician</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="ssnNumber" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>The Social Security Number of the entity.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="suffix" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This is the Entity Suffix </xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+        </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

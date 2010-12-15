@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>
+    <xsd:complexType name="ResponsiblePartyBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="entityCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="entityTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="addressLine1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="addressLine2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="cityName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="stateCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="zipCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="countryCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="subscriberCardName" type="bons0:NameBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

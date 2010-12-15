@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bo="http://LetterGenerationLibrary/com/acs/enterprise/common/cots/lettergeneration/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://LetterGenerationLibrary/com/acs/enterprise/common/cots/lettergeneration/process/bo">
+  <xsd:annotation>
+    <xsd:appinfo source="wid.federated.schema"/>
+  </xsd:annotation>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/lettergeneration/process/bo/KeywordBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/lettergeneration/process/bo/LetterGenerationResponseBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/lettergeneration/process/bo/LetterGenerationInputBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/lettergeneration/process/bo/AddressDataBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/lettergeneration/process/bo/ProcessKeywordBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/lettergeneration/process/bo/LetterGenerationReceiverBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/lettergeneration/process/bo/LetterRealTimeBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/lettergeneration/process/bo/LetterRequestKeysBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/lettergeneration/process/bo/BatchInputBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/lettergeneration/process/bo/FunctionAreaInfoBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/lettergeneration/process/bo/CommonLetterStatusDetailsBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/lettergeneration/process/bo/LetterGenerationRequestParamBO.xsd"/>
+    <xsd:include schemaLocation="../com/acs/enterprise/common/cots/lettergeneration/process/bo/LetterReceiverSKBO.xsd"/>
+</xsd:schema>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bo="http://ContactManagementLibrary" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ContactManagementLibrary">
+  <xsd:annotation>
+    <xsd:appinfo source="wid.federated.schema"/>
+  </xsd:annotation>
+  <xsd:include schemaLocation="../com/acs/enterprise/mmis/program/contactmanagment/process/bo/CreateCRServiceErrorBO.xsd"/>
+</xsd:schema>

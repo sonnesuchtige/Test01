@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="PaymentBO">
+        <xsd:sequence>
+          <xsd:element name="reimbursementAmount" type="xsd:double" minOccurs="0"/>
+            <xsd:element minOccurs="0" name="mic" type="xsd:string"/>
+            <xsd:element name="eombDate" type="xsd:date" minOccurs="0"/>
+          <xsd:element name="fcn" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="medicalRecordNumber" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="netAmount" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="signIndicator" type="xsd:boolean" minOccurs="0"/>
+          <xsd:element name="admittingDiagnosisCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="totalCoPayAmount" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="managedCareCoPayAmount" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="emergencyDiagnosisIndicator" type="xsd:boolean" minOccurs="0"/>
+          <xsd:element name="referalID" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="serviceFacilityTaxanomyCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="overrideLocationCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="payeeID" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="payeeType" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="ssnRTaxID" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="totalCharge" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="tplAmount" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="otherInsurance" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="serviceFacilityLocation" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="signChecked" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="totalClaimBilledAmount" type="xsd:double" minOccurs="0"/>
+            <xsd:element name="raNumber" type="xsd:string" minOccurs="0"/>
+            <xsd:element minOccurs="0" name="overrideLocationID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="extInjuryDiagnosisCode" type="xsd:string"/>
+        </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

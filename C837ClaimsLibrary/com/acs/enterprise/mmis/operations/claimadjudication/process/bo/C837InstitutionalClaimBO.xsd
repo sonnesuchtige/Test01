@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">    
+    <xsd:include schemaLocation="C837InstitutionalLineItemBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+    <xsd:include schemaLocation="RepricedClaimInfoBO.xsd"/>
+    <xsd:include schemaLocation="ClaimsQuantityBO.xsd"/>
+    <xsd:include schemaLocation="TreatmentCodesBO.xsd"/>
+    <xsd:include schemaLocation="HomeHealthActivitiesBO.xsd"/>
+    <xsd:include schemaLocation="HomeHealthMentalStatusBO.xsd"/>
+    <xsd:include schemaLocation="HomeHealthCareCertificationBO.xsd"/>
+    <xsd:include schemaLocation="ClaimAuxBO.xsd"/>
+    <xsd:include schemaLocation="HomeHealthCareFunctionalLimitationBO.xsd"/>   
+	<xsd:include schemaLocation="NotesInfoBO.xsd"/>
+    <xsd:complexType name="C837InstitutionalClaimBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="dischargeQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dischargePeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dischargeTime" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="serviceDateQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="servicePeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="firstServiceRenderedDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="lastServiceRenderedDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="admissionQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="admissionPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="admissionDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="payerEstimateDueAmountQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="payerEstimateDueAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="patientEstimateDueAmountQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="patientEstimateDueAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="documentControlQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="documentControlNumber1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="documentControlQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="documentControlNumber2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="peerReviewQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="peerReviewAuthorizationNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="drgQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="drgCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="notesInfo" type="bons0:NotesInfoBO"/>
+            <xsd:element minOccurs="0" name="homeHealthCareCertification" type="bons0:HomeHealthCareCertificationBO"/>
+            <xsd:element minOccurs="0" name="treatmentCodes" type="bons0:TreatmentCodesBO"/>
+            <xsd:element minOccurs="0" name="claimsQuantity" type="bons0:ClaimsQuantityBO"/>
+            <xsd:element minOccurs="0" name="repricedClaimInfo" type="bons0:RepricedClaimInfoBO"/>
+            <xsd:element minOccurs="0" name="homeHealthMentalStatus" type="bons0:HomeHealthMentalStatusBO"/>
+            <xsd:element minOccurs="0" name="homeHealthActivities" type="bons0:HomeHealthActivitiesBO"/>
+            <xsd:element minOccurs="0" name="homeHealthCareFunctionalLimitation" type="bons0:HomeHealthCareFunctionalLimitationBO"/>
+                    <xsd:element minOccurs="0" name="c837InstitutionalLineItems" type="bons0:C837InstitutionalLineItemBO" maxOccurs="unbounded"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

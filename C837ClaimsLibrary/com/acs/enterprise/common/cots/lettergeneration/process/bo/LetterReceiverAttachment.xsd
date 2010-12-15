@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://LetterGenerationLibrary">
+  <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="LetterReceiverAttachment">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="attachmentSK" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="attachmentDesc" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="attachmentAddedByName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="storedInEdmsDt" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="edmsPageId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="attachmentFileName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="attachCreatedDate" type="xsd:date"/>
+        </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="OtherPayerMedicareInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="outPatientReimburseRate" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="outPatientHCPCSAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="outPatientESRDAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="outPatientProfessionalAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="paidQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="paidAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="paid100PercentQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="paid100PercentAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="paid80PercentQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="paid80PercentAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="partATrustQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="partATrustAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="partBTrustQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="partBTrustAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="coveredDays" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="reserveDays" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="psychiatricDays" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="drgAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="disproportionateShareAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="mspPassThroughAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="ppsCapitalAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="fspDRGAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="hspDRGAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="ppsCapitalDSHDRGAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="oldCapitalAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="ppsCapitalIMEAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="ppsCapitalHSPDRGAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="costReportDays" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="federalDRGAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="ppsCapitalOutlierAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="indirectTeachingAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="professionalAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="ppsCapitalExceptionAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="outPatientRemarkCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="outPatientRemarkCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="outPatientRemarkCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="outPatientRemarkCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="outPatientRemarkCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="inPatientRemarkCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="inPatientRemarkCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="inPatientRemarkCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="inPatientRemarkCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="inPatientRemarkCode5" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

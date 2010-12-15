@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="CoveragePolicyHolderBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="CoverageGroupPolicyBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+        <xsd:sequence>
+        <xsd:element name="groupPolicyNumber" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="groupPolicySequenceNumber" type="xsd:int" minOccurs="0"/>
+      <xsd:element name="coverageGroupPolicySK" type="xsd:int" minOccurs="0"/>
+      <xsd:element name="groupID" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="groupPolicyBeginDate" type="xsd:date" minOccurs="0"/>
+      <xsd:element name="groupPolicyEndDate" type="xsd:date" minOccurs="0"/>
+      <xsd:element name="groupPolicyPendingIndicator" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="groupPolicyVoidIndicator" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="groupPolicyHMOIndicator" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="groupPolicyPrintIndicator" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="coverageCoPaymentAmount" type="xsd:double" minOccurs="0"/>
+      <xsd:element name="coverageGroupSourceCode" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="coverageLastValidDate" type="xsd:date" minOccurs="0"/>
+      <xsd:element name="coveragePolicyHolder" type="bons1:CoveragePolicyHolderBO" minOccurs="0"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="AssistantSurgeonInfoBO.xsd"/>
+    <xsd:include schemaLocation="NotesInfoBO.xsd"/>
+    <xsd:complexType name="C837DentalLineItemBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="lineNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="serviceQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="serviceDateQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="servicePeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="placementStatusCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="priorPlacementQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="priorPlacementPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="priorPlacementDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="applianceQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="appliancePeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="applianceDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="replacementQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="replacementPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="replacementDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="anestesiaQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="anestesiaCount1" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="anestesiaQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="anestesiaCount2" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="anestesiaQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="anestesiaCount3" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="anestesiaQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="anestesiaCount4" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="anestesiaQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="anestesiaCount5" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="benefitsQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitsID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="controlNumberQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="controlNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="approvedQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="approvedAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="notesInfo" type="bons0:NotesInfoBO"/>
+      <xsd:element minOccurs="0" name="assistantSurgeonInfo" type="bons0:AssistantSurgeonInfoBO"/>
+                    <xsd:element minOccurs="0" name="referralID1" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="referralID2" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="referralQualifierCode1" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="referralQualifierCode2" type="xsd:string"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo">
+  <xsd:complexType name="NameBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="lastName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="firstName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="middleName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="suffixName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="titleName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="sortName" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="phoneticFirstName" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="phoneticLastName" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="phoneticSortName" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

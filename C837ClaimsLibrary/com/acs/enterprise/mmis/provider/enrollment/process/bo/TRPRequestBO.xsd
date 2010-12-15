@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" xmlns:bons1="http://AddressValidationLibrary/com/acs/enterprise/common/cots/addressvalidation/bo" xmlns:bons2="http://LetterGenerationLibrary/com/acs/enterprise/common/cots/lettergeneration/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.LetterGenerationLibrary.com.acs.enterprise.common.cots.lettergeneration.process.bo.xsd" namespace="http://LetterGenerationLibrary/com/acs/enterprise/common/cots/lettergeneration/process/bo"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.AddressValidationLibrary.com.acs.enterprise.common.cots.addressvalidation.bo.xsd" namespace="http://AddressValidationLibrary/com/acs/enterprise/common/cots/addressvalidation/bo"/>
+    <xsd:include schemaLocation="TradingPartnerBO.xsd"/>
+    <xsd:complexType name="TRPRequestBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="tradingPartner" type="bons0:TradingPartnerBO"/>
+      <xsd:element minOccurs="0" name="saveStatus" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="addressResponseDataArray" type="bons1:AddressResponseDataArrayBO"/>
+            <xsd:element minOccurs="0" name="letterGenerationInputBO" type="bons2:LetterGenerationInputBO"/>
+            <xsd:element minOccurs="0" name="providerSysID" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="applicationNumber" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="taxID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="tradingPartnerID" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
+

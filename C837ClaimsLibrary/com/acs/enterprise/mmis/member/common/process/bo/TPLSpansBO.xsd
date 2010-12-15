@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+  <xsd:complexType name="TPLSpansBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="policyNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="carrierID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="endDate" type="xsd:date"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

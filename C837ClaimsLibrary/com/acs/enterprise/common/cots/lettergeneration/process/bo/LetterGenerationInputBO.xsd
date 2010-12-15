@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons1="http://LetterGenerationLibrary/com/acs/enterprise/common/cots/lettergeneration/process/bo" targetNamespace="http://LetterGenerationLibrary/com/acs/enterprise/common/cots/lettergeneration/process/bo">
+    <xsd:include schemaLocation="KeywordBO.xsd"/>
+    <xsd:include schemaLocation="FunctionAreaInfoBO.xsd"/>
+    <xsd:include schemaLocation="LetterGenerationRequestParamBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="LetterGenerationReceiverBO.xsd"/>
+    <xsd:include schemaLocation="ProcessKeywordBO.xsd"/>
+    <xsd:include schemaLocation="AddressDataBO.xsd"/>
+  
+    <xsd:complexType name="LetterGenerationInputBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+            <xsd:element minOccurs="0" name="explnText" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="letterID" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="keyword" type="bons1:KeywordBO"/>
+            <xsd:element minOccurs="0" name="letterReceiver" type="bons1:LetterGenerationReceiverBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="sprvsrRevwReqdInd" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="sprvsrRevwDt" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="revwgSprvsrWorkUnitSK" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="userWorkUnitSK" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="toBeSentDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="ltrReqDispCD" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="dueDateOffsetNum" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="notifyAlrtUserId" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="altrBsdOnColNm" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="sendAlertDaysCd" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="alertBfrAftrCd" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="noteSK" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="noteSeqNum" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="edmsPageId" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="letterReqSK" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="functionAreaInfo" type="bons1:FunctionAreaInfoBO"/>
+                    <xsd:element minOccurs="0" name="userID" type="xsd:string"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

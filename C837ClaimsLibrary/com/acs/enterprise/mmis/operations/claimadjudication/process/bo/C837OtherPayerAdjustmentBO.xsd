@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="C837OtherPayerAdjustmentBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="lineNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="tplSequenceNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="otherPayerID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="otherPayerPaidAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="serviceQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="serviceCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="procedureModifier1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="procedureModifier2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="procedureModifier3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="procedureModifier4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="serviceDescription" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="revenueCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="paidUnitCount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="bundlingLineNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="paymentDateQualifier" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="paymentDatePeriodQualifier" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="otherPayerPaidDate" type="xsd:date"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

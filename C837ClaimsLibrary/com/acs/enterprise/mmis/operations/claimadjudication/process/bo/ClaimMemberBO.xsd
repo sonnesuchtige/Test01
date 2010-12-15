@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons4="http://MemberEnrollmentLibrary/com/acs/enterprise/mmis/member/enrollment/process/bo" xmlns:bons5="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:bons2="http://ClaimAdjudicationLibrary" xmlns:bons6="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="ClaimsHeaderBenefitPlanCategoryofEligibility.xsd"/>
+    <xsd:include schemaLocation="ClaimsLTCSpanBO.xsd"/>
+    <xsd:include schemaLocation="ClaimMemberEligibilitySpanBO.xsd"/>
+    <xsd:include schemaLocation="ClaimMemberBenefitPlanBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>    
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="ClaimMemberBO">
+        <xsd:sequence>
+          <xsd:element name="age" type="xsd:int" minOccurs="0"/>
+          <xsd:element name="altIDTypeCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="coeCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="dateOfBirth" type="xsd:date" minOccurs="0"/>
+            <xsd:element name="dateOfDeath" type="xsd:date" minOccurs="0"/>
+            <xsd:element name="altMemberID" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="submittedMemberID" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="racialCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="residenceCountyCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="sex" type="xsd:string" minOccurs="0"/>
+            <xsd:element minOccurs="0" name="nhLimitDays" type="xsd:int"/>
+            <xsd:element name="memberName" type="bons5:NameBO" minOccurs="0"/>
+          <xsd:element name="availableBenefitPlan" type="bons6:ClaimMemberBenefitPlanBO" maxOccurs="unbounded" minOccurs="0"/>
+          <xsd:element name="availableEligibilitySpan" type="bons6:ClaimMemberEligibilitySpanBO" maxOccurs="unbounded" minOccurs="0"/>
+            <xsd:element minOccurs="0" name="applicableEligibilitySpans" type="bons6:ClaimMemberEligibilitySpanBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="applicableBenefitPlans" type="bons6:ClaimMemberBenefitPlanBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="lockInTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ltcSpans" type="bons6:ClaimsLTCSpanBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="countyOfficeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="geographicRegionCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="federalMatchCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="federalCategoryCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="claimsHeaderBenefitPlanCategoryofEligibility" type="bons6:ClaimsHeaderBenefitPlanCategoryofEligibility" maxOccurs="unbounded"/>
+        </xsd:sequence>
+        
+      
+    </xsd:complexType>
+</xsd:schema>

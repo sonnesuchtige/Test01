@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons1="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.MemberLibrary.com.acs.enterprise.mmis.member.common.process.bo.xsd" namespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo"/>
+    <xsd:include schemaLocation="EnterpriseClaimBO.xsd"/>
+    <xsd:complexType name="ClaimPatientLiabilityRequestBO">
+        <xsd:sequence>
+      <xsd:element minOccurs="0" name="enterpriseClaimBO" type="bons0:EnterpriseClaimBO"/>
+      <xsd:element minOccurs="0" name="lineNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="readPatientLiabilityAmountFlag" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="patientLiabilityLeft" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="memberBO" type="bons1:MemberBO"/>
+    </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

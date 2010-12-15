@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons2="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>    
+    <xsd:complexType name="MedicareDetailsBO">
+        <xsd:sequence>
+      <xsd:element name="allowedAmount" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="coInsuranceAmount" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="deductibleAmount" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="paidAmount" type="xsd:double" minOccurs="0"/>
+    </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

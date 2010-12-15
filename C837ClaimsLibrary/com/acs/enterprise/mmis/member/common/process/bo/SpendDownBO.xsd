@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:include schemaLocation="MemberSpanBaseDomainBO.xsd"/>
+    <xsd:include schemaLocation="MemberSearchResultBO.xsd"/>
+    <xsd:include schemaLocation="MemberSearchCriteriaBO.xsd"/>
+    <xsd:include schemaLocation="MemberRulesCriteriaBO.xsd"/>
+    <xsd:include schemaLocation="MemberResultBO.xsd"/>
+    <xsd:include schemaLocation="MemberInformationRequestBO.xsd"/>
+    <xsd:include schemaLocation="MemberIDBO.xsd"/>
+    <xsd:include schemaLocation="MemberExceptionBO.xsd"/>
+    <xsd:include schemaLocation="MemberEnrollmentTriggerBO.xsd"/>
+    <xsd:include schemaLocation="MemberDataBO.xsd"/>
+    <xsd:include schemaLocation="MemberArraySearchCriteriaBO.xsd"/>
+    <xsd:include schemaLocation="McareSpanBO.xsd"/>
+    <xsd:include schemaLocation="MassEnrollmentTriggerBO.xsd"/>
+    <xsd:include schemaLocation="MemberBO.xsd"/>
+    <xsd:include schemaLocation="SpendDownDetailsBO.xsd"/>
+    <xsd:complexType name="SpendDownBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:MemberSpanBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="spendDownSequenceNum" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="spendDownBalanceAmt" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="spendDownOriginalAmt" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="spendDownMetDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="spendDownFirstDayAmt" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="spendDownDetails" type="bons1:SpendDownDetailsBO" maxOccurs="unbounded"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

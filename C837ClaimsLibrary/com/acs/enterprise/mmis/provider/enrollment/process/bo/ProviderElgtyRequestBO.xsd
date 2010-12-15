@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons1="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd"/>
+    <xsd:include schemaLocation="ProviderBO.xsd"/>
+    <xsd:include schemaLocation="ProviderRequestBO.xsd"/>
+    <xsd:complexType name="ProviderElgtyRequestBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="provider" type="bons1:ProviderBO"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="address" type="bons0:AddressBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

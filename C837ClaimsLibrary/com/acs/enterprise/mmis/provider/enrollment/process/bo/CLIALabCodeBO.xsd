@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="CLIALabBO.xsd"/>
+    <xsd:complexType name="CLIALabCodeBO">
+        <xsd:annotation>
+      <xsd:documentation>This object holds Information for Clinical Lab Code.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                
+                  
+            <xsd:sequence>
+      <xsd:element minOccurs="0" name="cliaCertificationBeginDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="cliaCertificationEndDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="cliaLabCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="cliaLab" type="bons0:CLIALabBO"/>
+    </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

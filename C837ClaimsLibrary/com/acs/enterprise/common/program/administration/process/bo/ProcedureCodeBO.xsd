@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="PCCategoryOfServiceInclExclBO.xsd"/>
+    <xsd:include schemaLocation="ProcedureCodeCLIABO.xsd"/>
+    <xsd:include schemaLocation="ProgramBaseDomainBO.xsd"/>
+    <xsd:include schemaLocation="ProcedureTechnicalComponentBO.xsd"/>
+    <xsd:include schemaLocation="PCProviderTaxonomyInclExclBO.xsd"/>
+    <xsd:include schemaLocation="PCProviderTypeInclExclBO.xsd"/>
+    <xsd:include schemaLocation="PCProviderSpecialtyInclExclBO.xsd"/>
+    <xsd:include schemaLocation="ProcedureProfessionalComponentBO.xsd"/>
+    <xsd:include schemaLocation="ProcedureFormerCodesBO.xsd"/>
+    <xsd:include schemaLocation="PCToothNumberInclExclBO.xsd"/>
+    <xsd:include schemaLocation="ProcedureCodePricingBO.xsd"/>
+    <xsd:include schemaLocation="PCPlaceOfServiceInclExclBO.xsd"/>
+    <xsd:include schemaLocation="PCProcedureModifierInclExclBO.xsd"/>
+    <xsd:include schemaLocation="ProcedureCodeMedicareCoverageBO.xsd"/>
+    <xsd:include schemaLocation="ProcedureCodeLabClassBO.xsd"/>
+    <xsd:include schemaLocation="ProcedureCodeCrossRefBO.xsd"/>
+    <xsd:include schemaLocation="ProcedureCodeHCPCSBO.xsd"/>
+    <xsd:include schemaLocation="ProcedureCodeDetailBO.xsd"/>
+    <xsd:include schemaLocation="PCClaimTypeInclExclBO.xsd"/>
+    <xsd:include schemaLocation="ProcedureASCGroupBO.xsd"/>
+    <xsd:include schemaLocation="ProcedureCodeIncludeIndicatorsBO.xsd"/>
+    <xsd:include schemaLocation="ProcedureRateIndicatorsBO.xsd"/>
+   <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:complexType name="ProcedureCodeBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:ProgramBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="procedureCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="shortDescription" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="longDescription" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="noteSet" type="bons0:NoteSetBO"/>
+      <xsd:element minOccurs="0" name="procedureCodeIncIndicator" type="bons1:ProcedureCodeIncludeIndicatorsBO"/>
+            <xsd:element minOccurs="0" name="localCodeIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="procedureRateIndicators" type="bons1:ProcedureRateIndicatorsBO"/>
+            <xsd:element minOccurs="0" name="procedureASCGroup" type="bons1:ProcedureASCGroupBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="PCClaimTypeInclExcl" type="bons1:PCClaimTypeInclExclBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="procedureCodeDetail" type="bons1:ProcedureCodeDetailBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="procedureCodeHCPCS" type="bons1:ProcedureCodeHCPCSBO"/>
+            <xsd:element minOccurs="0" name="procedureCodeCrossRef" type="bons1:ProcedureCodeCrossRefBO"/>
+            <xsd:element minOccurs="0" name="procedureCodeLabClass" type="bons1:ProcedureCodeLabClassBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="procedureCodeMedicareCoverage" type="bons1:ProcedureCodeMedicareCoverageBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="PCProcedureModifierInclExcl" type="bons1:PCProcedureModifierInclExclBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="PCPlaceOfServiceInclExcl" type="bons1:PCPlaceOfServiceInclExclBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="procedureCodePricing" type="bons1:ProcedureCodePricingBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="PCToothNumberInclExcl" type="bons1:PCToothNumberInclExclBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="procedureFormerCodes" type="bons1:ProcedureFormerCodesBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="procedureProfessionalComponent" type="bons1:ProcedureProfessionalComponentBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="PCProviderSpecialtyInclExcl" type="bons1:PCProviderSpecialtyInclExclBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="PCProviderTypeInclExcl" type="bons1:PCProviderTypeInclExclBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="PCProviderTaxonomyInclExcl" type="bons1:PCProviderTaxonomyInclExclBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="procedureTechnicalComponent" type="bons1:ProcedureTechnicalComponentBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="procedureCodeCLIA" type="bons1:ProcedureCodeCLIABO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="PCCategoryOfServiceInclExcl" type="bons1:PCCategoryOfServiceInclExclBO" maxOccurs="unbounded"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

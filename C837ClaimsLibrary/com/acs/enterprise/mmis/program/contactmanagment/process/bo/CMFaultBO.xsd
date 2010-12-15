@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://ContactManagementLibrary" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:import schemaLocation="CreateCRServiceErrorBO.xsd" namespace="http://ContactManagementLibrary"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.ContactManagementLibrary.xsd" namespace="http://ContactManagementLibrary"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd"/>
+  <xsd:complexType name="CMFaultBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBusinessFaultBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="strErrorCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="strErrorMessage" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="strErrorLevel" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="createCRServiceError" type="bons1:CreateCRServiceErrorBO"/>
+                </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

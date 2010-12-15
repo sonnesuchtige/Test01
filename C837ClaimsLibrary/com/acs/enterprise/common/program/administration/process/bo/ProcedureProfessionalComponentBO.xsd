@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="ProgramBaseDomainBO.xsd"/>
+    <xsd:include schemaLocation="ProcedureCodeBO.xsd"/>
+    <xsd:include schemaLocation="LineOfBusinessBO.xsd"/>
+    <xsd:complexType name="ProcedureProfessionalComponentBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:ProgramBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="multiplierAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

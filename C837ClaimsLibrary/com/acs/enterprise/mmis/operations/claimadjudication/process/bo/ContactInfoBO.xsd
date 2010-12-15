@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>
+    <xsd:complexType name="ContactInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="entityCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="entityQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="submitterQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="submitterID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="contactCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="contactCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="contactCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="contactName1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="contactName2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="contactName3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationQualifierCode1A" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationQualifierCode2A" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationQualifierCode3A" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationNumber1A" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationNumber2A" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationNumber3A" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationQualifierCode1B" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationQualifierCode2B" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationQualifierCode3B" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationNumber1B" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationNumber2B" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationNumber3B" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationQualifierCode1C" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationQualifierCode2C" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationQualifierCode3C" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationNumber1C" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationNumber2C" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationNumber3C" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="submitterName" type="bons0:NameBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

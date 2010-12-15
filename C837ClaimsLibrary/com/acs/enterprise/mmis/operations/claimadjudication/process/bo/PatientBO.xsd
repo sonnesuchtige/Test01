@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>
+    <xsd:complexType name="PatientBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="hierarchicalCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="hierarchicalID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="hierarchicalLevelCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="hierarchicalChildCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="relationshipCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="studentStatusCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="patientDateOfDeathQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="patientDateOfDeath" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="patientweightCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="patientWeight" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="pregnancyIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="entityCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="entityQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="memberQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="memberID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="addressLine1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="addressLine2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="cityName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="stateCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="zipCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="countryCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dateOfBirth" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="dateOfBirthQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="genderCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionQualifierCodede1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionalID1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionQualifierCodede2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionalID2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionQualifierCodede3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionalID3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionQualifierCodede4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionalID4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionQualifierCodede5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionalID5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="propertyQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="propertyClaimNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="patientName" type="bons0:NameBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

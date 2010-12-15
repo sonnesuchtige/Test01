@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="ConditionCodeInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="categoryCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="certificationIndicator1" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="conditionCode1A" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionCode1B" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionCode1C" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionCode1D" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionCode1E" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="categoryCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="certificationIndicator2" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="conditionCode2A" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionCode2B" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionCode2C" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionCode2D" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionCode2E" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="categoryCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="certificationIndicator3" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="conditionCode3A" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionCode3B" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionCode3C" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionCode3D" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionCode3E" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

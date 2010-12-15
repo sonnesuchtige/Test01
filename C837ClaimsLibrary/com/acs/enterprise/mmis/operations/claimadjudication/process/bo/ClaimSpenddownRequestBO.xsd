@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="EnterpriseClaimBO.xsd"/>
+    <xsd:complexType name="ClaimSpenddownRequestBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="enterpriseClaimBO" type="bons0:EnterpriseClaimBO"/>
+      <xsd:element minOccurs="0" name="lineNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="readSpenddownAmountFlag" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="spendDownLeft" type="xsd:double"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

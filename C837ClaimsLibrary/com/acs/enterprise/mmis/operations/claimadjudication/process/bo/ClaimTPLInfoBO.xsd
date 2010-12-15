@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons1="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="OtherPayerSubmittedProviderIDBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>
+    <xsd:include schemaLocation="ClaimTPLBillingBO.xsd"/>
+    <xsd:include schemaLocation="ClaimTPlBillingBO.xsd"/>
+    <xsd:include schemaLocation="ClaimTPLAmountInfoBO.xsd"/>    
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="ClaimTPLInfoBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element name="dateOfBirth" type="xsd:date" minOccurs="0"/>
+      <xsd:element name="employerName" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="cityName" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="lineAddress1" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="lineAddress2" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="insurancePlanName" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="stateCode" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="insuredID" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="zipCode" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="acceptMedicareAssignment" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="relationToPatient" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="sex" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="sequenceNumber" type="xsd:int" minOccurs="0"/>
+      <xsd:element name="otherPayerID" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="authorizationID" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="countryCode" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="policyNumber" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="releaseInformationCode" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="otherPayerName" type="xsd:string" minOccurs="0"/>
+      <xsd:element maxOccurs="unbounded" name="claimTPLAmountInfo" type="bons1:ClaimTPLAmountInfoBO" minOccurs="0"/>
+                    <xsd:element minOccurs="0" name="insuredName" type="bons2:NameBO"/>
+                    <xsd:element minOccurs="0" name="otherPayerSubmittedProviderIDs" type="bons1:OtherPayerSubmittedProviderIDBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="otherPayerDcnNum" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="otherPayerProviderId" type="xsd:string"/>
+                </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

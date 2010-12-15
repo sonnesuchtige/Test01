@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>
+    <xsd:complexType name="AssistantSurgeonInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="entityCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="entityTypeQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="taxonomyProviderCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="taxonomyQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="taxonomyCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="assistantSurgeonName" type="bons0:NameBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

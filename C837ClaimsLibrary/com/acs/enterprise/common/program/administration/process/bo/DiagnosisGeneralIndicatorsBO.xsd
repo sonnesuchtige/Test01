@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="BaseGeneralIndicatorsBO.xsd"/>
+    <xsd:complexType name="DiagnosisGeneralIndicatorsBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:BaseGeneralIndicatorsBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="emergencyIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="accidentIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="epsdtIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="diseaseManagementIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="nonSpecificIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="comorbidityIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="sterilizationIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="icdUpdateIndicator" type="xsd:boolean"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

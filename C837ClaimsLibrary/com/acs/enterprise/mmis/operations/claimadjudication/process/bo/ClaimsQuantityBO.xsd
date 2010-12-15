@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="ClaimsQuantityBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="quantityQualifier1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="claimDays1" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="claimsDayCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="quantityQualifier2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="claimDays2" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="claimsDayCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="quantityQualifier3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="claimDays3" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="claimsDayCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="quantityQualifier4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="claimDays4" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="claimsDayCode4" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

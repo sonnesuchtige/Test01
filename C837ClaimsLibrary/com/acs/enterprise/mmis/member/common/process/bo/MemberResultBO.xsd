@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:include schemaLocation="LiabilitySpanBO.xsd"/>
+    <xsd:include schemaLocation="LTCSpanBO.xsd"/>
+    <xsd:include schemaLocation="LockinSpanBO.xsd"/>
+    <xsd:include schemaLocation="SpendDownBO.xsd"/>
+    <xsd:include schemaLocation="CaseBO.xsd"/>
+    <xsd:include schemaLocation="EligibilitySpanBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:include schemaLocation="DemographicInformationBO.xsd"/>
+    <xsd:include schemaLocation="MemberIDBO.xsd"/>
+    <xsd:include schemaLocation="MemberBO.xsd"/>
+    <xsd:include schemaLocation="TransactionStatusBO.xsd"/>
+    <xsd:include schemaLocation="DuplicateResultBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd"/>
+    <xsd:complexType name="MemberResultBO">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="errorDescription" type="bons0:ErrorDescriptionBO"/>
+      <xsd:element minOccurs="0" name="mandatoryErrorCount" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="nonMandatoryErrorCount" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="stateCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="mandatoryThresholdErrCount" type="xsd:int"/>
+            <xsd:element minOccurs="0" name="nonMandatoryThresholdErrCount" type="xsd:int"/>
+            <xsd:element minOccurs="0" name="enterpriseID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="member" type="bons1:MemberBO"/>
+            <xsd:element minOccurs="0" name="duplicateResult" type="bons1:DuplicateResultBO"/>
+            <xsd:element minOccurs="0" name="transactionStatus" type="bons1:TransactionStatusBO"/>
+            <xsd:element minOccurs="0" name="currentAltID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="currentAltIDTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="sysID" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="maxThresholdErrorCount" type="xsd:int"/>
+            <xsd:element minOccurs="0" name="updtdDemographicInformation" type="bons1:DemographicInformationBO"/>
+            <xsd:element minOccurs="0" name="updtdEmailAddressUsage" type="bons2:EmailAddressUsageBO"/>
+            <xsd:element minOccurs="0" name="updtdAddressUsage" type="bons2:AddressUsageBO"/>
+            <xsd:element minOccurs="0" name="updtdEligibilitySpan" type="bons1:EligibilitySpanBO"/>
+            <xsd:element minOccurs="0" name="pregnancyCOEExists" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="enrollmentInvocationReq" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="updtdEligibilitySpanList" type="bons1:EligibilitySpanBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="updtdCase" type="bons1:CaseBO"/>
+            <xsd:element minOccurs="0" name="updtdPhoneUsage" type="bons2:PhoneUsageBO" maxOccurs="1"/>
+            <xsd:element minOccurs="0" name="updtdSpendDownSpanList" type="bons1:SpendDownBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="updtdLockinSpan" type="bons1:LockinSpanBO"/>
+            <xsd:element minOccurs="0" name="updtdLTCSpan" type="bons1:LTCSpanBO"/>
+            <xsd:element minOccurs="0" name="updtdLiabilitySpan" type="bons1:LiabilitySpanBO"/>
+            <xsd:element minOccurs="0" name="updtdRepresentative" type="bons2:CommonEntityRepCrossReferenceBO"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

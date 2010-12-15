@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons2="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons3="http://MemberEnrollmentLibrary/com/acs/enterprise/mmis/member/enrollment/process/bo" xmlns:bons4="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:bons5="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:bons6="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons7="http://ClaimAdjudicationLibrary" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="ClaimBenefitLimitBackoutBO.xsd"/>
+    <xsd:include schemaLocation="ClaimSABackoutBO.xsd"/>
+    <xsd:include schemaLocation="ClaimProcessFieldsBO.xsd"/>
+    <xsd:include schemaLocation="ClaimProcessFields.xsd"/>
+    <xsd:include schemaLocation="ClaimPricingBO.xsd"/>
+    <xsd:include schemaLocation="EnterpriseClaimAuxBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd"/>
+    <xsd:include schemaLocation="ClaimProvidersBO.xsd"/>
+    <xsd:include schemaLocation="ClaimAdjustmentReasonBO.xsd"/>
+    <xsd:include schemaLocation="MedicareDetailsBO.xsd"/>
+    <xsd:include schemaLocation="ClaimTPLBillingBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd"/>
+    <xsd:import namespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.MemberLibrary.com.acs.enterprise.mmis.member.common.process.bo.xsd"/>    
+    <xsd:include schemaLocation="LineItemEditsBO.xsd"/>
+    <xsd:include schemaLocation="PaymentBO.xsd"/>
+    <xsd:include schemaLocation="AdditionalClaimDataBO.xsd"/>
+    <xsd:include schemaLocation="BatchInfoBO.xsd"/>
+    <xsd:include schemaLocation="ClaimServiceAuthorizationBO.xsd"/>
+    <xsd:include schemaLocation="ClaimProviderBO.xsd"/>
+    <xsd:include schemaLocation="ClaimAuxBO.xsd"/>
+    <xsd:include schemaLocation="DiagnosisBO.xsd"/>
+    <xsd:include schemaLocation="ClaimTPLInfoBO.xsd"/>
+    <xsd:include schemaLocation="EnterpriseClaimLineItemBO.xsd"/>
+    <xsd:include schemaLocation="ClaimProviderIDBO.xsd"/>
+    <xsd:include schemaLocation="PreviousLocationBO.xsd"/>
+    <xsd:include schemaLocation="ClaimAttachmentBO.xsd"/>
+    <xsd:include schemaLocation="ClaimAdjudicationEditBO.xsd"/>   
+    <xsd:include schemaLocation="ClaimMemberBO.xsd"/>    
+    <xsd:include schemaLocation="RelatedHistoryBO.xsd"/>
+    <xsd:include schemaLocation="InstitutionalClaimBO.xsd"/>
+    <xsd:include schemaLocation="ClaimAdjustmentBO.xsd"/>    
+    <xsd:include schemaLocation="OverrideExceptionBO.xsd"/>
+    <xsd:include schemaLocation="ManualEOBBO.xsd"/>
+    <xsd:include schemaLocation="AdditionalRemarkBO.xsd"/>
+    <xsd:include schemaLocation="BaseRateChangeInfoBO.xsd"/>
+    <xsd:include schemaLocation="ProfessionalClaimBO.xsd"/>    
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="EnterpriseClaimBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+        <xsd:sequence>
+                    <xsd:element minOccurs="0" name="adjudicationDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="memberSystemID" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="claimTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="creditCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="FDOS" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="LDOS" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="statusCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="tcn" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="totalChargeAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="priorAuthTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="pcpProviderID" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="lockinProviderSystemID" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="facilityTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="facilityCodeQualifier" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="averageDaysOfStay" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="billedDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="categoryOfServiceCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="saRequiredIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="copayExclusionCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="msqTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="claimEnteredDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="dailyReportIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="lastCycleDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="originationCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="otherInsuranceIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="paidDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="remarkIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="suspendedDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="illnessDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="mapSetID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="totalNetChargeAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="totalTPLAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="ltcProviderID" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="adjudicationCycleNumber" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="calculatedTotalAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="claimAge" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="eligibilityAttachmentIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="eombAttachmentIndicator" type="xsd:boolean"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="additionalRemark" type="bons2:AdditionalRemarkBO"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimAttachment" type="bons2:ClaimAttachmentBO"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="baseRateChangeInfo" type="bons2:BaseRateChangeInfoBO"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimAdjustment" type="bons2:ClaimAdjustmentBO"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="previousLocations" type="bons2:PreviousLocationBO"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimProviderID" type="bons2:ClaimProviderIDBO"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="enterpriseClaimLineItem" type="bons2:EnterpriseClaimLineItemBO"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimAdjudicationEdit" type="bons2:ClaimAdjudicationEditBO"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="manualEOB" type="bons2:ManualEOBBO"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="overrideException" type="bons2:OverrideExceptionBO"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="relatedHistory" type="bons2:RelatedHistoryBO"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimTPLInfo" type="bons2:ClaimTPLInfoBO"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="diagnosis" type="bons2:DiagnosisBO"/>
+                    <xsd:element minOccurs="0" name="otherProvider1" type="bons2:ClaimProviderBO"/>
+                    <xsd:element minOccurs="0" name="referringProvider" type="bons2:ClaimProviderBO"/>
+                    <xsd:element minOccurs="0" name="attendingProvider" type="bons2:ClaimProviderBO"/>
+                    <xsd:element minOccurs="0" name="renderingProvider" type="bons2:ClaimProviderBO"/>
+                    <xsd:element minOccurs="0" name="billingProvider" type="bons2:ClaimProviderBO"/>
+                    <xsd:element minOccurs="0" name="payToProvider" type="bons2:ClaimProviderBO"/>
+                    <xsd:element minOccurs="0" name="payment" type="bons2:PaymentBO"/>
+                    <xsd:element minOccurs="0" name="claimServiceAuthorization" type="bons2:ClaimServiceAuthorizationBO"/>
+                    <xsd:element minOccurs="0" name="institutionalClaim" type="bons2:InstitutionalClaimBO"/>
+                    <xsd:element minOccurs="0" name="professionalClaim" type="bons2:ProfessionalClaimBO"/>
+                    <xsd:element minOccurs="0" name="claimMember" type="bons2:ClaimMemberBO"/>
+                    <xsd:element minOccurs="0" name="batchInfo" type="bons2:BatchInfoBO"/>
+                    <xsd:element minOccurs="0" name="additionalClaimData" type="bons2:AdditionalClaimDataBO"/>
+                    <xsd:element minOccurs="0" name="operationType" type="xsd:string"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="lineItemEdits" type="bons2:LineItemEditsBO"/>
+                    <xsd:element minOccurs="0" name="referralID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="patientAccountNumber" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="cosDefaultIndicator" type="xsd:boolean"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimTPLBilling" type="bons2:ClaimTPLBillingBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimAdjustmentReasons" type="bons2:ClaimAdjustmentReasonBO"/>
+                    <xsd:element minOccurs="0" name="billingFedaralTaxID" type="xsd:string"/>
+                    <xsd:element maxOccurs="1" minOccurs="0" name="medicareDetails" type="bons2:MedicareDetailsBO"/>
+                    <xsd:element minOccurs="0" name="exceptionLocationDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="benefitPlanID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="overrideUserID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="otherProvider2" type="bons2:ClaimProviderBO"/>
+                    <xsd:element minOccurs="0" name="exceptionLocationCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="claimFormCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="noteSet" type="bons6:NoteSetBO"/>
+                    <xsd:element minOccurs="0" name="relatedCauseCode1" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="relatedCauseCode2" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="relatedCauseCode3" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="admitDateTime" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="dischargeDateTime" type="xsd:date"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="userModLIEdits" type="bons2:LineItemEditsBO"/>
+                    <xsd:element minOccurs="0" name="claimProcessFields" type="bons2:ClaimProcessFieldsBO"/>
+                    <xsd:element minOccurs="0" name="memberDateOfBirth" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="claimPricing" type="bons2:ClaimPricingBO"/>
+                    <xsd:element minOccurs="0" name="levelOfCare" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="enterpriseClaimAux" type="bons2:EnterpriseClaimAuxBO"/>
+                    <xsd:element minOccurs="0" name="pricingMethodCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="reimbursementStatusCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="memberLocked" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="payeeEntityExtlId" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="payeeEntityExtlIdTypeCode" type="xsd:string"/>                 
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimSABackouts" type="bons2:ClaimSABackoutBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="claimBenefitLimitBackouts" type="bons2:ClaimBenefitLimitBackoutBO"/>
+                    <xsd:element minOccurs="0" name="commonEntitySK" type="xsd:long"/>
+                    <xsd:element minOccurs="0" name="commonEntityTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="financialRSNCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="levelOfCareCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="billingInd" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="overrideExceptionCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="famPlanningFundCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="epstdConditionCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="submitterOPayerProviderNPINum" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="relatedNursingHomeTCNNum" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="benefitPlanNetworkStatusCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="tplPolicyIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="tplTraumaIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="policyCourtOrderIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="absentParentIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="goodCauseIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="domesticViolenceIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="claim1099Indicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="fiscalPendIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="billingProvOrganizationName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="receiverName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="payerName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="adjudicationStartTime" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="serviceAuthLineNumber" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="famPlanningCountryFundAmt" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="famPlanningFederalFundAmt" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="famPlanningOtherFundAmt" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="famPlanningStateFundAmt" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="relativeWeightAmount" type="xsd:double"/>
+                    <xsd:element minOccurs="0" name="admitTMNumber" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="dischargeTMNumber" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="ltcSpanTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="diagnosisCodes" type="bons2:DiagnosisBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="remittanceAdviceInd" type="xsd:boolean"/>
+                </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

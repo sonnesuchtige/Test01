@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+
+    <xsd:complexType name="AutoAssignmentTriggerBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="CustomerCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="LOB" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="MemberSyID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="MemberCurrentID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="MemberCurrentType" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="Age" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="GenderCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="CountyCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="COE" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="CAPCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="EnrollmentBeginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="EnrollmentEndDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="BenefitPlanID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="PCPSysID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="NetworkID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ProvideEnrollmentVoidInd" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ProviderassignReasonCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="Providerchangereasoncode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ProviderEnrollmentBegindate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="ProviderEnrollmentEnddate" type="xsd:date"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

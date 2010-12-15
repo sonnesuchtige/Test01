@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons3="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="AddressBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons3:EnterpriseBaseDomainBO">
+        <xsd:sequence>
+      <xsd:element minOccurs="0" name="addressSK" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="addressLine1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="reasonCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="uspsAddressLine1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="uspsAddressLine2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="uspsAddressVerifyCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="addressLine2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="addressLine3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="addressLine4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="cityName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="stateCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="zipCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="zipCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="countyCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="countryCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="townCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="latitudeNumber" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="longitudeNumber" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="CommonEntityTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="districtOfficeCode" type="xsd:string"/>
+                </xsd:sequence>                                        </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

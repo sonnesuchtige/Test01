@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bo="http://AddressValidationLibrary/com/acs/enterprise/common/cots/addressvalidation/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://AddressValidationLibrary/com/acs/enterprise/common/cots/addressvalidation/bo">
+  <xsd:annotation>
+    <xsd:appinfo source="wid.federated.schema"/>
+  </xsd:annotation>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/cots/addressvalidation/bo/AddressResponseDataArrayBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/cots/addressvalidation/bo/AddressDataBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/cots/addressvalidation/bo/AddressDataArrayBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/cots/addressvalidation/bo/AddressResponseDataBO.xsd"/>
+</xsd:schema>

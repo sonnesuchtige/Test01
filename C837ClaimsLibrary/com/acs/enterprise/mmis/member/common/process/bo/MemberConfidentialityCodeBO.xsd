@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:include schemaLocation="CaseBO.xsd"/>
+    <xsd:include schemaLocation="MemberSpanBaseDomainBO.xsd"/>
+  <xsd:complexType name="MemberConfidentialityCodeBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:MemberSpanBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="confidentialityCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="confidentialitySeqNumber" type="xsd:int"/>
+        </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

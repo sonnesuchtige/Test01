@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:include schemaLocation="ProviderAcceptanceBO.xsd"/>
+    <xsd:include schemaLocation="SpecialNeedsBO.xsd"/>
+    <xsd:include schemaLocation="OfficeHoursBO.xsd"/>
+    <xsd:include schemaLocation="FacilityBO.xsd"/>
+    <xsd:include schemaLocation="BedInformationBO.xsd"/>
+    <xsd:include schemaLocation="LanguageBO.xsd"/>
+    <xsd:include schemaLocation="OtherServiceBO.xsd"/>
+    <xsd:complexType name="ProviderServiceBO">
+        <xsd:annotation>
+      <xsd:documentation>This object holds Provider Service Information.</xsd:documentation>
+    </xsd:annotation>
+        <xsd:sequence>
+      <xsd:element minOccurs="0" name="otherService" type="bons0:OtherServiceBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="languages" type="bons0:LanguageBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="handicapAccessIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="tddTTYIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="open24HrsIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="teachingHospIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="pharDriveThruIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="inKindIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="profitIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="bedDetails" type="bons0:BedInformationBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="facility" type="bons0:FacilityBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="officeHours" type="bons0:OfficeHoursBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="specialNeeds" type="bons0:SpecialNeedsBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="providerAcceptance" type="bons0:ProviderAcceptanceBO" maxOccurs="unbounded"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo" targetNamespace="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo">
+    <xsd:include schemaLocation="EDMSUserKeyBO.xsd"/>
+    <xsd:complexType name="EDMSUserKeyListBO">
+        <xsd:annotation>
+      <xsd:documentation>This BO contains the user key and its value</xsd:documentation>
+    </xsd:annotation>
+        <xsd:sequence>
+      <xsd:element minOccurs="1" name="edmsUserKeyList" type="bons0:EDMSUserKeyBO" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation>Self explanatory.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

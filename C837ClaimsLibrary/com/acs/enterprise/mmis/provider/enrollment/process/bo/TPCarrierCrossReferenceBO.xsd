@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons2="http://TPLAdministrationLibrary/com/acs/enterprise/mmis/operations/tpladministration/process/bo" xmlns:bons1="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:include schemaLocation="TPCarrierTransactionBO.xsd"/>
+    <xsd:include schemaLocation="TPCarrierBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="TPCarrierCrossReferenceBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="tradingPartnerId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="tplCarrierId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="tpCarrierCrossRefBeginDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="tpCarrierCrossRefEndDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="tplCarrier" type="bons1:TPCarrierBO" maxOccurs="1"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="tpCarrierTransaction" type="bons1:TPCarrierTransactionBO"/>
+                    <xsd:element minOccurs="0" name="tpCarrierCrossRefSeqNum" type="xsd:int"/>
+                </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

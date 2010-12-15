@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="ClaimSpenddownResponseBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="readSpenddownAmountFlag" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="baseRateChangeAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="spenddownLeft" type="xsd:double"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

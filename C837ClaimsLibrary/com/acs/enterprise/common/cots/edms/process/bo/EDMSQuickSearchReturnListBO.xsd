@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo" targetNamespace="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo">
+    <xsd:include schemaLocation="EDMSQuickSearchReturnBO.xsd"/>
+    <xsd:complexType name="EDMSQuickSearchReturnListBO">
+        <xsd:sequence>
+      <xsd:element minOccurs="0" name="edmsQuickSearchReturnBO" type="bons0:EDMSQuickSearchReturnBO" maxOccurs="unbounded"/>
+    </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

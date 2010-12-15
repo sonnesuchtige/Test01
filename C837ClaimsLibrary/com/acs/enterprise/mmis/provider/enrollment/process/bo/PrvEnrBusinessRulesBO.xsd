@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:include schemaLocation="EFTRulesBO.xsd"/>
+    <xsd:complexType name="PrvEnrBusinessRulesBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="providerType" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="deaNumber" type="xsd:string" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="providerDOB" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="bankCheckDigitNo" type="xsd:string" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="groupAffilDatee" type="xsd:date" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="nCPDP" type="xsd:string" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="nPI" type="xsd:string" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="eftStatus" type="bons0:EFTRulesBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="cliaID" type="xsd:string" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="ownershipDate" type="xsd:date" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="stateCode" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

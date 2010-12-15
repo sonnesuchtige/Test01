@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+  <xsd:complexType name="DBABO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="dbaOrigIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="dbaName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dbaYearsNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="dbaFormerBusinessName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dbaLastName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dbaFirstName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dbaMiddleName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dbaSuffixName" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons1="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="WorkUnitBO.xsd"/>
+    <xsd:complexType name="MessageReceiverBO">
+        <xsd:annotation>
+      <xsd:documentation>Message Receiver BO Object which holds the information like:&#13;
+&#13;
+1. message, which holds the Message domain object(user who sends the internal message).&#13;
+2.msgToWorkUnit, which holds the work unit doamin object information.&#13;
+</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="toWorkUnit" type="bons0:WorkUnitBO"/>
+      <xsd:element minOccurs="0" name="message" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="workUnitSK" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="workUnitTypeCode" type="xsd:string"/>
+        </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>
+    <xsd:include schemaLocation="EligibilityGuaranteeResponse.xsd"/>
+    
+    <xsd:include schemaLocation="PCPSpanBO.xsd"/>
+    <xsd:include schemaLocation="TPLSpansBO.xsd"/>
+    <xsd:include schemaLocation="CaseBO.xsd"/>
+    <xsd:include schemaLocation="MemberBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:include schemaLocation="EnrollmentSpanBO.xsd"/>
+    <xsd:include schemaLocation="LockinSpanBO.xsd"/>
+    <xsd:include schemaLocation="LTCSpanBO.xsd"/>
+    <xsd:include schemaLocation="EligibilitySpanBO.xsd"/>
+    <xsd:complexType name="MemberVerificationBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="eligibilityDetails" type="bons0:EligibilitySpanBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="pcpSpans" type="bons0:PCPSpanBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="ltcDetails" type="bons0:LTCSpanBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="lockInDetails" type="bons0:LockinSpanBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="enrollmentDetails" type="bons0:EnrollmentSpanBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="absentParent" type="bons1:MemberRepresentativeBO"/>
+      <xsd:element minOccurs="0" name="claimDetails" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="tplDetails" type="bons0:TPLSpansBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="memberVO" type="bons0:MemberBO"/>
+            <xsd:element minOccurs="0" name="caseVO" type="bons0:CaseBO"/>
+            <xsd:element minOccurs="0" name="isEligibilitySpan" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="addressData" type="bons1:AddressBO"/>
+            <xsd:element minOccurs="0" name="eligibilityBenefitDetails" type="bons0:EligibilitySpanBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" maxOccurs="unbounded" name="enrollmentBenefitDetails" type="bons0:EnrollmentSpanBO"/>
+            <xsd:element minOccurs="0" maxOccurs="unbounded" name="ltcBenefitDetails" type="bons0:LTCSpanBO"/>
+            <xsd:element minOccurs="0" name="commonReview" type="bons1:CommonReviewBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="eligibilityGuaranteeResponse" type="bons0:EligibilityGuaranteeResponse"/>
+            <xsd:element minOccurs="0" name="errorDescription" type="bons2:ErrorDescriptionBO"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

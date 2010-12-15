@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+  <xsd:complexType name="EmploymentInformationBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="workExpenseAmt" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="firstEmploymentDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="individualGrossAmt" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="individualNetAmt" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="workHistoryIndicator" type="xsd:boolean"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

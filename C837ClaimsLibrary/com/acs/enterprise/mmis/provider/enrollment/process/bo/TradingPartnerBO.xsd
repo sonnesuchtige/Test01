@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:bons3="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:include schemaLocation="EnrollmentTPProviderBO.xsd"/>
+    <xsd:include schemaLocation="EnrollmentTPCarrierBO.xsd"/>
+    <xsd:include schemaLocation="TPCarrierCrossReferenceBO.xsd"/>
+    <xsd:include schemaLocation="RequiredEnrollmentAttachedBO.xsd"/>
+    <xsd:include schemaLocation="TRPCrossReferenceBO.xsd"/>
+    <xsd:include schemaLocation="TPProviderCrossReferenceBO.xsd"/>
+    <xsd:include schemaLocation="TPTransactionRetrievalBO.xsd"/>
+    <xsd:include schemaLocation="SoftwareVendorBO.xsd"/>
+    <xsd:include schemaLocation="TPTransactionTransmissionBO.xsd"/>
+    <xsd:include schemaLocation="TradingPartnerEventBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="TradingPartnerBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" name="applicationTrackingNumber" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="tradPartId" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="taxID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="dbaName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="classification" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="webUserID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="commonEntity" type="bons1:CommonEntityBO"/>
+                    <xsd:element minOccurs="0" name="name" type="bons2:NameBO"/>
+                    <xsd:element minOccurs="0" name="tpProviderCrossReference" type="bons3:TPProviderCrossReferenceBO" maxOccurs="unbounded"/>
+		    <xsd:element minOccurs="0" name="tpTransactionTransmission" type="bons3:TPTransactionTransmissionBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="softwareVendor" type="bons3:SoftwareVendorBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="approvalProcessStatusCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="approvalProcessStatusDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="approvalProcessReasonCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="segmentDelimiterCode" type="xsd:string"/>
+		    <xsd:element minOccurs="0" name="tradingPartnerEvent" type="bons3:TradingPartnerEventBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="elementDelimiterCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="subElementDelimiterCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="deliveryDistanceCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="individualGroupCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="nonX12TxnAllowIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="tplCarrierID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="requiredEnrollmentAttached" type="bons3:RequiredEnrollmentAttachedBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="tpCarrierCrossReference" type="bons3:TPCarrierCrossReferenceBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="submitProvAlternateIDTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="submitProvAlternateID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="submitCarrierID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="noteSet" type="bons1:NoteSetBO"/>
+                    <xsd:element minOccurs="0" name="enrollmentTPCarrier" type="bons3:EnrollmentTPCarrierBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="enrollmentTPProvider" type="bons3:EnrollmentTPProviderBO" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

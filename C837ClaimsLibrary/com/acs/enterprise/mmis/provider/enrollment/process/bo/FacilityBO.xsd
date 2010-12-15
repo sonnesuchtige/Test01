@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="FacilityBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="fyeMonth" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="facilityType" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="facilityBeginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="facilityEndDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="facilityAdminName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="facilitySK" type="xsd:long"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

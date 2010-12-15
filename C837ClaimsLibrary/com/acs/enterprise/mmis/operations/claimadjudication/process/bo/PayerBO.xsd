@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="OtherPayerBO.xsd"/>
+    <xsd:complexType name="PayerBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:OtherPayerBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="addressLine1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="addressLine2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="cityName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="stateCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="zipCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="countryCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionalQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionalID1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionalQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionalID2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionalQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionalID3" type="xsd:string"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

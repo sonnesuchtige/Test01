@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" xmlns:bons3="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:import schemaLocation="../../../../../common/program/administration/process/bo/LineOfBusinessBO.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo"/>
+    <xsd:complexType name="AlternateMemberIDBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons3:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="altID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="altIDSrcCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="altIDTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

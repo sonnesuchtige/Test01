@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bo="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo">
+  <xsd:annotation>
+    <xsd:appinfo source="wid.federated.schema"/>
+  </xsd:annotation>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/MemberCaseRepresentativeBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/AddressUsageBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/PhoneUsageBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/BankruptcyBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/CommonReviewBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/MemberRepresentativeBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/ProviderRepresentativeIDBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/AddressRepCrossReferenceBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/CommonEntityBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/PhoneUsageLOBBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/NoteBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/AddressResponseBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/SpecificEntityBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/ProviderRequestApplicationBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/AddressRequestBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/TPLCarrierRepresentativeBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/CommonEntityRepCrossReferenceBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/CommonEntityTypeBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/NoteCexBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/AddressUsageLOBBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/ElectronicFundTransferBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/PhoneBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/NoteSetBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/EmailAddressBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/EmailAddressUsageLOBBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/FinancialInformationBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/RepCommonEntityBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/MetaDataTableBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/AddressBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/ProviderOrganizationBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/AddressPhoneUsageBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/RepresentativeBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/EmailAddressUsageBO.xsd"/>
+  <xsd:include schemaLocation="../com/acs/enterprise/common/program/commonentities/process/bo/ProviderRepresentativeBO.xsd"/>
+</xsd:schema>

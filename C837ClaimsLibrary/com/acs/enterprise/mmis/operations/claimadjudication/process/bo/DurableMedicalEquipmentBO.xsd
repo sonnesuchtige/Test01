@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="DurableMedicalEquipmentBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="serviceQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="serviceID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="unitTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="unitQuantity" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="rentalAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="purchaseAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="rentalUnitPriceIndicator" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="certificationTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="durationMeasurementCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="durationNumber" type="xsd:double"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

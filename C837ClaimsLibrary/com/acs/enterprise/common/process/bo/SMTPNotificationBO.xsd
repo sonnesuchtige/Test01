@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo">
+  <xsd:complexType name="SMTPNotificationBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="recipientID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="subject" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="message" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

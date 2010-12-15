@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo" targetNamespace="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo">
+    <xsd:include schemaLocation="CascadeInformationBO.xsd"/>
+    <xsd:complexType name="CascadeInformationListBO">
+        <xsd:annotation>
+      
+    <xsd:documentation>This BO will contain the Array of the CascaseInformationBO</xsd:documentation>
+    </xsd:annotation>
+        <xsd:sequence>
+      <xsd:element minOccurs="1" name="cascadeInformation" type="bons0:CascadeInformationBO" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation>This attribute stores list of EDMS CascadeInformation.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

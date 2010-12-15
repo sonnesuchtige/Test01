@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="ClaimProviderAddressBO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="addressLine1" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="addressLine2" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="cityName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="countryCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="stateCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="zipCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="countyCode" type="xsd:string"/>
+        </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

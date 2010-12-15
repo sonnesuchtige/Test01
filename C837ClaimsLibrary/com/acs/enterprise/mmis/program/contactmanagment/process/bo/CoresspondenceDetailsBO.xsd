@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://CorrespondenceLibrary" xmlns:bons1="http://CorrespondenceLibrary/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons2="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons3="http://CorrespondenceLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons4="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="WorkUnitBO.xsd"/>
+    <xsd:include schemaLocation="CategoryBO.xsd"/>
+    <xsd:include schemaLocation="SubjectBO.xsd"/>
+    <xsd:include schemaLocation="deliveryMethod.xsd"/>
+    <xsd:include schemaLocation="LOBHierarchyBO.xsd"/>
+    <xsd:complexType name="CoresspondenceDetailsBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons4:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+            <xsd:element minOccurs="0" name="openDate" type="xsd:date">
+        <xsd:annotation>
+          <xsd:documentation>The date the correspondence was opened.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="statusCode" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Under Review, Closed, etc.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="statusDate" type="xsd:date">
+        <xsd:annotation>
+          <xsd:documentation>The date the status code changed.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="resolutionCode" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>The resolution code&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="priorityCode" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>e.g. High, Medium, Low&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="sourceCode" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Defines the source of the correspondence.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="sprvsrRevwReqdIndicator" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>e.g. Phone, email, written document, web portal, etc.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="lobCode" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This field indicates a line of business code to be used for system processing. The line of business is used to identify the entities that have fiscal responsibility for payment of insurance claims on behalf of their respective members.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="temp" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="assignedToWorkUnit" type="bons2:WorkUnitBO">
+        <xsd:annotation>
+          <xsd:documentation>The user to which the cr is assigned&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="0" name="subjectSK" type="bons2:SubjectBO">
+        <xsd:annotation>
+          <xsd:documentation>The subject key where subject related information is there&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="createdByWorkUnitSK" type="bons2:WorkUnitBO">
+        <xsd:annotation>
+          <xsd:documentation>The user who created the cr.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="0" name="categorySK" type="bons2:CategoryBO">
+        <xsd:annotation>
+          <xsd:documentation>The correspondence category in which the cr is belongs to.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+        </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

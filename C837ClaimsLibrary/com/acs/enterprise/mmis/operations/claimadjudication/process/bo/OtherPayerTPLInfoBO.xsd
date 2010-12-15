@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="OtherPayerTPLInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="tplPaidQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="tplPaidAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="approvedQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="approvedAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="allowedQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="allowedAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="patientResponsibilityQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="patientResponsibilityAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="coveredQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="coveredAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="discountQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="discountAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="perDayQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="perDayAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="patientPaidQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="patientPaidAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="taxQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="taxAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="beforeTaxQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beforeTaxAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="totalChargeQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="totalChargeAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="drgOutlierQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="drgOutlierAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="nonCoveredQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="nonCoveredAmount" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="deniedQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="deniedAmount" type="xsd:double"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

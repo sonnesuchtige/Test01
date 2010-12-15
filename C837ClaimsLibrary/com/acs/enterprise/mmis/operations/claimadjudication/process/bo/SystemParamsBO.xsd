@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.administration.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo"/>
+    <xsd:complexType name="SystemParamsBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="params" type="bons0:SystemParameterBO" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

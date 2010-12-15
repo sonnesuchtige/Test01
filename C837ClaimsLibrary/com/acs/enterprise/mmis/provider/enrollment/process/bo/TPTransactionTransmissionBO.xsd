@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons2="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:include schemaLocation="TPCarrierTransactionBO.xsd"/>
+    <xsd:include schemaLocation="TPProviderTransactionBO.xsd"/>
+    <xsd:include schemaLocation="TPTransactionDefaultDeliverBO.xsd"/>
+    <xsd:include schemaLocation="TransactionTypeBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="TPTransactionTransmissionBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="tpTransactionTypeBeginDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="tpTransactionTypeEndDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="testingLevelStatusCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="testingLevelStatusDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="testFilesRecordCount" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="testFilesProcessSuccessCount" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="x12VersionCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="txnTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="txnDefaultDeliveryBeginDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="txnDirectionCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="retrievalConnectionTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="tpTransactionDefaultDeliver" type="bons2:TPTransactionDefaultDeliverBO"/>
+                    <xsd:element minOccurs="0" name="retrievalTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="tpTransactionTypeSeqNum" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="tpCarrierTransaction" type="bons2:TPCarrierTransactionBO" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+  <xsd:complexType name="ProcedureCodeIncludeIndicatorsBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="toothIncludeIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="provTypeIncludeIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="claimTypeIncludeIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="cosIncludeIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="procModifierIncludeIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="placeOfServiceIncludeIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="provSpecialtyIncludeIndicator" type="xsd:boolean"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/benefitadministration/process/bo" xmlns:bons2="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:include schemaLocation="MemberSpanBaseDomainBO.xsd"/>
+    <xsd:include schemaLocation="MassEnrollmentTriggerBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../common/program/benefitadministration/process/bo/BenefitPlanMainBO.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/benefitadministration/process/bo"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.ProviderEnrollmentLibrary.com.acs.enterprise.mmis.provider.enrollment.process.bo.xsd" namespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo"/>
+    <xsd:complexType name="PCPSpanBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:MemberSpanBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="changeReasonCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="assignReasonCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="providerAltID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="providerAltIDTypeCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="benefitPlanMain" type="bons1:BenefitPlanMainBO"/>
+                    <xsd:element minOccurs="0" name="provider" type="bons0:ProviderBO"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

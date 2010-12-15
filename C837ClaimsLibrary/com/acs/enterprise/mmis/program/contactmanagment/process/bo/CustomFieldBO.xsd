@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:include schemaLocation="CustomFieldValueBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="CustomFieldBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="dataTypeCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="description" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="numericScaleNumber" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="totalLengthInBytes" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="valueProtectedIndicator" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="voidIndicator" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="customFieldSK" type="xsd:long"/>
+        </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

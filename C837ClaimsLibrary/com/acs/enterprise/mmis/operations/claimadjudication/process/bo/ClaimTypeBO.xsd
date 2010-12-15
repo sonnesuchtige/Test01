@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="ClaimTypeBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+        <xsd:sequence>
+        <xsd:element name="claimTypeSK" type="xsd:long" minOccurs="0"/>
+          <xsd:element name="beginDate" type="xsd:date" minOccurs="0"/>
+          <xsd:element name="endDate" type="xsd:date" minOccurs="0"/>
+          <xsd:element name="lobCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="claimFormCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="batchTypeCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="mediaSourceCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="beginBillType" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="endBillType" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="claimTypeCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="defaultIndicator" type="xsd:boolean" minOccurs="0"/>
+          <xsd:element name="rankNumber" type="xsd:long" minOccurs="0"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

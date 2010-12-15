@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="RevenueGeneralIndicatorsBO.xsd"/>
+    <xsd:include schemaLocation="AgeRangeBO.xsd"/>
+    <xsd:include schemaLocation="RevenueGeneralCodesBO.xsd"/>
+    <xsd:include schemaLocation="ProgramBaseDomainBO.xsd"/>
+  <xsd:complexType name="RevenueCodeDetailBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:ProgramBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="revenueGeneralCodes" type="bons0:RevenueGeneralCodesBO"/>
+          <xsd:element minOccurs="0" name="ageRange" type="bons0:AgeRangeBO"/>
+          <xsd:element minOccurs="0" name="revenueGeneralIndicators" type="bons0:RevenueGeneralIndicatorsBO"/>
+        </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

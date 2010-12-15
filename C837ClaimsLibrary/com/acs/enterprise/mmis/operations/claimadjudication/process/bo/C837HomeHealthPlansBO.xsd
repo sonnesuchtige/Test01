@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+    <xsd:include schemaLocation="ClaimAuxBO.xsd"/>
+    <xsd:complexType name="C837HomeHealthPlansBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="sequenceNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="disciplineTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="priorVisitsCount" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="projectedVisitsCount" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="serviceSequenceNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="visitQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="visitsCount" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="frequencyPeriodCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="frequencyCount" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="unitQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="unitsQuantity" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="patternCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="patternTimeCode" type="xsd:string"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

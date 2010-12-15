@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="SpinalPatientInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="conditionCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionDescription1A" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionDescription1B" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="spinalXRayAvailabilityIndicator1" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="conditionCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionDescription2A" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionDescription2B" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="spinalXRayAvailabilityIndicator2" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="conditionCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionDescription3A" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionDescription3B" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="spinalXRayAvailabilityIndicator3" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="conditionCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionDescription4A" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionDescription4B" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="spinalXRayAvailabilityIndicator4" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="conditionCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionDescription5A" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="conditionDescription5B" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="spinalXRayAvailabilityIndicator5" type="xsd:boolean"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

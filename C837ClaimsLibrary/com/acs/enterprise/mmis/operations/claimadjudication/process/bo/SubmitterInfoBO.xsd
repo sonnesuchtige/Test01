@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>
+    <xsd:include schemaLocation="ContactInfoBO.xsd"/>    
+    <xsd:complexType name="SubmitterInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="entityCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="entityQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="submitterQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="submitterID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="submitterContactInfo" type="bons0:ContactInfoBO"/>
+            <xsd:element minOccurs="0" name="submitterName" type="bons1:NameBO"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

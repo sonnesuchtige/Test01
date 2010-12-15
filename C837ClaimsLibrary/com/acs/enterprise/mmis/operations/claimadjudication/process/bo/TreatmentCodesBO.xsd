@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="TreatmentCodesBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode6" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode6" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode7" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode7" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode8" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode8" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode9" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode9" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode10" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode10" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode11" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode11" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode12" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode12" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode13" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode13" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode14" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode14" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode15" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode15" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode16" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode16" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode17" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode17" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode18" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode18" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode19" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode19" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode20" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode20" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode21" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode21" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode22" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode22" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode23" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode23" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentQualifierCode24" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="treatmentCode24" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

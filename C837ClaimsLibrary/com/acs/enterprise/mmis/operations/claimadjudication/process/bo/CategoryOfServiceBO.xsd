@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="CategoryOfServiceBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+        <xsd:sequence>
+        <xsd:element name="categoryOfServiceSK" type="xsd:long" minOccurs="0"/>
+          <xsd:element name="beginDate" type="xsd:date" minOccurs="0"/>
+          <xsd:element name="endDate" type="xsd:date" minOccurs="0"/>
+          <xsd:element name="lobCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="headerLineAssignCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="claimFormCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="claimTypeCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="beginBillingProviderID" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="endBillingProviderID" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="biginRenderingProviderID" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="endRenderingProviderID" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="beginProcedureCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="endProcedureCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="beginDiagnosisCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="endDiagnosisCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="beginSurgicalProcedureCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="endSurgicalProcedureCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="categoryOfServiceCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="defaultIndicator" type="xsd:boolean" minOccurs="0"/>
+          <xsd:element name="rankNumber" type="xsd:long" minOccurs="0"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

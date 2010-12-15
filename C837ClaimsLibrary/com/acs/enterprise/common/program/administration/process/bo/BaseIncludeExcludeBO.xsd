@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="ProgramBaseDomainBO.xsd"/>
+    <xsd:complexType name="BaseIncludeExcludeBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:ProgramBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="includeExcludeIndicator" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="code" type="xsd:string"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

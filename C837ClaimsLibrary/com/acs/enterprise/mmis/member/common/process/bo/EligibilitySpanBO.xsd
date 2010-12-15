@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:include schemaLocation="MemberSpanBaseDomainBO.xsd"/>
+    <xsd:include schemaLocation="MemberURLimitBO.xsd"/>
+    <xsd:include schemaLocation="MemberSearchResultBO.xsd"/>
+    <xsd:include schemaLocation="MemberRulesCriteriaBO.xsd"/>
+    <xsd:include schemaLocation="MemberResultBO.xsd"/>
+    <xsd:include schemaLocation="MemberInformationRequestBO.xsd"/>
+    <xsd:include schemaLocation="MemberIDBO.xsd"/>
+    <xsd:include schemaLocation="MemberEnrollmentTriggerBO.xsd"/>
+    <xsd:include schemaLocation="MemberDataBO.xsd"/>
+    <xsd:include schemaLocation="McareSpanBO.xsd"/>
+    <xsd:include schemaLocation="MassEnrollmentTriggerBO.xsd"/>
+    <xsd:include schemaLocation="SpendDownBO.xsd"/>
+    <xsd:include schemaLocation="AlternateMemberIDBO.xsd"/>
+    <xsd:include schemaLocation="MemberBO.xsd"/>
+    <xsd:include schemaLocation="CaseBO.xsd"/>
+    <xsd:complexType name="EligibilitySpanBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:MemberSpanBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="coeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="relationshiptoHOHCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="federalCategoryCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="federalMatchCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="moneyCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="terminateReasonCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="caseAssistanceGroupNumber" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="altID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="altIDTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="caseInfo" type="bons0:CaseBO"/>
+            <xsd:element minOccurs="0" name="alternateMember" type="bons0:AlternateMemberIDBO"/>
+            <xsd:element minOccurs="0" name="spendDown" type="bons0:SpendDownBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="coeSourceCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="coeBccpCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="caseNum" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+                </xsd:sequence>
+                          
+                    
+    
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

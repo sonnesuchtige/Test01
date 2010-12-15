@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/bo" xmlns:bons1="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/common/domain" xmlns:bons3="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons4="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    
+    
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:include schemaLocation="CLIALabCodeBO.xsd"/>
+    <xsd:include schemaLocation="CLIAInformationBO.xsd"/>
+    <xsd:include schemaLocation="CLIACertificationBO.xsd"/>
+    <xsd:complexType name="CLIALabBO">
+        <xsd:annotation>
+      <xsd:documentation>This object holds Information for Clinical Lab.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="bons4:EnterpriseBaseDomainBO">        <xsd:sequence>
+            <xsd:element minOccurs="0" name="cliaNumber" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="cliaLabPayerIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="cliaFederalTaxID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="cliaMedicareNumber" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="cliaUpdateDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="cliaAddDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="cliaLabName" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="cliaNPINum" type="xsd:string"/>
+            
+                    <xsd:element minOccurs="0" name="commonEntity" type="bons3:CommonEntityBO"/>
+                    <xsd:element minOccurs="0" name="noteSet" type="bons3:NoteSetBO"/>
+                </xsd:sequence>                                          
+            
+   
+  
+                    
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

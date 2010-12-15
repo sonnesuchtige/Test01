@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="EnterpriseClaimAuxBO.xsd"/>
+    <xsd:include schemaLocation="EnterpriseClaimLineItemAuxBO.xsd"/>
+    <xsd:include schemaLocation="EnterpriseClaimLineItemBO.xsd"/>
+    <xsd:include schemaLocation="ReplacedClaimInfoBO.xsd"/>
+    <xsd:include schemaLocation="EnterpriseClaimBO.xsd"/>
+    <xsd:complexType name="DataValidationResultBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="enterpriseClaimBO" type="bons0:EnterpriseClaimBO"/>
+          <xsd:element minOccurs="0" name="replacedClaimInfoBO" type="bons0:ReplacedClaimInfoBO"/>
+        </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

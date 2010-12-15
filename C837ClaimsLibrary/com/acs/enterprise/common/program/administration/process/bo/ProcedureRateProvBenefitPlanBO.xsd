@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+  <xsd:complexType name="ProcedureRateProvBenefitPlanBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="networkID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="providerAltID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="providerAltIDTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitPlanID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="procedureCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="provider" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

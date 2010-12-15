@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://CorrespondenceLibrary" xmlns:bons1="http://CorrespondenceLibrary/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons3="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons4="http://CorrespondenceLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons5="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons2="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons6="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+
+    <xsd:include schemaLocation="CorrespondenceClientServicesBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.administration.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo"/>
+    <xsd:include schemaLocation="CRCmnEntityXRefBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="EDMSDocumentDefaultsBO.xsd"/>
+    <xsd:include schemaLocation="SubjectBO.xsd"/>
+    <xsd:include schemaLocation="EntityTypeBO.xsd"/>
+    <xsd:include schemaLocation="LOBHierarchyBO.xsd"/>
+    <xsd:include schemaLocation="WorkUnitBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd"/>
+    <xsd:include schemaLocation="CorrespondenceLetterRequest.xsd"/>
+    <xsd:include schemaLocation="AlertBO.xsd"/>
+    <xsd:include schemaLocation="CorrespondenceLinkBO.xsd"/>
+    <xsd:include schemaLocation="AssociatedCorrespondenceBO.xsd"/>
+    <xsd:include schemaLocation="CorrespondenceAttachXref.xsd"/>
+    <xsd:include schemaLocation="CoresspondenceDetailsBO.xsd"/>
+    <xsd:include schemaLocation="CorrespondenceRoutingBO.xsd"/>
+    <xsd:include schemaLocation="Attachment.xsd"/>
+    <xsd:include schemaLocation="CMEntityBO.xsd"/>
+    <xsd:include schemaLocation="CategoryBO.xsd"/>
+    <xsd:include schemaLocation="CorrespondenceWatchlist.xsd"/>
+
+
+
+    <xsd:complexType name="CorrespondenceRecordBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons5:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="daysToCloseNumber" type="xsd:int">
+        <xsd:annotation>
+          
+        <xsd:documentation>The no. of days taken to close the cr.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="correspondenceOpenWorkUnit" type="bons2:WorkUnitBO">
+        <xsd:annotation>
+          <xsd:documentation>The user who open the cr&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="correspondenceLastUpdatedWorkUnit" type="bons2:WorkUnitBO">
+        <xsd:annotation>
+          <xsd:documentation>The user who update the cr.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="sensitiveDataIndicator" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>This is a row-level indicator.  Requirement came from an email received from Bill Dock on 2/23/06.  Text follows. We need to add a "filter" indicator (that may be a drop-down of code values) to a Correspondence and Case record.  Purpose is to allow a user to indicate that a specific CR or Case contains sensitive data.   Application window will need to build logic based on this value to either restrict access to the record entirely, or in NH's case, hide certain fields from unauthorized users but still display the CR or Case.  This leads to the next issue:   need ability to designate which fields should be hidden (similar to how we indicate which fields are protected after save in our OT_Datadictionary table today, which includes Custom Fields!). We have an open DOL CSR (#5894) for some of the same type of functionality.   They refer to this as "Liason" thread requirement.   We will be working with Rob Burge of the ACS web team on that enhancement when we get to it.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="responseExistsIndicator" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>Indicates if there are any response documents associated with this Correspondence.  If yes, they must all be considered "closed" before the correspondence can be closed.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="responseHasFileIndicator" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>Indicates if this correspondence includes responses that do not include documents.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="responseAllClosedIndicator" type="xsd:boolean">
+        <xsd:annotation>
+          <xsd:documentation>Indicates all the associated responses in TBD (fka CORR_DOC) have a Closed status.  This improves performance by not having to join to that table to determine this when generating reports.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="supervisorReviewReqIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="statusCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="statusDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="representative" type="bons3:RepresentativeBO">
+        <xsd:annotation>
+          <xsd:documentation>The representative key in which the address related information is there.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="supervisorReviewedWorkUnit" type="bons2:WorkUnitBO">
+        <xsd:annotation>
+          <xsd:documentation>The supervisor who reviewed the cr&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="correspondenceRoutings" type="bons2:CorrespondenceRoutingBO"/>
+            <xsd:element minOccurs="0" name="correspondenceCategory" type="bons2:CategoryBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="alerts" type="bons2:AlertBO"/>
+            <xsd:element minOccurs="0" name="noteSet" type="bons3:NoteSetBO">
+        <xsd:annotation>
+          <xsd:documentation>The note set key&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="crAttachmentXrefs" type="bons2:CorrespondenceAttachXref"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="letterRequests" type="bons2:CorrespondenceLetterRequest"/>
+            <xsd:element minOccurs="0" name="correspondenceWatchList" type="bons2:CorrespondenceWatchlist" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="correspondenceAssignToWorkUnit" type="bons2:WorkUnitBO"/>
+            <xsd:element minOccurs="0" name="createdByWorkUnit" type="bons2:WorkUnitBO"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="lineOfBusinessHierarchy" type="bons2:LOBHierarchyBO"/>
+            <xsd:element minOccurs="0" name="priorAssociatedCRs" type="bons2:CorrespondenceLinkBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="currentAssociatedCRs" type="bons2:CorrespondenceLinkBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="correspondenceSK" type="xsd:long">
+        <xsd:annotation>
+          <xsd:documentation>The correspondence record number&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+                    <xsd:element minOccurs="0" name="priorityCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="sourceCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="edmsDocTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="crCmnEntyXRefs" type="bons2:CRCmnEntityXRefBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="subjectCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="resolutionCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="openDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="receivedDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="lineOfBusiness" type="bons6:LineOfBusinessBO"/>
+                    <xsd:element minOccurs="0" name="correspondenceClientServices" type="bons2:CorrespondenceClientServicesBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="priorityDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="authorizationNumber" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="transactionNumber" type="xsd:string"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

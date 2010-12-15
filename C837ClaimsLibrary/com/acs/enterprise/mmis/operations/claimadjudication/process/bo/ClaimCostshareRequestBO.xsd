@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="EnterpriseClaimBO.xsd"/>
+    <xsd:complexType name="ClaimCostshareRequestBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="enterpriseClaimBO" type="bons0:EnterpriseClaimBO"/>
+      <xsd:element minOccurs="0" name="lineNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="readCostShareAmountFlag" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="costShareLeft" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="readCostShareAmountFromDB" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="costShareCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="costshareIHSRemaining" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="costshareABDRemaining" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="costshareDDRemaining" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="costshareECIRemaining" type="xsd:double"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="OtherPayerSubmittedProviderIDBO.xsd"/>
+    <xsd:include schemaLocation="OtherPayerTPLInfoBO.xsd"/>
+    <xsd:include schemaLocation="OtherPayerMedicareInfoBO.xsd"/>
+    <xsd:include schemaLocation="ContactInfoBO.xsd"/>
+    <xsd:include schemaLocation="SubscriberInfoBO.xsd"/>
+    <xsd:complexType name="C837OtherPayerBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="sequenceNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="entityCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="entityTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="addressLine1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="addressLine2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="cityName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="stateCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="zipCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="countryCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="otherPayerQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="otherPayerID" type="xsd:string"/>
+       <xsd:element minOccurs="0" name="additionalQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionalID1" type="xsd:string"/>
+       <xsd:element minOccurs="0" name="additionalQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionalID2" type="xsd:string"/>
+       <xsd:element minOccurs="0" name="additionalQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="additionalID3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="referralQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="referralID1" type="xsd:string"/>
+       <xsd:element minOccurs="0" name="referralQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="referralID2" type="xsd:string"/>
+      
+            <xsd:element minOccurs="0" name="adjustmentQualifierCode1" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="adjustmentIndicatorCode1" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="adjustmentQualifierCode2" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="adjustmentIndicatorCode2" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="additionalPatientQualifierCode1" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="additionalPatientID1" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="additionalPatientQualifierCode2" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="additionalPatientID2" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="additionalPatientQualifierCode3" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="additionalPatientID3" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="patientEntityCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="patientEntityTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="patientMemberQualifierCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="patientMemberID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="referringProviderEntityCode1" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="referringProviderEntityTypeCode1" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="referringProviderEntityCode2" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="referringProviderEntityTypeCode2" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="renderingProviderEntityCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="renderingProviderEntityTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="purchasedProviderEntityCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="purchasedProviderEntityTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="facilityEntityCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="facilityEntityTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="supervisingProviderEntityCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="supervisingProviderEntityTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="paidDateQualifierCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="paidDatePeriodQualifierCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="paidDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="attendingProviderEntityCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="attendingProviderEntityTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="operatingProviderEntityCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="operatingProviderEntityTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="otherProviderEntityCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="otherProviderEntityTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="otherSubscriberInfo" type="bons0:SubscriberInfoBO"/>
+            <xsd:element minOccurs="0" name="otherPayerTPLInfo" type="bons0:OtherPayerTPLInfoBO"/>
+            <xsd:element minOccurs="0" name="contactInfo" type="bons0:ContactInfoBO"/>
+            <xsd:element minOccurs="0" name="otherPayerMedicareInfo" type="bons0:OtherPayerMedicareInfoBO"/>
+                    <xsd:element minOccurs="0" name="otherPayerLastName" type="xsd:string"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

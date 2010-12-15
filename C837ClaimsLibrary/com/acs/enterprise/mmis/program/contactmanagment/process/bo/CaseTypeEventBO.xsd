@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:include schemaLocation="ActCMCaseEventBO.xsd"/>
+    <xsd:include schemaLocation="EnterpriseUserBO.xsd"/>
+    <xsd:include schemaLocation="CaseTypeBO.xsd"/>
+    <xsd:complexType name="CaseTypeEventBO">
+    <xsd:sequence>
+            <xsd:element minOccurs="0" name="actCMCaseEvents" type="bons1:ActCMCaseEventBO"/>
+            <xsd:element minOccurs="0" name="caseType" type="bons1:CaseTypeBO"/>
+            <xsd:element minOccurs="0" name="caseTypeSK" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="cmCaseEventCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="defaultAlertBasedOnColName" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="defaultBeforeAfterCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="defaultSendAlertDaysCode" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

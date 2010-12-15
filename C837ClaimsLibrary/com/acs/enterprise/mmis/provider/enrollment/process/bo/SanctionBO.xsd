@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:include schemaLocation="AdverseLegalActionBO.xsd"/>
+    <xsd:include schemaLocation="QuestionnaireOverPaymentBO.xsd"/>
+    <xsd:include schemaLocation="QuestionnaireOtherStateBO.xsd"/>
+    <xsd:include schemaLocation="QuestionnaireExclusionBO.xsd"/>
+    <xsd:include schemaLocation="QuestionnaireBO.xsd"/>
+    <xsd:complexType name="SanctionBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="questionnaires" type="bons0:QuestionnaireBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="questionnaireExclusions" type="bons0:QuestionnaireExclusionBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="questionnaireOtherStates" type="bons0:QuestionnaireOtherStateBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="questionnaireOverPayments" type="bons0:QuestionnaireOverPaymentBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="adverseLegalActions" type="bons0:AdverseLegalActionBO" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

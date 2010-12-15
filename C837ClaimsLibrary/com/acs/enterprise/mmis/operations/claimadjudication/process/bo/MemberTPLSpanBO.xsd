@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="MemberTPLSpanBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+        <xsd:sequence>
+        <xsd:element name="coverageMemberBeginDate" type="xsd:date" minOccurs="0"/>
+	      <xsd:element name="courtCode" type="xsd:string" minOccurs="0"/>
+	      <xsd:element name="coverageMemberRelativeCode" type="xsd:string" minOccurs="0"/>
+	      <xsd:element name="coverageMemberEndDate" type="xsd:date" minOccurs="0"/>
+	      <xsd:element name="coverageMemberPendingIndicator" type="xsd:boolean" minOccurs="0"/>
+	      <xsd:element name="coverageMemberVoidIndicator" type="xsd:boolean" minOccurs="0"/>
+	      <xsd:element name="lifeExhudicationIndicator" type="xsd:boolean" minOccurs="0"/>
+	      <xsd:element name="coverageMemberSouceCode" type="xsd:string" minOccurs="0"/>
+	      <xsd:element name="coverageAnnExhudicationBeginDate" type="xsd:date" minOccurs="0"/>
+	      <xsd:element name="policyHolderID" type="xsd:string" minOccurs="0"/>
+	      <xsd:element name="carrierID" type="xsd:string" minOccurs="0"/>
+	      <xsd:element name="groupPolicyNumber" type="xsd:string" minOccurs="0"/>
+	      <xsd:element name="groupPolicySequenceNumber" type="xsd:int" minOccurs="0"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

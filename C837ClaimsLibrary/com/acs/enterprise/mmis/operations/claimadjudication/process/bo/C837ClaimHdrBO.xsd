@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="C837ClaimProviderBO.xsd"/>
+    <xsd:include schemaLocation="C837SpecializedServiceBO.xsd"/>
+    <xsd:include schemaLocation="C837PayerBO.xsd"/>
+    <xsd:include schemaLocation="C837ClaimBO.xsd"/>
+    <xsd:include schemaLocation="C837HomeHealthPlansBO.xsd"/>
+    <xsd:include schemaLocation="C837OtherPayerBO.xsd"/>
+    <xsd:include schemaLocation="C837ServiceLineItemBO.xsd"/>
+    <xsd:include schemaLocation="C837QuestionBO.xsd"/>
+    <xsd:include schemaLocation="C837LineItemProviderBO.xsd"/>
+    <xsd:include schemaLocation="C837TraceBO.xsd"/>
+    <xsd:include schemaLocation="C837OtherPayerAdjustmentBO.xsd"/>
+    <xsd:include schemaLocation="C837AttachmentBO.xsd"/>
+    <xsd:include schemaLocation="C837DentalClaimBO.xsd"/>
+    <xsd:include schemaLocation="C837InstitutionalClaimBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+    <xsd:include schemaLocation="ClaimAuxBO.xsd"/>
+    <xsd:include schemaLocation="ContactInfoBO.xsd"/>
+    <xsd:include schemaLocation="BillingProviderCreditInfoBO.xsd"/>
+    <xsd:include schemaLocation="ReceiverInfoBO.xsd"/>
+    <xsd:include schemaLocation="SubmitterInfoBO.xsd"/>
+    <xsd:complexType name="C837ClaimHdrBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="transactionID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="transactionControlNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="hierarchyStructure" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="purposeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="applicationTransactionID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="transactionCreationTime" type="xsd:dateTime"/>
+      <xsd:element minOccurs="0" name="transactionTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="transmissionQualifier" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="transmissionType" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="hierarchicalID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="hierarchicalLevelCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="hierarchicalChildCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="currencyEntityCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="currencyCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="submitterInfo" type="bons0:SubmitterInfoBO"/>
+      <xsd:element minOccurs="0" name="receiverInfo" type="bons0:ReceiverInfoBO"/>
+      <xsd:element minOccurs="0" name="billingProviderCreditInfo" type="bons0:BillingProviderCreditInfoBO"/>
+      <xsd:element minOccurs="0" name="billingProviderContactInfo" type="bons0:ContactInfoBO"/>
+                    <xsd:element minOccurs="0" name="c837InstitutionalClaims" type="bons0:C837InstitutionalClaimBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="c837DentalClaims" type="bons0:C837DentalClaimBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="c837Attachments" type="bons0:C837AttachmentBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="c837OtherPayerAdjustments" type="bons0:C837OtherPayerAdjustmentBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="c837Traces" type="bons0:C837TraceBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="c837LineItemProviders" type="bons0:C837LineItemProviderBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="c837Questions" type="bons0:C837QuestionBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="c837ServiceLineItems" type="bons0:C837ServiceLineItemBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="c837OtherPayers" type="bons0:C837OtherPayerBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="c837HomeHealthPlans" type="bons0:C837HomeHealthPlansBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="c837Claim" type="bons0:C837ClaimBO"/>
+                    <xsd:element minOccurs="0" name="c837Payer" type="bons0:C837PayerBO"/>
+                    <xsd:element minOccurs="0" name="c837SpecializedService" type="bons0:C837SpecializedServiceBO"/>
+                    <xsd:element minOccurs="0" name="c837ClaimProvider" type="bons0:C837ClaimProviderBO"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

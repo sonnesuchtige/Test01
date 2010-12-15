@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+  <xsd:complexType name="TRPBusinessRulesBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="trpBeginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="trpEndDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="prvBeginDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="prvEndDate" type="xsd:date"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

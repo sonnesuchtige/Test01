@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="DiagnosisCodeBO.xsd"/>
+    <xsd:complexType name="DRGPricingBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="peerGroupCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="geometricMeanLengthOfStay" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="costOutlierThreshold" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="dayOutlierTrimPoint" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="drgCode" type="bons0:DiagnosisCodeBO"/>
+      <xsd:element minOccurs="0" name="fromDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="grouperVersion" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="relativeWeight" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="shortStayOrTransferExcl" type="xsd:boolean"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo">
+    <xsd:complexType name="EDMSUserKeyBO">
+        <xsd:annotation>
+      
+    <xsd:documentation>This BO contains the Enterprise user key and its value</xsd:documentation>
+    </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="indexKey" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="indexKeyValue" type="xsd:string"/>
+        </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="TestInfoBO.xsd"/>
+    <xsd:include schemaLocation="OxygenTherapyBO.xsd"/>
+    <xsd:include schemaLocation="SpinalPatientInfoBO.xsd"/>
+    <xsd:include schemaLocation="AmbulanceInfoBO.xsd"/>
+    <xsd:include schemaLocation="DurableMedicalEquipmentRegionalCarrierBO.xsd"/>
+    <xsd:include schemaLocation="DurableMedicalEquipmentBO.xsd"/>
+    <xsd:complexType name="C837ProfessionalLineItemBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="lineNumber" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="emergencyIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="coPayStatusCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="hospiceEmployeeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="hospiceEmployeeIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hospiceConditionCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="serviceQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="submittedUnitsCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="certificationRevisionQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="certificationRevisionPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="certificationRevisionDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="lastCertificationQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lastCertificationPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lastCertificationDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="therapyQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="therapyPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="therapyBeginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="lastSeenQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lastSeenPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lastSeenDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="shippedQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="shippedPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="shippedDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="illnessQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="illnessDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="lastXRayQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lastXRayPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lastXRayDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="acuteQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="acutePeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="acuteDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="initialTreatmentQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="initialTreatmentPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="initialTreatmentDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="similarIllnessQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="similarIllnessPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="similarIllnessDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="referralQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="referralID1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="referralQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="referralID2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dmeInfo" type="bons0:DurableMedicalEquipmentBO"/>
+      <xsd:element minOccurs="0" name="dmercInfo" type="bons0:DurableMedicalEquipmentRegionalCarrierBO"/>
+      <xsd:element minOccurs="0" name="ambulanceInfo" type="bons0:AmbulanceInfoBO"/>
+      <xsd:element minOccurs="0" name="spinalPatientInfo" type="bons0:SpinalPatientInfoBO"/>
+      <xsd:element minOccurs="0" name="oxygenTherapy" type="bons0:OxygenTherapyBO"/>
+      <xsd:element minOccurs="0" name="testInfo" type="bons0:TestInfoBO"/>
+                    <xsd:element minOccurs="0" name="servicePeriodQualifierCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="serviceDateQualifierCode" type="xsd:string"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

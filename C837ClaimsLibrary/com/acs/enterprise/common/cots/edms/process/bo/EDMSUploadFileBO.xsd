@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo" targetNamespace="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo">
+    <xsd:include schemaLocation="CascadeInformationBO.xsd"/>
+    <xsd:include schemaLocation="EDMSIndexBO.xsd"/>
+    <xsd:complexType name="EDMSUploadFileBO">
+        <xsd:sequence>
+      <xsd:element minOccurs="0" name="strFileName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="strFilePath" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="payloadFile" type="xsd:hexBinary"/>
+      <xsd:element minOccurs="0" name="boUserKey" type="bons0:EDMSIndexBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="cascadeInformation" type="bons0:CascadeInformationBO"/>
+      <xsd:element minOccurs="0" name="strFileType" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="strCascadeKey" type="xsd:string"/>
+        </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

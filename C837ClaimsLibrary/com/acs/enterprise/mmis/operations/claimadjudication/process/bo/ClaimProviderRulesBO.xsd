@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://ClaimsAdjLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons2="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons3="http://ClaimsAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="ClaimProviderCommonRulesBO.xsd"/>    
+    <xsd:include schemaLocation="ClaimProviderLineItemRulesBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="ClaimProviderRulesBO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="billingProviderCommonVO" type="bons2:ClaimProviderCommonRulesBO"/>
+          <xsd:element minOccurs="0" name="otherProviderCommonVO" type="bons2:ClaimProviderCommonRulesBO"/>
+          <xsd:element minOccurs="0" name="payToProviderCommonVO" type="bons2:ClaimProviderCommonRulesBO"/>
+          <xsd:element minOccurs="0" name="claimProviderLineItemRulesVO" type="bons2:ClaimProviderLineItemRulesBO" maxOccurs="unbounded"/>
+            <xsd:element minOccurs="0" name="refferingProviderCommonVO" type="bons2:ClaimProviderCommonRulesBO"/>
+            <xsd:element minOccurs="0" name="attendingProviderCommonVO" type="bons2:ClaimProviderCommonRulesBO"/>
+        </xsd:sequence>
+        
+            
+    </xsd:complexType>
+</xsd:schema>

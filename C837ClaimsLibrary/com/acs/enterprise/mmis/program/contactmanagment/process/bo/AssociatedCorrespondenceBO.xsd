@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="AssociatedCorrespondenceBO">
+        <xsd:annotation>
+      
+    <xsd:documentation>This domain object holds the associated correspondence  details</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+            <xsd:element minOccurs="0" name="category" type="xsd:long">
+        <xsd:annotation>
+          <xsd:documentation>The correspondence category in which the cr is belongs to.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="correspondenceRecordNumber" type="xsd:long">
+        <xsd:annotation>
+          <xsd:documentation>The correspondence record number</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="openDt" type="xsd:date">
+        <xsd:annotation>
+          <xsd:documentation>The date the correspondence was opened.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="status" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Under Review, Closed, etc.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="subject" type="xsd:long">
+        <xsd:annotation>
+          <xsd:documentation>The subject key where subject related information is there</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+        </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

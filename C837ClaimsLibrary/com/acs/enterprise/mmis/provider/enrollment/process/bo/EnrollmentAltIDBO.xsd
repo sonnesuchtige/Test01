@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/common/domain" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">   
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="ProviderBO.xsd"/>
+    <xsd:complexType name="EnrollmentAltIDBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">        <xsd:sequence>
+          <xsd:element minOccurs="0" name="enrolAlternateID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="enrolAlternateIDSeqNumber" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="enrolAlternateIDTypeCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="enrolAlternateIDBeginDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="enrolAlternateIDEndDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="taxReportingIndicator" type="xsd:boolean"/>
+        </xsd:sequence>                                          
+            
+    
+  
+                    
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

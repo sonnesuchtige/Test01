@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="AccidentInfoBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="accidentQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentPeriodQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentDateTime1" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="accidentQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentPeriodQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentDateTime2" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="accidentQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentPeriodQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentDateTime3" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="accidentQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentPeriodQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentDateTime4" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="accidentQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentPeriodQualifierCode5" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentDateTime5" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="accidentQualifierCode6" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentPeriodQualifierCode6" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentDateTime6" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="accidentQualifierCode7" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentPeriodQualifierCode7" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentDateTime7" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="accidentQualifierCode8" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentPeriodQualifierCode8" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentDateTime8" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="accidentQualifierCode9" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentPeriodQualifierCode9" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentDateTime9" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="accidentQualifierCode10" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentPeriodQualifierCode10" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="accidentDateTime10" type="xsd:date"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

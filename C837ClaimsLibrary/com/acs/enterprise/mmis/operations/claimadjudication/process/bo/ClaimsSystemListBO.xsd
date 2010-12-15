@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="ClaimsSystemListBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="endDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="beginValue" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endValue" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

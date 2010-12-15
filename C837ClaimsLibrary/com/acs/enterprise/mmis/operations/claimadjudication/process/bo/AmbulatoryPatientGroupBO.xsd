@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="AmbulatoryPatientGroupBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="apgQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="apgCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="apgQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="apgCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="apgQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="apgCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="apgQualifierCode4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="apgCode4" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="ClaimTPLInfoBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="ClaimTPLAmountInfoBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element name="lineNumber" type="xsd:int" minOccurs="0"/>
+          <xsd:element name="allowedAmount" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="coinsuranceAmount" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="deductibleAmount" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="billedAmount" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="paidAmount" type="xsd:double" minOccurs="0"/>
+          <xsd:element name="patientResponsibleAmount" type="xsd:double" minOccurs="0"/>
+                </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

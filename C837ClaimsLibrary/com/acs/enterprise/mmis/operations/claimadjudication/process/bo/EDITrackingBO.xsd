@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EDITrackingLibrary/com/acs/enterprise/common/ediinboundtracking/process/bo" xmlns:bons0="http://EDITrackingLibrary/com/acs/enterprise/common/edioutboundtracking/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../common/edioutboundtracking/process/bo/EDIOutboundTrackingBO.xsd" namespace="http://EDITrackingLibrary/com/acs/enterprise/common/edioutboundtracking/process/bo"/>
+    <xsd:import schemaLocation="../../../../../common/ediinboundtracking/process/bo/EDIInboundTrackingBO.xsd" namespace="http://EDITrackingLibrary/com/acs/enterprise/common/ediinboundtracking/process/bo"/>
+    <xsd:complexType name="EDITrackingBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="ediInboundTracking" type="bons1:EDIInboundTrackingBO"/>
+      <xsd:element minOccurs="0" name="ediOutboundTracking" type="bons0:EDIOutboundTrackingBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

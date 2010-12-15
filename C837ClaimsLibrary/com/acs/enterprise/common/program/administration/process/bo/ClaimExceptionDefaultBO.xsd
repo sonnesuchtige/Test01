@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="LocationTextBO.xsd"/>
+    <xsd:include schemaLocation="ClaimExceptionBO.xsd"/>
+    <xsd:complexType name="ClaimExceptionDefaultBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="claimEOBCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="secureClerkId" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="trackingNum" type="xsd:int"/>
+            <xsd:element minOccurs="0" name="uncleanClaimInd" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="drugOverrideInd" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="claimAdjRejCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="claimException" type="bons0:ClaimExceptionBO"/>
+            <xsd:element minOccurs="0" name="locationCode" type="bons0:LocationTextBO"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo" targetNamespace="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo">
+    <xsd:include schemaLocation="EDMSIndexBO.xsd"/>
+    <xsd:include schemaLocation="EDMSUserKeyBO.xsd"/>
+    <xsd:complexType name="EDMSPageInfoBO">
+        <xsd:annotation>
+      <xsd:documentation>This is the return object from the EDMS ESB modules for Get Document information Module</xsd:documentation>
+    </xsd:annotation>
+        <xsd:sequence>
+      <xsd:element minOccurs="0" name="strAccount" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This attribute stores Company name which is part of EDMS Cascade structure</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="strCompany" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This attribute stores Department name which is part of EDMS Cascade structure.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="strDepartment" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This attribute stores Account name which is part of EDMS Cascade structure</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="strDocument" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This attribute stores Folder name which is part of EDMS Cascade structure</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="strFolder" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This attribute stores Document name which is part of EDMS Cascade structure</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="1" name="strPageID" type="xsd:string">
+        <xsd:annotation>
+          
+        <xsd:documentation>This attribute stores EDMS pageID which is a unique key id representing file stored in EDMS.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="trueCreatedDate" type="xsd:string"/>
+            <xsd:element minOccurs="1" name="userKey" type="bons0:EDMSIndexBO" maxOccurs="unbounded">
+        <xsd:annotation>
+          
+        <xsd:documentation>This attribute stores array of EDMSUserKeyBO which contain Enterprise index key values.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="strLoginId" type="xsd:string"/>
+        </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

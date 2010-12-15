@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+  <xsd:complexType name="MemberInformationRequestBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="altID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="altIDTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="memberSysID" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="asOfDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="showVoids" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="previousNamesRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="eligibilitySpansRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="enrollmentSpansRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="liabilitySpansRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="medicareSpansRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="pcpSpansRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="memberBPOptionsRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="disabilityInfoRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="tplSpansRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="ltcSpansRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="lockinSpansRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="eligibilityGuaranteeRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="alternateMemberRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="buyinTransactionRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="previousDateOfBirthRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="previousDateOfDeathRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="previousEthinicityRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="previousGenderRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="previousLivingArrangementRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="previousMedicareRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="previousSSNRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="suspectDuplicateRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="spendDownRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="swipeCardRequired" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="swipeRequestRequired" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="demographySpansRequired" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="sourceOfRequest" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="endDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="providerSysID" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="ssn" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="dob" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="caseNum" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="benefitPlanServiceLimitRequired" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="caseRequired" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="caseRepresentativeRequired" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="saDetailsRequired" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="claimDetailsRequired" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="commonEntityRequired" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="representativeRequired" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="addressRequired" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="commonReviewRequired" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="strAsOfDate" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

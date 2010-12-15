@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/mmis/common/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons3="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Q1="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons4="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo">
+    
+
+    <!--xsd:include schemaLocation="CommonEntityBO.xsd"/-->
+    <xsd:include schemaLocation="RepCommonEntityBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.administration.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo"/>
+    <xsd:include schemaLocation="CommonEntityRepCrossReferenceBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+    <xsd:complexType name="RepresentativeBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">        <xsd:sequence>
+      <xsd:element minOccurs="0" name="representativeSK" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="namePrefixCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ssnNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dateOfBirth" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="dateOfDeath" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="genderCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="phoneticFirstName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="phoneticLastName" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="name" type="bons0:NameBO"/>
+                    <!--xsd:element minOccurs="0" name="repCommonEntity" type="Q1:CommonEntityBO"/-->
+                    <xsd:element minOccurs="0" name="organizationName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="commonEntityTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="cmnEntityRep" type="Q1:RepCommonEntityBO"/>
+                </xsd:sequence>                          
+                    
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

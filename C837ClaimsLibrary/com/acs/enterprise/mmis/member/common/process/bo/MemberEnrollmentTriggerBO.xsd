@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:include schemaLocation="DetermineBPTriggerBO.xsd"/>
+    <xsd:include schemaLocation="LetterGenerationBO.xsd"/>
+    <xsd:include schemaLocation="AutoAssignmentTriggerBO.xsd"/>
+    <xsd:include schemaLocation="MassEnrollmentTriggerBO.xsd"/>
+    <xsd:complexType name="MemberEnrollmentTriggerBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="massEnrollmentTrigger" type="bons0:MassEnrollmentTriggerBO"/>
+      <xsd:element minOccurs="0" name="autoAssignmentTrigger" type="bons0:AutoAssignmentTriggerBO"/>
+      <xsd:element minOccurs="0" name="letterGeneration" type="bons0:LetterGenerationBO"/>
+      <xsd:element minOccurs="0" name="determineBPTrigger" type="bons0:DetermineBPTriggerBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

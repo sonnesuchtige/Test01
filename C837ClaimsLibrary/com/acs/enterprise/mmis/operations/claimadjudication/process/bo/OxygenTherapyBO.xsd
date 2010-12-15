@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="OxygenTherapyBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="certificationTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="certificationPeriod" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="bloodGasQuantity" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="saturationQuantity" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="testConditionCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dependantEdemaIndicator" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="pulmonaleIndicator" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="erythrocythemiaIndicator" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dependantEdemaQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dependantEdemaPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dependantEdemaTestDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="pulmonaleQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="pulmonalePeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="pulmonaleTestDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="erythrocythemiaQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="erythrocythemiaPeriodQualifierCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="erythrocythemiaTestDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="dependantEdemaCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="pulmonaleCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="erythrocythemiaCode" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

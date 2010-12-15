@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:complexType name="EnterpriseClaimLineItemAuxBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="networkID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="serviceComponentCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="revenueCodeReqsProcIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="preOpLimitDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="memberAge" type="xsd:int"/>
+            <xsd:element minOccurs="0" name="cliaNumber" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="levelOfCareCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="familyPlanIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="tplIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="allowanceUnitIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="retentionCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="serviceAuthTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="referralID" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="liableAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="federalFundAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="stateFundAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="countyFundAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="otherFundAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="checkLineNumber" type="xsd:int"/>
+            <xsd:element minOccurs="0" name="checkResultCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="checkStatusCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="managedCareCoPayAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="coeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="memberLockInTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="submittedLineNumber" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="memberLockInSystemID" type="xsd:long"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

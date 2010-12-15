@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" xmlns:bons3="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo">
+    <xsd:import schemaLocation="../../../administration/process/bo/LineOfBusinessBO.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo"/>
+    <xsd:complexType name="EmailAddressUsageLOBBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="endDate" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="lineOfBusiness" type="bons3:LineOfBusinessBO"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

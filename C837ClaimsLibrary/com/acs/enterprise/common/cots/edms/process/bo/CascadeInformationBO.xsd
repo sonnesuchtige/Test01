@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="CascadeInformationBO">
+        <xsd:annotation>
+      
+    <xsd:documentation>The cascade information present in the property file will be populated into this BO</xsd:documentation>
+    </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="strAccount" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="strCompanyName" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="strDepartment" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="strDocumentType" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="strFolder" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="strGroupName" type="xsd:string"/>
+        </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

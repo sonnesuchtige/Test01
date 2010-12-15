@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="C837ClaimParent.xsd"/>
+    <xsd:complexType name="ClaimProcessContextBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="claimParent" type="bons0:C837ClaimParent"/>
+      <xsd:element minOccurs="0" name="claimSourceID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="transactionID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="pageID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="faultName" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="cycleNumber" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="memberSystemID" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

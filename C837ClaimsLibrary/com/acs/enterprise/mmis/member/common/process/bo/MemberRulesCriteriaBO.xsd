@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+
+<xsd:complexType name="MemberRulesCriteriaBO">
+
+<xsd:sequence>
+
+<xsd:element minOccurs="0" name="actionCode" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="interfaceType" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="invocationType" type="xsd:string"/>
+
+<xsd:element minOccurs="0" name="maxThresholdErrorCount" type="xsd:int"/>
+
+</xsd:sequence>
+
+</xsd:complexType>
+
+</xsd:schema>

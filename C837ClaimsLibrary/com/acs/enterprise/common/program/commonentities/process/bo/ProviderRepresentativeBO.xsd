@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo">
+    <xsd:include schemaLocation="ProviderRepresentativeIDBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="CommonEntityRepCrossReferenceBO.xsd"/>
+    <xsd:complexType name="ProviderRepresentativeBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons2:EnterpriseBaseDomainBO">        <xsd:sequence>
+          <xsd:element minOccurs="0" name="businessName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="taxID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="providerRepresetativePositionCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="managedEmpMedicaidStateCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="managedEmpBirthCountyCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="managedEmpIDNumber" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="managedEmpBirthCountryCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="managedEmpDbaBusinessName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="remittanceAdviceBusinessAttnName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="dbaName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="managedEmpBirthStateCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="stateOrCountryOfBirth" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="providerRepresentativeIDs" type="bons0:ProviderRepresentativeIDBO" maxOccurs="unbounded"/>
+                </xsd:sequence>                          
+                    
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

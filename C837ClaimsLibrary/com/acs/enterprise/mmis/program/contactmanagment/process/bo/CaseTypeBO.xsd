@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:Q1="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons0="http://ContactMangementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons1="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:include schemaLocation="CaseRecordBO.xsd"/>
+    <xsd:include schemaLocation="CaseTypeEventBO.xsd"/>
+  
+    <xsd:include schemaLocation="CustomFieldAssignBO.xsd"/>
+    
+    <xsd:complexType name="CaseTypeBO">
+    <xsd:sequence>
+            <xsd:element minOccurs="0" name="caseTypeSteps" type="Q1:CaseTypeStepBO"/>
+            <xsd:element minOccurs="0" name="caseTypeEvents" type="Q1:CaseTypeEventBO"/>
+            <xsd:element minOccurs="0" name="businessUnitCaseTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="customFieldAssignments" type="Q1:CustomFieldAssignBO"/>
+            <xsd:element minOccurs="0" name="description" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="shortDescription" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="statusTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="supervisorReviewReqIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="valuesProtectedIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="caseTypeSK" type="xsd:long"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

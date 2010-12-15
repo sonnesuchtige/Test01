@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+  <xsd:complexType name="MemberSearchCriteriaBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="ssn" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dob" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="firstName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lastName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="middleName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="gender" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="zipCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="searchTypeAltID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="searchTypeAltIDValue" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="endDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="benefitBeginDate" type="xsd:date"/>
+            <xsd:element minOccurs="0" name="benefitEndDate" type="xsd:date"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

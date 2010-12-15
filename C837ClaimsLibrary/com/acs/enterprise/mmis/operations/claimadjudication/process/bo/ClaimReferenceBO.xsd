@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="NationalDrugCodeBO.xsd"/>
+    <xsd:include schemaLocation="ClaimsSystemListBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.administration.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo"/>
+    <xsd:include schemaLocation="DiagnosisBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="ClaimReferenceBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="diagnosisCodeList" type="bons2:DiagnosisCodeBO" maxOccurs="unbounded"/>
+          <xsd:element minOccurs="0" name="procedureCodeList" type="bons2:ProcedureCodeBO" maxOccurs="unbounded"/>
+          <xsd:element minOccurs="0" name="surgicalProcedureCodeList" type="bons2:ICDSurgicalProcedureBO" maxOccurs="unbounded"/>
+          <xsd:element minOccurs="0" name="revenueCodeList" type="bons2:RevenueCodeBO" maxOccurs="unbounded"/>
+          <xsd:element minOccurs="0" name="highRiskPregnancySystemList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="highRiskPregnancyDiagnosisSystemList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="liveBornDiagSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="accomodationRevCodeSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="labRevenueCodesSystemList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="abortionAttachmentCodesSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="sterilizationHysterectomyCodesSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="revCodeReqProcCodeSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="petScanProcSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="snfProcSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="revCodeReqSurgProcCodeList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="revCodeReqTOBProcCodeSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="revCodePosFamPlngSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="famPlngDRGCodeSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="nationalDrugCodes" type="bons1:NationalDrugCodeBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="DischPatientStatSysCodeSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="RevCodesWUnitsGtCovDays" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="timeOfDayModifiersSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="dentlBrokeLateApptSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="dntlPrcCdsRqISfc" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="diabeteMellitusDiag" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="ambProcSystemList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="procRqDiagPty80BypSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="procRqDiagPty81BypSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="procRqDiagPty82BypSysList" type="bons1:ClaimsSystemListBO" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

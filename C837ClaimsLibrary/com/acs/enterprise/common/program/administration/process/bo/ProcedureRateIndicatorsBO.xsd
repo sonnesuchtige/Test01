@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+  <xsd:complexType name="ProcedureRateIndicatorsBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="providerTypeRateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="providerBPRateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="procedureProvRateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="providerSpecialtyRateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="procedureBPRateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="procedureCOSRateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="procedurePLOSRateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="procedureModifierRateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="modifiedPLOSRateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="providerTaxonomyRateIndicator" type="xsd:boolean"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

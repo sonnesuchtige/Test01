@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="LocationTextBO.xsd"/>
+    <xsd:complexType name="ClaimExceptionLocationBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="batchDocumentTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="batchMediaSourceCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="claimTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="secureClerkID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="locationCode" type="bons0:LocationTextBO"/>
+      <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

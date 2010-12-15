@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:complexType name="ReviewSvcBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="reviewServiceTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="reviewBeginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="reviewEndDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="reviewServiceFromCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="reviewServiceThruCode" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.ProviderEnrollmentLibrary.com.acs.enterprise.mmis.provider.enrollment.process.bo.xsd" namespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo"/>
+    <xsd:complexType name="EligibilityGuaranteeBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="guaranteeNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ssnNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="guaranteeFromDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="guaranteeToDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="altID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="provider" type="bons0:ProviderBO"/>
+      <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

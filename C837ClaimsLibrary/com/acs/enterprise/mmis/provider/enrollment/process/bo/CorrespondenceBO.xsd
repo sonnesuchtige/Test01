@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.administration.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="CorrespondenceBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="priorityDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="authorizationNumber" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="transactionNumber" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="lineOfBusiness" type="bons1:LineOfBusinessBO"/>
+          <xsd:element minOccurs="0" name="correspondenceSK" type="xsd:long"/>
+          <xsd:element minOccurs="0" name="sensitiveDataIndicator" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="daysToCloseNumber" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="responseExistsIndicator" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="responseHasFileIndicator" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="responseAllClosedIndicator" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="supervisorReviewReqIndicator" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="statusCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="resolutionCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="priorityCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="sourceCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="openDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="statusDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="subjectCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="edmsDocTypeCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="receivedDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="lineOfBusinessHierarchy" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="representative" type="bons2:RepresentativeBO"/>
+          <xsd:element minOccurs="0" name="correspondenceCategory" type="xsd:string"/>
+        </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

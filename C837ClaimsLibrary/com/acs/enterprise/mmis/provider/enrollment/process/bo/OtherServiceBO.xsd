@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/common/domain" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="OtherServiceBO">
+        <xsd:annotation>
+      <xsd:documentation>This object holds Other Service Information.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">        <xsd:sequence>
+      <xsd:element minOccurs="0" name="serviceTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="serviceSequenceNumber" type="xsd:int"/>
+            <xsd:element minOccurs="0" name="serviceCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="serviceTypeSK" type="xsd:long"/>
+                </xsd:sequence>                        </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

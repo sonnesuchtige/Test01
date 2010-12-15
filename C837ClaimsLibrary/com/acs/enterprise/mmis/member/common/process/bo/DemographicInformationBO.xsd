@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons2="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:include schemaLocation="SuspectDuplicateBO.xsd"/>
+    <xsd:include schemaLocation="DisabilityInformationBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+ 
+    <xsd:include schemaLocation="AlternateMemberIDBO.xsd"/>
+    <xsd:include schemaLocation="RaceBO.xsd"/>
+    <xsd:include schemaLocation="PregnancyInformationBO.xsd"/>
+    <xsd:include schemaLocation="EmploymentInformationBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd"/>
+    <xsd:complexType name="DemographicInformationBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="peProviderAltID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="peProviderAltIDTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="phoneticSearchFirstName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="phoneticSearchLastName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="confidentiality" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dateOfBirth" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="updateDateOfDeath" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="vip" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="demoLock" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ssnVerification" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="medicareVerification" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="department" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="gender" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ethinicCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="primaryLanguage" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="citizenship" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="livingArrangement" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="maritalStatus" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="caseFormNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="dateOfDeath" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="dodVerification" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="applicationDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="medicaidCertDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="expectedConfinementDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="tribalAffiliation" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="familyStatusCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="reviewBeginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="reviewEndDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="deliveryUpdatedDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="updateVerification" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="updateDateOfDeathUserID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="hsCompletionIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="omitFromArchiveIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="stopMSQIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hchkLetterIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="name" type="bons0:NameBO"/>
+            <xsd:element minOccurs="0" name="employmentInfo" type="bons2:EmploymentInformationBO"/>
+            <xsd:element minOccurs="0" name="pregnancyInfo" type="bons2:PregnancyInformationBO"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="race" type="bons2:RaceBO"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="alternateMemberID" type="bons2:AlternateMemberIDBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="disabilityInfo" type="bons2:DisabilityInformationBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="suspectDuplicate" type="bons2:SuspectDuplicateBO"/>
+                    <xsd:element minOccurs="0" name="socialSecurityEntitlementDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="altPayeeIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="incmgTxnTypeCode" type="xsd:string"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

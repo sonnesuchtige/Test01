@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons3="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo">
+    <xsd:include schemaLocation="AddressPhoneUsageBO.xsd"/>
+    <xsd:include schemaLocation="AddressRepCrossReferenceBO.xsd"/>
+    <xsd:include schemaLocation="CommonEntityBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="AddressUsageLOBBO.xsd"/>
+    <xsd:include schemaLocation="AddressBO.xsd"/>
+    <xsd:complexType name="AddressUsageBO">
+    <xsd:complexContent>
+        <xsd:extension base="bons3:EnterpriseBaseDomainBO">
+	        <xsd:sequence>
+				<xsd:element minOccurs="0" name="addressUsageTypeCode" type="xsd:string"/>
+				<xsd:element minOccurs="0" name="addressSK" type="xsd:long"/>
+				<xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+				<xsd:element minOccurs="0" name="endDate" type="xsd:date"/>
+				<xsd:element minOccurs="0" name="addressUsageSigCode" type="xsd:string"/>
+				<xsd:element minOccurs="0" name="changeReasonCode" type="xsd:string"/>
+				<xsd:element minOccurs="0" name="statusCode" type="xsd:string"/>
+				<xsd:element minOccurs="0" name="address" type="bons0:AddressBO"/>
+				<xsd:element minOccurs="0" name="addressRepCrossReferences" type="bons0:AddressRepCrossReferenceBO" maxOccurs="unbounded"/>
+				<xsd:element minOccurs="0" name="addressPhoneUsages" type="bons0:AddressPhoneUsageBO" maxOccurs="unbounded"/>
+				<xsd:element minOccurs="0" name="addressUsageSequenceNumber" type="xsd:int"/>
+				<xsd:element minOccurs="0" name="addressUsageGlobalSigCode" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="incmgTxnTypeCode" type="xsd:string"/>
+                <!--<xsd:element minOccurs="0" name="commonEntity" type="bons0:CommonEntityBO"/>-->		
+				<xsd:element minOccurs="0" name="dummyInd" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="alternateMailID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="alternatePayeeID" type="xsd:string"/>
+                </xsd:sequence>                                        
+        </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

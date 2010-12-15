@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" xmlns:bons1="http://AddressValidationLibrary/com/acs/enterprise/common/cots/addressvalidation/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.AddressValidationLibrary.com.acs.enterprise.common.cots.addressvalidation.bo.xsd" namespace="http://AddressValidationLibrary/com/acs/enterprise/common/cots/addressvalidation/bo"/>
+    <xsd:include schemaLocation="ProviderBO.xsd"/>
+    <xsd:include schemaLocation="PrvRulesResultBO.xsd"/>
+    <xsd:complexType name="ProviderAppMntResponseBO">
+    <xsd:sequence>
+            <xsd:element minOccurs="0" name="provider" type="bons0:ProviderBO"/>
+            <xsd:element minOccurs="0" name="addressResponseDataArray" type="bons1:AddressResponseDataArrayBO"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="StatusBO">
+        <xsd:sequence>
+        <xsd:element name="denialReason" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="terminationReason" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="alertDate" type="xsd:date" minOccurs="0"/>
+      <xsd:element name="overrideLocationCode" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="overrideUserID" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="statusDate" type="xsd:date" minOccurs="0"/>
+      <xsd:element name="statusCode" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="originalStatus" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="originalStatusDate" type="xsd:date" minOccurs="0"/>
+      <xsd:element name="originalAuthorizingID" type="xsd:string" minOccurs="0"/>
+            <xsd:element minOccurs="0" name="locationCode" type="xsd:string"/>
+        </xsd:sequence>
+        
+      
+    </xsd:complexType>
+</xsd:schema>

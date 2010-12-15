@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo">
+    <xsd:complexType name="EDMSIndexBO">
+        <xsd:annotation>
+      <xsd:documentation>This BO is the User Key and Value Mapping. This is used to pass the user key information to the EDMSFileClientESB module. The user key contains the Docfinity understandable user key name. In EDMSUpdateIndex SCA module looks into DB table for various user keys name and its mapping what Docfinity Understands.</xsd:documentation>
+    </xsd:annotation>
+        <xsd:sequence>
+      <xsd:element minOccurs="0" name="strUserKey" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This attribute stores EDMS index key name.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="strUserKeyVal" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This attribute stores EDMS index key value.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

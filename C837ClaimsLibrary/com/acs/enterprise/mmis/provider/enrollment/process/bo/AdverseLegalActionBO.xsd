@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="AdverseLegalActionBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="adverseLegalActionCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="qstnrLegalActionDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="qstnrLawEnforceAuthName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="qstnrResolutionData" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="qstnrBusinessName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="name" type="bons0:NameBO"/>
+      <xsd:element minOccurs="0" name="qstnrSSNNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="qstnrDateOfBirth" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="qstnrSequenceNumber" type="xsd:int"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

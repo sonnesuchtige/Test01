@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo">
+    <xsd:import schemaLocation="../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="AppealTrackingBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="caseSK" type="xsd:long"/>
+          <xsd:element minOccurs="0" name="appealTypeCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="caseAppealStatusCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="caseAppealTypeCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="appealDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="commonEntityType" type="bons1:CommonEntityTypeBO"/>
+          <xsd:element minOccurs="0" name="caseAppealDisputeCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="caseAppealResultsCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="caseAppealReasonCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="transactionControlNumber" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="caseAppealStatusCodeDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="caseAppealDistrictOfficeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="previousAppealNumber" type="xsd:long"/>
+                    <xsd:element minOccurs="0" name="additionalInfoReqdDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="additionalInfoDueDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="additionalInfoNotifyLtrSentDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="additionalInfoRecvd2ndReqdDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="additionalInfoRecvdDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="additionalInfoRevisedReviewDueDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="additionalInfo2ndRevisedDueDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="additionalInfoAauOfficerName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="additionalInfoRespReqdDueDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="additionalInfoMotionTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="additionalInfoMotionFiledDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="additionalInfoFileLocationCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="additionalInfoClientRepresentName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="assignedDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="dhhsDescDueDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="dhhsNotifyLtrSentDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="dhhsSentDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="dhhsDescCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="informalReviewAckSentDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="informalReviewDueDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="informalReviewRequiredDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="informalReviewSentDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="programTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="reconsiderationDescCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="reconsiderationDescDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="reconsiderationNotifyLtrSentDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="reconsiderationReviewerName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="reconsiderationReturnDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="reconsiderationOrderDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="reviewerName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="saDenyDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="saReceivedDate" type="xsd:date"/>
+                </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

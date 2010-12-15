@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:include schemaLocation="EventReasonBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="ProviderEventBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="eventCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="eventUserID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="eventProcessIndicator" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="eventTypeCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="eventNoteText" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="eventTimestamp" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="eventReason" type="bons1:EventReasonBO" maxOccurs="unbounded"/>
+          <xsd:element minOccurs="0" name="eventSK" type="xsd:long"/>
+        </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

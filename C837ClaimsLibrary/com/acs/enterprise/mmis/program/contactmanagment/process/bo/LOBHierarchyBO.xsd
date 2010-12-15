@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Q1="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons0="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:include schemaLocation="DepartmentBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.administration.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="CorrespondenceRecordBO.xsd"/>
+    <xsd:complexType name="LOBHierarchyBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="lobHierarchyDescription" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>The description of the lob&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="lobHierarchyLevelNumber" type="xsd:integer">
+        <xsd:annotation>
+          <xsd:documentation>the level number in the hierarchy&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+            <xsd:element minOccurs="0" name="voidIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="lineOfBusinessHierarchySK" type="xsd:long">
+        <xsd:annotation>
+          <xsd:documentation>The lob hierarchy key&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+                    <xsd:element minOccurs="0" name="lineOfBusiness" type="bons2:LineOfBusinessBO"/>
+                    <xsd:element minOccurs="0" name="departments" type="Q1:DepartmentBO"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

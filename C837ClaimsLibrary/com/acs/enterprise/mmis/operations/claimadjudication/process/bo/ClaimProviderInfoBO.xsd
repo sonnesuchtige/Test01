@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:bons1="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="ServiceFacilityBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo"/>
+    <xsd:complexType name="ClaimProviderInfoBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:ServiceFacilityBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="providerCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="contactCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="contactName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationQualifierCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationNumber1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationQualifierCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationNumber2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationQualifierCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="communicationNumber3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="providerName" type="bons0:NameBO"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

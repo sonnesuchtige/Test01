@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons2="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="ValueBO.xsd"/>
+    <xsd:include schemaLocation="SurgicalProcedureBO.xsd"/>
+    <xsd:include schemaLocation="OccurrenceSpanBO.xsd"/>
+    <xsd:include schemaLocation="OccurrenceCodeBO.xsd"/>
+    <xsd:include schemaLocation="ConditionCodeBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="CoverageAdmissionBO">
+        <xsd:sequence>
+          <xsd:element name="typeOfBillCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="coveredDays" type="xsd:int" minOccurs="0"/>
+          <xsd:element name="medicalRecord" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="patientStatusCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="admitSourceCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="admitTypeCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="billedHours" type="xsd:int" minOccurs="0"/>
+          <xsd:element name="nonCoveredDays" type="xsd:int" minOccurs="0"/>
+          <xsd:element name="lengthOfStay" type="xsd:int" minOccurs="0"/>
+          <xsd:element maxOccurs="unbounded" name="conditionCode" type="bons2:ConditionCodeBO" minOccurs="0"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="occurrenceCode" type="bons2:OccurrenceCodeBO"/>
+          <xsd:element maxOccurs="unbounded" name="occurrenceSpan" type="bons2:OccurrenceSpanBO" minOccurs="0"/>
+          <xsd:element maxOccurs="unbounded" name="surgicalProcedure" type="bons2:SurgicalProcedureBO" minOccurs="0"/>
+          <xsd:element maxOccurs="unbounded" name="value" type="bons2:ValueBO" minOccurs="0"/>
+            <xsd:element minOccurs="0" name="fundCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="admitHour" type="xsd:int"/>
+            <xsd:element minOccurs="0" name="dischargeHour" type="xsd:int"/>
+        </xsd:sequence>
+        
+      
+    </xsd:complexType>
+</xsd:schema>

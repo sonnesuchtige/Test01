@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:include schemaLocation="ICDSurgicalProcedureDetailBO.xsd"/>
+    <xsd:include schemaLocation="ICDSurgicalProcedureFormerCodeBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="ICDSurgicalProcedureBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="grouperVersionNumber" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="icdSurgicalProcedureCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="longDescription" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="shortDescription" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="icdVersionCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="endDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="noteSet" type="bons2:NoteBO" maxOccurs="1"/>
+          <xsd:element minOccurs="0" name="icdSurgicalProcedureDetails" type="bons1:ICDSurgicalProcedureDetailBO" maxOccurs="unbounded"/>
+          <xsd:element minOccurs="0" name="icdSurgicalProcedureFormerCodes" type="bons1:ICDSurgicalProcedureFormerCodeBO" maxOccurs="unbounded"/>
+        </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

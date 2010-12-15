@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="ProgramBasePricingBO.xsd"/>
+    <xsd:include schemaLocation="RevenueCodeBO.xsd"/>
+    <xsd:complexType name="RevenuePricingBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:ProgramBasePricingBO">
+                <xsd:sequence>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

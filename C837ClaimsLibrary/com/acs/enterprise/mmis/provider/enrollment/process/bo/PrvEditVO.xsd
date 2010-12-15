@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+  <xsd:include schemaLocation="EditVO.xsd"/>
+  <xsd:complexType name="PrvEditVO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EditVO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="validValues" type="xsd:string" maxOccurs="unbounded"/>
+        </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

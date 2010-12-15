@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons1="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:include schemaLocation="PrvEditBO.xsd"/>
+    <xsd:complexType name="FaultBO">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="editBO" type="bons1:PrvEditBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

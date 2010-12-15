@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo">
+  <xsd:complexType name="EDMSCommonReturnBO">
+        <xsd:annotation>
+      
+    <xsd:documentation>This is the return object from the EDMS ESB module.</xsd:documentation>
+    </xsd:annotation>
+        <xsd:sequence>
+      <xsd:element minOccurs="1" name="strModuleName" type="xsd:string">
+        <xsd:annotation>
+          
+        <xsd:documentation>&#13;
+This attribute stores ModuleName used to retrieve cascade information from properties file.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="1" name="strSessionToken" type="xsd:string">
+        <xsd:annotation>
+          
+        <xsd:documentation>This attribute stores session token used to maintain session in EDMS.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="strErrorDescription" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This attribute stores error description information returned from EDMS.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="strErrorLevel" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This attribute stores error level returned from EDMS.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="strErrorMessage" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This attribute stores error message returned from EDMS.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="strReturnValue" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>This attribute stores return value from EDMS.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

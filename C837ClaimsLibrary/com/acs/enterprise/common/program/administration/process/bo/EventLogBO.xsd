@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+  <xsd:complexType name="EventLogBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="eventLoggingSK" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="eventTimeStamp" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="eventUserID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="eventLoggingTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="eventCode" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

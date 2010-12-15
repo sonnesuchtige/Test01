@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+  <xsd:complexType name="LetterGenerationBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="letterID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="enterpriseID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="freeFormText" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="code" type="xsd:int"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

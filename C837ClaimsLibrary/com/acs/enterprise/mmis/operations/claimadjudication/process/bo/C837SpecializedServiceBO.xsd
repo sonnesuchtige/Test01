@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="C837ProfessionalLineItemBO.xsd"/>
+    <xsd:include schemaLocation="RepricedClaimInfoBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+    <xsd:include schemaLocation="PatientVisionConditionBO.xsd"/>
+    <xsd:include schemaLocation="AmbulanceInfoBO.xsd"/>
+    <xsd:include schemaLocation="ReplacedClaimInfoBO.xsd"/>
+    <xsd:include schemaLocation="ClaimAuxBO.xsd"/>
+    <xsd:complexType name="C837SpecializedServiceBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="spinalConditionCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="spinalConditionDescription1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="spinalConditionDescription2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="spinalXRayAvailabilityIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="homeboundCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="homeboundIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="homeboundConditionCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="espdtCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="epsdtIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="espdtConditionCode1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="espdtConditionCode2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="espdtConditionCode3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="repricedClaimInfo" type="bons0:RepricedClaimInfoBO"/>
+      <xsd:element minOccurs="0" name="ambulanceInfo" type="bons0:AmbulanceInfoBO"/>
+      <xsd:element minOccurs="0" name="patientVisionCondition" type="bons0:PatientVisionConditionBO"/>
+                    <xsd:element minOccurs="0" name="noteCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="noteText" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="c837ProfessionalLineItems" type="bons0:C837ProfessionalLineItemBO" maxOccurs="unbounded"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

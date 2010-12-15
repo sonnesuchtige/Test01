@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="ConditionCodeInfoBO.xsd"/>
+    <xsd:include schemaLocation="PatientBO.xsd"/>
+    <xsd:include schemaLocation="ResponsiblePartyBO.xsd"/>
+    <xsd:include schemaLocation="PayerBO.xsd"/>
+    <xsd:include schemaLocation="SubscriberInfoBO.xsd"/>
+    <xsd:complexType name="C837PayerBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:ConditionCodeInfoBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="subscriber" type="bons0:SubscriberInfoBO"/>
+      <xsd:element minOccurs="0" name="payer" type="bons0:PayerBO"/>
+      <xsd:element minOccurs="0" name="responsibleParty" type="bons0:ResponsiblePartyBO"/>
+      <xsd:element minOccurs="0" name="patient" type="bons0:PatientBO"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons1="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:include schemaLocation="ProviderReviewLobBO.xsd"/>
+    <xsd:include schemaLocation="ProviderReviewServiceBO.xsd"/>
+    <xsd:include schemaLocation="ProviderReviewClaimBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="ProviderReviewBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="sequenceNumber" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="endDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="actionCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="reasonCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="locationCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="reviewDateCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="reviewDateInd" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="reviewSourceCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="reviewDepartmentData" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="providerReviewClaim" type="bons1:ProviderReviewClaimBO" maxOccurs="unbounded"/>
+          <xsd:element minOccurs="0" name="providerReviewService" type="bons1:ProviderReviewServiceBO" maxOccurs="unbounded"/>
+          <xsd:element minOccurs="0" name="providerReviewLob" type="bons1:ProviderReviewLobBO" maxOccurs="unbounded"/>
+        </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

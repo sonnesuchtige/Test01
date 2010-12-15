@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/benefitadministration/process/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:bons3="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:import schemaLocation="../../../../../common/program/benefitadministration/process/bo/MapSetHeaderBO.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/mmis/member/common/process/bo"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.administration.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo"/>
+    
+    <xsd:import schemaLocation="../../../../../common/program/benefitadministration/process/bo/BenefitPlanMainBO.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/benefitadministration/process/bo"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="BenefitPlanLimitBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="benefitPlanNetworkStatusCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="typeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="mapSetID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="rankNum" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="endDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="indPlusAmt" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="indAmt" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="famAmt" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="ctbckIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="saBYPSIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="benefitPlan" type="bons0:BenefitPlanMainBO"/>
+                    <xsd:element minOccurs="0" name="strBeginDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="mapSetHeader" type="bons2:MapSetHeaderBO"/>
+                    <xsd:element minOccurs="0" name="overClaimException" type="bons3:ClaimExceptionBO"/>
+                    <xsd:element minOccurs="0" name="claimException" type="bons3:ClaimExceptionBO"/>
+                    <xsd:element minOccurs="0" name="benefitPlanLimitID" type="xsd:long"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

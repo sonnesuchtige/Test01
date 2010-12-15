@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons2="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:include schemaLocation="ClaimDataValidationLineItemRulesBO.xsd"/>    
+  <xsd:complexType name="ClaimDataValidationRulesBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">     
+                <xsd:sequence>
+          <xsd:element name="locationCodeNotInSL" type="xsd:boolean" default="true" minOccurs="0"/>
+          <xsd:element name="medicalDiagnosisCodeNotInSL" type="xsd:boolean" default="true" minOccurs="0"/>
+          <xsd:element name="typeOfBillNotInSL" type="xsd:boolean" default="true" minOccurs="0"/>
+          <xsd:element name="admitSourceNotInSL" type="xsd:boolean" default="true" minOccurs="0"/>
+          <xsd:element name="admitTypeNotInSL" type="xsd:boolean" default="true" minOccurs="0"/>
+          <xsd:element name="admitHourNotInSL" type="xsd:boolean" default="true" minOccurs="0"/>
+          <xsd:element name="adjustmentReasonCodeNotInSL" type="xsd:boolean" default="true" minOccurs="0"/>
+          <xsd:element name="fcnCodeNotInSL" type="xsd:boolean" default="true" minOccurs="0"/>
+          <xsd:element name="hospitaldischargeCodeNotInSL" type="xsd:boolean" default="true" minOccurs="0"/>
+          <xsd:element name="conditionCodeNotInSL" type="xsd:boolean" maxOccurs="unbounded" minOccurs="0"/>
+          <xsd:element name="relatedCauseCodeNotInSL" type="xsd:boolean" maxOccurs="unbounded" minOccurs="0"/>
+          <xsd:element name="occurenceCodeNotInSL" type="xsd:boolean" maxOccurs="unbounded" minOccurs="0"/>
+          <xsd:element name="occurSpanCodeNotInSL" type="xsd:boolean" maxOccurs="unbounded" minOccurs="0"/>
+          <xsd:element name="valueCodeNotInSL" type="xsd:boolean" maxOccurs="unbounded" minOccurs="0"/>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="claimDataValidationLineItemRules" type="bons2:ClaimDataValidationLineItemRulesBO"/>
+                    <xsd:element minOccurs="0" name="payeeDesignationCodeNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="medicareAssignmentCodeNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="claimTypeNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="fiscalYearStartDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="fiscalYearEndDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="stateDefinedNumberOfDays" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="liRevenueCodeRefNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="timelyFilingPeriodAdjustment" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="excludedAdjustmentReasonCodeNotInSL" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="providerOnFCNMatch" type="xsd:boolean"/>
+		    		<xsd:element minOccurs="0" name="providerIDTypeNotInSL" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="fcnReasonCodeNotInSL" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="fcnBalanceAmtNotInSL" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="reasonCodeFCNRequired" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="reasonCodeFCNNotRequired" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="manualEOB" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="batchTypeCodeNotInSL" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="timelyFilingPeriodAllWNotes" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="timelyFilingPeriodAllWONotes" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="timelyFilingPeriodCrossovers" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="claimRemarkCodeNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="submittedRemarksNotInSL" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="hipaaAttachmentCodeNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="overrideExceptionCodeNotInSL" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="manualEOBCodeNotInSL" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="C3_5347_recycle_days" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="C3_5348_recycle_days" type="xsd:int"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

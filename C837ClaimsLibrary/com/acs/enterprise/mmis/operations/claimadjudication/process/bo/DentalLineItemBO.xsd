@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons2="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="ToothInformationBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="DentalLineItemBO">
+        <xsd:sequence>
+        <xsd:element name="oralCavityCode1" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="toothInformation" type="bons2:ToothInformationBO" maxOccurs="unbounded" minOccurs="0"/>
+            <xsd:element minOccurs="0" name="oralCavityCode2" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="oralCavityCode3" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="oralCavityCode4" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="oralCavityCode5" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="multipleToothIndicator" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="toothSurfaceCode1" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="toothSurfaceCode2" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="toothSurfaceCode3" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="toothSurfaceCode4" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="toothSurfaceCode5" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="toothCode" type="xsd:string"/>
+        </xsd:sequence>
+        
+      
+    </xsd:complexType>
+</xsd:schema>

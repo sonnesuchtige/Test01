@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ContactManagementLibrary/com/acs/enterprise/mmis/program/contactmanagment/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:complexType name="AppealTracking">
+    <xsd:complexContent>
+      <xsd:extension base="bons1:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="appealDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="appealTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="caseAppealDisputeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="caseAppealResultsCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="caseAppealStatusCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="caseAppealTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="caseID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="commonEntityType" type="bons0:CommonEntityTypeBO"/>
+      <xsd:element minOccurs="0" name="serviceAuthorization" type="xsd:string"/>
+        </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

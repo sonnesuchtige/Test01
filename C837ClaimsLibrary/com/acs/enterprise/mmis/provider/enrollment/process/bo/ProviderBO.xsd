@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/bo" xmlns:bons2="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" xmlns:bons3="http://EnterpriseLibrary/com/acs/enterprise/common/base/common/domain" xmlns:bons4="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons5="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:include schemaLocation="EnrollmentAffiliationBO.xsd"/>
+    <xsd:include schemaLocation="ProgramInformationBO.xsd"/>
+    <xsd:include schemaLocation="ProviderNetworkBO.xsd"/>
+    <xsd:include schemaLocation="TPProviderSubmissionBO.xsd"/>
+    <xsd:include schemaLocation="TPProviderCrossReferenceBO.xsd"/>
+    <xsd:include schemaLocation="ProviderInterpServiceBO.xsd"/>
+    <xsd:include schemaLocation="ProviderDisproportionateShareBO.xsd"/>
+    <xsd:include schemaLocation="ProviderEventBO.xsd"/>
+    <xsd:include schemaLocation="ApplicationStatusBO.xsd"/>
+    <xsd:include schemaLocation="TaxNoticeBO.xsd"/>
+    <xsd:include schemaLocation="RequiredAttachmentsBO.xsd"/>
+    <xsd:include schemaLocation="OwnershipCrossReferenceBO.xsd"/>
+    <xsd:include schemaLocation="BedInformationBO.xsd"/>
+    <xsd:include schemaLocation="AlternateIdInfoBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.process.bo.xsd"/>
+    <xsd:include schemaLocation="COSStatusBO.xsd"/>
+    <xsd:include schemaLocation="ProviderBillingMediumBO.xsd"/>
+    <xsd:include schemaLocation="ProviderReviewBO.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd"/>
+    <xsd:include schemaLocation="SanctionBO.xsd"/>
+    <xsd:include schemaLocation="ProviderEDIInformationBO.xsd"/>
+    <xsd:include schemaLocation="ProviderEDITransactionInformationBO.xsd"/>
+    <xsd:include schemaLocation="LanguageBO.xsd"/>
+    <xsd:include schemaLocation="OtherServiceBO.xsd"/>
+    <xsd:include schemaLocation="MedicareBO.xsd"/>
+    <xsd:include schemaLocation="QuestionnaireOtherStateBO.xsd"/>
+    <xsd:include schemaLocation="PreviousMedicaidBO.xsd"/>
+    <xsd:include schemaLocation="CLIAInformationBO.xsd"/>
+    <xsd:include schemaLocation="TaxonomyBO.xsd"/>
+    <xsd:include schemaLocation="BoardCertifiedSpecialityBO.xsd"/>
+    <xsd:include schemaLocation="DBABO.xsd"/>
+    <xsd:include schemaLocation="ProviderTypeBO.xsd"/>
+    <xsd:include schemaLocation="EnrollmentAltIDBO.xsd"/>
+    <xsd:include schemaLocation="WebDisplayBO.xsd"/>
+    <xsd:include schemaLocation="ProviderServiceBO.xsd"/>    
+    <xsd:include schemaLocation="EnrollmentStatusBO.xsd"/>
+    <xsd:include schemaLocation="CategoryofServiceBO.xsd"/>
+    <xsd:include schemaLocation="LicenseCertificationBO.xsd"/>
+    <xsd:include schemaLocation="AffiliationBO.xsd"/>
+    <xsd:include schemaLocation="RemittanceAdviceBO.xsd"/>
+    <xsd:complexType name="ProviderBO">
+        <xsd:annotation>
+      <xsd:documentation>This object holds Information for Provider.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="bons4:EnterpriseBaseDomainBO">        <xsd:sequence>
+                    <xsd:element minOccurs="0" name="sysID" type="xsd:long"/>
+                    <xsd:element minOccurs="0" name="applicationNumber" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="commonEntity" type="bons2:CommonEntityBO"/>
+                    <xsd:element minOccurs="0" name="name" type="bons5:NameBO"/>
+                    <xsd:element minOccurs="0" name="providerService" type="bons0:ProviderServiceBO"/>
+                    <xsd:element minOccurs="0" name="dateOfBirth" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="genderCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="birthCountryCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="birthStateCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="nameOrganisationIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="withHoldingStatus" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="multiLocationIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="medicareIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="ihsIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="programIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="epsdtIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="stateMatchIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="duplicateOverrideIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="cancelApplicationIndicator" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="reportingAlternateID" type="xsd:string"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="webDisplay" type="bons0:WebDisplayBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="enrollmentAltID" type="bons0:EnrollmentAltIDBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="licenseCertifications" type="bons0:LicenseCertificationBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="providerTypes" type="bons0:ProviderTypeBO"/>
+                    <xsd:element minOccurs="0" name="dbaInfo" type="bons0:DBABO"/>
+                    <xsd:element minOccurs="0" name="addedDate" type="xsd:date"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="boardCertifiedSpeciality" type="bons0:BoardCertifiedSpecialityBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="taxonomy" type="bons0:TaxonomyBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="cliaInformation" type="bons0:CLIAInformationBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="previousMedicaid" type="bons0:PreviousMedicaidBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="medicare" type="bons0:MedicareBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="remittanceAdvice" type="bons0:RemittanceAdviceBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="providerEDITransactionInformation" type="bons0:ProviderEDITransactionInformationBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="providerEDIInformation" type="bons0:ProviderEDIInformationBO"/>
+                    <xsd:element minOccurs="0" name="sanction" type="bons0:SanctionBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="providerReview" type="bons0:ProviderReviewBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="providerBillingMedium" type="bons0:ProviderBillingMediumBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="cosStatus" type="bons0:COSStatusBO"/>
+                    <xsd:element maxOccurs="unbounded" minOccurs="0" name="enrollmentStatus" type="bons0:EnrollmentStatusBO"/>
+                    <xsd:element minOccurs="0" name="locationCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="profTechCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="billingCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="provGroupAffiliations" type="bons0:AffiliationBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="individualGroupCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="ownerTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="nursingFacilityCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="otherLanguageText" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="alternateIdInfo" type="bons0:AlternateIdInfoBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="ownershipCrossRef" type="bons0:OwnershipCrossReferenceBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="requiredAttachments" type="bons0:RequiredAttachmentsBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="taxNotice" type="bons0:TaxNoticeBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="applicationStatus" type="bons0:ApplicationStatusBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="providerEvent" type="bons0:ProviderEventBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="providerDisproportionateShare" type="bons0:ProviderDisproportionateShareBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="providerInterpService" type="bons0:ProviderInterpServiceBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="tpProviderCrossReference" type="bons0:TPProviderCrossReferenceBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="organizationName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="practiceTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="costSettlementDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="providerNetwork" type="bons0:ProviderNetworkBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="typeClassificationCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="phoneticLastName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="phoneticFirstName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="phoneticSortName" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="auditDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="enrollmentActionCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="recordTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="raSortSequenceCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="raPrintSuspendedCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="pharmacyClassificationCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="medicareFiscalYearMonth" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="medicaidFiscalYearMonth" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="bulletinMediumCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="bulletinCopyNumber" type="xsd:int"/>
+                    <xsd:element minOccurs="0" name="reverifyDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="peerGroupCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="webUserID" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="currentAltIDTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="programInfo" type="bons0:ProgramInformationBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="tplAuditDate" type="xsd:date"/>
+                    <xsd:element minOccurs="0" name="tplAuditTypeCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="fiscalYearEndMonth" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="raceCode" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="pharmaDeliveryServiceInd" type="xsd:boolean"/>
+		    <xsd:element minOccurs="0" name="noteSet" type="bons2:NoteSetBO" maxOccurs="1"/>
+                    <xsd:element minOccurs="0" name="enrollmentAffiliation" type="bons0:EnrollmentAffiliationBO" maxOccurs="unbounded"/>
+                    <xsd:element minOccurs="0" name="latestApplicationStatus" type="bons0:ApplicationStatusBO"/>
+                </xsd:sequence> 
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

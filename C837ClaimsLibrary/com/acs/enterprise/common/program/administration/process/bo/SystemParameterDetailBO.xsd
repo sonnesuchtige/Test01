@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="LineOfBusinessBO.xsd"/>
+    <xsd:complexType name="SystemParameterDetailBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="tempValue" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="beginDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="endDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="valueDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="valueTimeStamp" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="valueAmt" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="valuePCT" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="valueNum" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="valueData" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lob" type="bons0:LineOfBusinessBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

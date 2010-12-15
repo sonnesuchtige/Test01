@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.ProviderEnrollmentLibrary.com.acs.enterprise.mmis.provider.enrollment.process.bo.xsd" namespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo"/>
+    <xsd:complexType name="PregnancyInformationBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="noOfChildrenExpected" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="pregnancyDueDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="pregnancyTermDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="pcpForNewBornAltID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="pcpForNewBornAltIDTypeCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="pcpForNewBorn" type="bons0:ProviderBO"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

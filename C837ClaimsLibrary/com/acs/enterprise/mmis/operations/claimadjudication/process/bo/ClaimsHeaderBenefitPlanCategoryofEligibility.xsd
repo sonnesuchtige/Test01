@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="ClaimsHeaderBenefitPlanCategoryofEligibility">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="benfitPlanXREFSeqNumber" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="bpId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="coeCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="benefitPlanXREFBeginDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="benefitPlanXREFEndDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="tcn" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="memberSystemID" type="xsd:long"/>
+        </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

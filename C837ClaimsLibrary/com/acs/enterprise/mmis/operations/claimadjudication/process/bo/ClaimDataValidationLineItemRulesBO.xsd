@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">    
+    <xsd:include schemaLocation="ValueBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:complexType name="ClaimDataValidationLineItemRulesBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">  
+                <xsd:sequence>
+          <xsd:element name="procedureModifierCodeNotInSL" type="xsd:boolean" maxOccurs="unbounded" minOccurs="0"/>
+                    <xsd:element minOccurs="0" name="placeOfServiceNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="diagRelCodesNotInSL" maxOccurs="unbounded">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:boolean"/>
+            </xsd:simpleType>
+          </xsd:element>
+                    <xsd:element minOccurs="0" name="oralCavityNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="revenueCodeNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="toothNumberNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="firstToothSurfaceNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="secondToothSurfaceNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="thirdToothSurfaceNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="fourthToothSurfaceNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="fifthToothSurfaceNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="remarkCodeNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="hipaaAttachmentCodeNotInSL" type="xsd:boolean" default="true"/>
+                    <xsd:element minOccurs="0" name="manualEOBCodeNotInSL" type="xsd:boolean"/>
+                </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="DocumentDetailsBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+        <xsd:sequence>
+        <xsd:element name="enteredCountNumber" type="xsd:long" minOccurs="0"/>
+          <xsd:element name="beginDocumentNumber" type="xsd:long" minOccurs="0"/>
+          <xsd:element name="endDocumentNumber" type="xsd:long" minOccurs="0"/>
+          <xsd:element name="documentCountNumber" type="xsd:long" minOccurs="0"/>
+          <xsd:element name="documentTypeCode" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="highDocumentNumber" type="xsd:long" minOccurs="0"/>
+          <xsd:element name="lastEnteredNumber" type="xsd:long" minOccurs="0"/>
+          </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

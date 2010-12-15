@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="ClaimServiceAuthorizationBO">
+        <xsd:sequence>
+          <xsd:element name="serviceAuthID" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="serviceAuthLineNumber" type="xsd:int" minOccurs="0"/>
+          <xsd:element name="serviceAuthIndicator" type="xsd:boolean" minOccurs="0"/>
+          <xsd:element name="submittedServiceAuthID" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="saRequiredIndicator" type="xsd:boolean" minOccurs="0"/>
+            <xsd:element minOccurs="0" name="saUnitAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="saUnits" type="xsd:int"/>
+            <xsd:element minOccurs="0" name="approvedUnitAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="approvedAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="usedUnitAmount" type="xsd:double"/>
+            <xsd:element minOccurs="0" name="usedAmount" type="xsd:double"/>
+        </xsd:sequence>
+        
+      
+    </xsd:complexType>
+</xsd:schema>

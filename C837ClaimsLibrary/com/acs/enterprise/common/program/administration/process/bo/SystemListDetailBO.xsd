@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary" xmlns:bons1="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="SystemListBO.xsd"/>
+    <xsd:include schemaLocation="LineOfBusinessBO.xsd"/>
+    <xsd:complexType name="SystemListDetailBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="beginDate" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endingValue" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="endDate" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="sortNum" type="xsd:double"/>
+      <xsd:element minOccurs="0" name="startingValue" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="functionalAreaCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lob" type="bons1:LineOfBusinessBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

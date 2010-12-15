@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://LetterGenerationLibrary/com/acs/enterprise/common/cots/lettergeneration/process/bo">
+  <xsd:complexType name="LetterGenerationRequestParamBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="letterRequestSK" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="letterTemplateId" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="letterKeywordId" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="keywordLabel" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="keywordTypCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="keywordValue" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="letterText" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="letterKeyWordUsageCode" type="xsd:string"/>
+        </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

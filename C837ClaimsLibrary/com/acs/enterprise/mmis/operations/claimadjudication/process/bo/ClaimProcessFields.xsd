@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+  <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="ClaimProcessFields">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="ruleCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="drgReturnCode" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="mdcCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="mdcTitle" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="drgGrouperVersion" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="drgTitle" type="xsd:string"/>
+        </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

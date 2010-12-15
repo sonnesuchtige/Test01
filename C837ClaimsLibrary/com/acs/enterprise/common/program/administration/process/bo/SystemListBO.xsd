@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://EnterpriseLibrary" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="SystemListDetailBO.xsd"/>
+    <xsd:include schemaLocation="ValidValueDomainBO.xsd"/>
+    <xsd:complexType name="SystemListBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="functionalArea" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="listBusinessName" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="listNumber" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="description" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="systemListDetail" type="bons0:SystemListDetailBO" maxOccurs="unbounded"/>
+      <xsd:element minOccurs="0" name="dataFormat" type="bons0:ValidValueDomainBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

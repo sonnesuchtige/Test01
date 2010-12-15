@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+  <xsd:complexType name="MemberExceptionBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="errorDesc" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="errorCode" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

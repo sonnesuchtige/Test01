@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.program.commonentities.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/commonentities/process/bo"/>
+    <xsd:complexType name="EOMBTextBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="eombFromCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="eombThruCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="eombProcedureTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="lobCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="eombText" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="noteSet" type="bons0:NoteSetBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

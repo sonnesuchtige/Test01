@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://MemberLibrary/com/acs/enterprise/mmis/member/common/process/bo">
+    <xsd:include schemaLocation="DuplicateSearchCriteriaBO.xsd"/>
+    <xsd:complexType name="MemberArraySearchCriteriaBO">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="duplicateSearchCriteria" type="bons0:DuplicateSearchCriteriaBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

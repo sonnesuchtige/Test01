@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:bons1="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo">
+    <xsd:include schemaLocation="SoftwareSupportedTxnTypeBO.xsd"/>
+    <xsd:include schemaLocation="SoftwareProduct.xsd"/>
+    <xsd:import namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd"/>
+  <xsd:complexType name="SoftwareProductVersionBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:EnterpriseBaseDomainBO">
+                <xsd:sequence>
+          <xsd:element minOccurs="0" name="certificationDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="versionBeginDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="versionEndDate" type="xsd:date"/>
+          <xsd:element minOccurs="0" name="softwareProtocolCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="versionId" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="softwareSupportedTxnType" type="bons1:SoftwareSupportedTxnTypeBO"/>
+        </xsd:sequence>
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

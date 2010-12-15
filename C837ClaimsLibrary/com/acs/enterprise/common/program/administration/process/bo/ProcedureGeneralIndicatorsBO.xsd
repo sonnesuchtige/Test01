@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo" targetNamespace="http://EnterpriseLibrary/com/acs/enterprise/common/program/administration/process/bo">
+    <xsd:include schemaLocation="BaseGeneralIndicatorsBO.xsd"/>
+    <xsd:complexType name="ProcedureGeneralIndicatorsBO">
+    <xsd:complexContent>
+      <xsd:extension base="bons0:BaseGeneralIndicatorsBO">
+                <xsd:sequence>
+      <xsd:element minOccurs="0" name="attachmentIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="cmsLabUpdateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="diagnosisRequiredIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="electiveSurgeryIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="hcpcsUpdateIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="injuryIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="longTermCareIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="modifierRequiredIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="multipleSurgeryIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="ndcRequiredIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="officeVisitSurgeryIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="quadrantIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="secondSurgicalOpinionIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="toothNumberIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="toothSurfaceIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="partialUnitsAllowableIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="confidentialityIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="diseaseStateMgmtIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="emergencyIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="duplicateCheckIndicator" type="xsd:boolean"/>
+      <xsd:element minOccurs="0" name="rateFileOnlyIndicator" type="xsd:boolean"/>
+    </xsd:sequence>
+                  
+            </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

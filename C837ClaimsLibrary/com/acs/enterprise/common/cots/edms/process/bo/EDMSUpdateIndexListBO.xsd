@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:Q1="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo" xmlns:bons0="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://EDMSLibrary/com/acs/enterprise/common/cots/edms/process/bo">
+    <xsd:include schemaLocation="EDMSIndexUpdateBO.xsd"/>
+    <xsd:complexType name="EDMSUpdateIndexListBO">
+        <xsd:annotation>
+      <xsd:documentation>This BO will be used to update the index value back to EDMS. This Bo will be populated by the calling module for Index key update into EDMS.</xsd:documentation>
+    </xsd:annotation>
+        <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="1" name="edmsUpdateIndexList" type="Q1:EDMSIndexUpdateBO">
+        <xsd:annotation>
+          <xsd:documentation>Self explanatory.&#13;
+</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+        
+                  
+            
+    </xsd:complexType>
+</xsd:schema>

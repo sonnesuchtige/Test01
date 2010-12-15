@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:bons0="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons1="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo" xmlns:bons2="http://ClaimsAdjLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons3="http://ClaimsAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" xmlns:bons4="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">    
+    <xsd:include schemaLocation="ClaimLineItemsProvidersBO.xsd"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.EnterpriseLibrary.com.acs.enterprise.common.base.process.bo.xsd" namespace="http://EnterpriseLibrary/com/acs/enterprise/common/base/process/bo"/>
+    <xsd:import schemaLocation="../../../../../../../../xsd-includes/http.ProviderEnrollmentLibrary.com.acs.enterprise.mmis.provider.enrollment.process.bo.xsd" namespace="http://ProviderEnrollmentLibrary/com/acs/enterprise/mmis/provider/enrollment/process/bo"/>    
+  <xsd:complexType name="ClaimProvidersBO">
+        <xsd:sequence>
+          <xsd:element name="claimLineItemProviders" type="bons4:ClaimLineItemsProvidersBO" maxOccurs="unbounded" minOccurs="0"/>
+          <xsd:element name="providers" type="bons1:ProviderBO" maxOccurs="unbounded" minOccurs="0"/>
+          <xsd:element name="billingProviderIndex" type="xsd:int" minOccurs="0"/>
+          <xsd:element name="otherProviderIndex" type="xsd:int" minOccurs="0"/>
+          <xsd:element name="payToProviderIndex" type="xsd:int" minOccurs="0"/>
+            <xsd:element minOccurs="0" name="refferingProviderIndex" type="xsd:int"/>
+            <xsd:element minOccurs="0" name="attendingProviderIndex" type="xsd:int"/>
+        </xsd:sequence>
+                                
+        
+    </xsd:complexType>
+</xsd:schema>

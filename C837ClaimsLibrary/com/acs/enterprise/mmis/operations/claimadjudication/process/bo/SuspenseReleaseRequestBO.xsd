@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bons0="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo" targetNamespace="http://ClaimAdjudicationLibrary/com/acs/enterprise/mmis/operations/claimadjudication/process/bo">
+    <xsd:include schemaLocation="SuspenseReleaseRequestMiscellaneousBO.xsd"/>
+    <xsd:include schemaLocation="BatchControlBO.xsd"/>
+    <xsd:complexType name="SuspenseReleaseRequestBO">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="requestDate" type="xsd:date"/>
+      <xsd:element minOccurs="0" name="requestNumber" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="actionCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="benefitPlanID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="diagnosisCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="revenueCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="billingAltID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="billingAltTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="payToAltID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="payToAltTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="renderingAltID" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="renderingAltTypeCode" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="procedureModifier1" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="procedureModifier2" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="procedureModifier3" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="procedureModifier4" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="memberSysId" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="renderingProviderSysId" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="billingProviderSysId" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="otherProviderSysId" type="xsd:long"/>
+      <xsd:element minOccurs="0" name="batchControl" type="bons0:BatchControlBO"/>
+      <xsd:element minOccurs="0" name="miscellaneousRequest" type="bons0:SuspenseReleaseRequestMiscellaneousBO"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
